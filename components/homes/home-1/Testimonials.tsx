@@ -122,24 +122,25 @@ export default function Testimonials() {
                                   height={item.authorPhotoHeight}
                                 />
                               </div>
-                              <div className="mxd-testimonials-card__company">
+                              {/* <div className="mxd-testimonials-card__company">
                                 <Image
                                   alt="Company Logo"
                                   src={item.companyLogo}
                                   width={item.companyLogoWidth}
                                   height={item.companyLogoHeight}
                                 />
-                              </div>
+                              </div> */}
                             </div>
                             <div className="mxd-testimonials-card__text">
                               <p className="anim-uni-in-up">{item.text}</p>
-                              <AnimatedButton
+                              {/* <AnimatedButton
                                 text="Project Page"
                                 className="btn btn-anim btn-default btn-small btn-outline slide-right-up anim-uni-in-up"
                                 href={item.projectPage}
                               >
                                 <i className="ph ph-arrow-up-right" />
-                              </AnimatedButton>
+                              </AnimatedButton> */}
+                              
                             </div>
                           </div>
                           <div className="mxd-testimonials-card__author">

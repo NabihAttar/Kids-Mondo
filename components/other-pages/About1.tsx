@@ -1,14 +1,14 @@
 "use client";
 import Image from "next/image";
 
-import testimonialsPortfolioData from "@/data/testimonials-portfolio.json";
+import about1 from "@/data/about1.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Parallax } from "swiper/modules";
 import AnimatedButton from "../animation/AnimatedButton";
 import Link from "next/link";
 import RevealText from "../animation/RevealText";
 
-export default function Testimonials() {
+export default function About1() {
   return (
     <div
       id="testimonials"
@@ -44,7 +44,7 @@ export default function Testimonials() {
             >
               {/* additional required wrapper */}
 
-              {testimonialsPortfolioData.map((item, idx) => (
+              {about1.map((item, idx) => (
                 <SwiperSlide
                   className="swiper-slide mxd-fullwidth-slide"
                   key={idx}

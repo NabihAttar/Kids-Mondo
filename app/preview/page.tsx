@@ -1,4 +1,4 @@
-import Hero from "@/components/preview/Hero";
+import Hero from "@/components/homes/home-freelancer-portfolio/Hero";
 
 import Demos from "@/components/preview/Demos";
 import MarqueeSection from "@/components/preview/MarqueeSection";
@@ -12,6 +12,9 @@ import FeatureCards from "@/components/preview/FeatureCards";
 import Cta from "@/components/preview/Cta";
 import Footer1 from "@/components/footers/Footer1";
 import { Metadata } from "next";
+import Approch from "@/components/common/Approch";
+import Testimonials from "@/components/common/Testimonials";
+import Partners from "@/components/homes/home-1/Partners";
 export const metadata: Metadata = {
   title:
     "Preview || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
@@ -23,16 +26,21 @@ export default function PreviewPage() {
     <>
       <main id="mxd-page-content" className="mxd-page-content">
         <Hero />
-        <Demos />
+        <Approch />
+        <Testimonials />
+        <MarqueeSection2 />
+        <Partners />
+
+
+        {/* <Demos />
         <MarqueeSection />
         <BlogPages />
         <Features />
-        <MarqueeSection2 />
         <InnerPagesSlider />
         <PagesMarquee />
         <Features2 />
         <FeatureCards />
-        <Cta />
+        <Cta /> */}
       </main>
       <Footer1 />
     </>

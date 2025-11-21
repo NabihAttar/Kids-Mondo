@@ -12,7 +12,7 @@ export default function MarqueeSection2() {
           >
             {/* single item */}
             <div className="marquee__item one-line item-regular text">
-              <p className="marquee__text">Inner Pages</p>
+              <p className="marquee__text"> Find us Online </p>
               <div className="marquee__image">
                 <svg
                   version="1.1"

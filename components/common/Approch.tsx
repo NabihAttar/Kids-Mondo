@@ -16,15 +16,17 @@ export default function Approch() {
                 <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrtitle anim-uni-in-up">
                     <RevealText as="h2" className="reveal-type">
-                      Approach and philosophy
+                      The City That Raises Dreamers
                     </RevealText>
                   </div>
                 </div>
                 <div className="col-12 col-xl-3 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrdescr">
-                    <p className="anim-uni-in-up">Design</p>
-                    <p className="anim-uni-in-up">Development</p>
-                    <p className="anim-uni-in-up">Mastership</p>
+                    {/* <p className="anim-uni-in-up">Inspiring Tomorrow’s Leaders Through the Power of Play</p>
+                    <p className="anim-uni-in-up">At KidzMondo, every child steps into a world built just for them a living city where imagination meets responsibility and curiosity turns into confidence.</p>
+                    <p className="anim-uni-in-up">Through hands-on experiences that mirror real life children explore professions, teamwork, and values in a safe, inclusive environment.</p>
+                    <p className="anim-uni-in-up">Our mission is to spark a lifelong love of learning by turning everyday play into a meaningful journey of discovery, creativity, and growth.</p> */}
+
                   </div>
                 </div>
                 <div className="col-12 col-xl-3 mxd-grid-item no-margin">

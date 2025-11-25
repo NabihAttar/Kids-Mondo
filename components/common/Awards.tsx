@@ -42,9 +42,7 @@ export default function Awards() {
                 <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrtitle anim-uni-in-up">
                     <RevealText as="h2" className="reveal-type">
-                      Awards &amp;
-                      <br />
-                      publications
+                      Event                    
                     </RevealText>
                   </div>
                 </div>

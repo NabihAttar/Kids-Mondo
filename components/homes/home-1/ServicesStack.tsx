@@ -23,30 +23,32 @@ export default function ServicesStack() {
                   </Link>
                 </div>
                 <div className="mxd-services-stack__title width-60">
-                  <h3 className="opposite">Digital art and graphic design</h3>
+                  <h3 className="opposite">Chef</h3>
                 </div>
+                <h6 style={{ color: "white" }}>Skills Learned:</h6>
+
                 <div className="mxd-services-stack__info width-60">
+
                   <div className="mxd-services-cards__tags">
                     <span className="tag tag-default tag-outline-opposite">
-                      UI/UX
+                      Teamwork and communication
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Web design
+                      Following instructions and precision
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Packaging
+                      Creativity and sensory learning
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Motion
+                      Time management and organization
                     </span>
-                    <span className="tag tag-default tag-outline-opposite">
-                      3D models
-                    </span>
+
                   </div>
                   <p className="t-small-mobile t-opposite">
-                    We create visually compelling designs that enhance user
-                    experience. We make sure your brand&apos;s visuals resonate
-                    with your audience.
+                    What Kids Do:
+                  </p>
+                  <p className="t-small-mobile t-opposite">
+                    Step into the kitchen, wear the hat, and create dishes just like a real chef. Kids learn to follow recipes, measure ingredients, and work together to prepare simple, delicious meals.
                   </p>
                 </div>
                 <div className="services-stack__image">
@@ -80,30 +82,32 @@ export default function ServicesStack() {
                 </div>
                 <div className="mxd-services-stack__title width-60">
                   <h3 className="opposite">
-                    Creative
-                    <br />
-                    development
+                    Firefighter
                   </h3>
                 </div>
+                <h6 style={{ color: "white" }}>Skills Learned:</h6>
+
                 <div className="mxd-services-stack__info width-60">
                   <div className="mxd-services-cards__tags">
                     <span className="tag tag-default tag-outline-opposite">
-                      Frontend
+                      Responsibility and courage
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Interactions
+                      Team coordination
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Backend
+                      Safety awareness and empathy
                     </span>
-                    <span className="tag tag-default tag-outline-opposite">
+                    {/* <span className="tag tag-default tag-outline-opposite">
                       Mobile Apps
-                    </span>
+                    </span> */}
                   </div>
                   <p className="t-small-mobile t-opposite">
-                    We build high-performance websites and applications using
-                    modern technologies. Our solutions are designed to be
-                    scalable and functional for optimal performance.
+                    What Kids Do:
+                  </p>
+
+                  <p className="t-small-mobile t-opposite">
+                    Suit up, ride in the fire truck, and respond to emergencies around the city. Children practice safety drills, teamwork, and problem-solving as they learn how to protect others.
                   </p>
                 </div>
                 <div className="services-stack__image">
@@ -137,30 +141,30 @@ export default function ServicesStack() {
                 </div>
                 <div className="mxd-services-stack__title width-60">
                   <h3>
-                    Brand
-                    <br />
-                    identity
+                    Reporter
                   </h3>
                 </div>
+                <h6 style={{ color: "black" }}>Skills Learned:</h6>
+
                 <div className="mxd-services-stack__info width-60">
                   <div className="mxd-services-cards__tags">
                     <span className="tag tag-default tag-outline">
-                      Brand strategy
+                      Communication and public speaking
                     </span>
                     <span className="tag tag-default tag-outline">
-                      Logo design
+                      Critical thinking and curiosity
                     </span>
                     <span className="tag tag-default tag-outline">
-                      Guidelines
+                      Writing and storytelling
                     </span>
                     <span className="tag tag-default tag-outline">
-                      Rebranding
+                      Confidence and media literacy
                     </span>
                   </div>
                   <p className="t-small-mobile">
-                    From logo design to comprehensive brand strategies, we
-                    ensure your business stands out with a unique visual
-                    identity and consistent messaging across all touchpoints.
+                    What Kids Do:                  </p>
+                  <p className="t-small-mobile">
+                    Grab a microphone and step into the newsroom. Kids learn how to research, interview, and report stories — turning information into engaging news segments.
                   </p>
                 </div>
                 <div className="services-stack__image">
@@ -194,34 +198,92 @@ export default function ServicesStack() {
                 </div>
                 <div className="mxd-services-stack__title width-60">
                   <h3 className="opposite">
-                    Digital marketing
-                    <br />
-                    solutions
+                    Doctor
                   </h3>
+
                 </div>
+                <h6 style={{ color: "white" }}>Skills Learned:</h6>
+
                 <div className="mxd-services-stack__info width-60">
                   <div className="mxd-services-cards__tags">
                     <span className="tag tag-default tag-outline-opposite">
-                      Strategy
+                      Empathy and compassion
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Social media
+                      Attention to detail
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
                       SEO
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Optimization
+                      Problem-solving and observation
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Campaigns
+                      Health awareness and responsibility
                     </span>
                   </div>
                   <p className="t-small-mobile t-opposite">
-                    SEO and content marketing, social media management and paid
-                    campaigns - we help you reach and engage your target
-                    audience effectively.
+                    What Kids Do:
                   </p>
+                  <p className="t-small-mobile t-opposite">
+                    Put on a lab coat, check vitals, and care for patients in the hospital zone. Children experience the world of healthcare — learning empathy, precision, and how to make others feel better.
+                  </p>
+                </div>
+                <div className="services-stack__image">
+                  <Image
+                    className="service-img service-img-s"
+                    alt="Service/Feature Image"
+                    src="/img/services/800x800_ser-04.webp"
+                    width={800}
+                    height={800}
+                  />
+                  <Image
+                    className="service-img service-img-m"
+                    alt="Service/Feature Image"
+                    src="/img/services/1000x1000_ser-04.webp"
+                    width={1000}
+                    height={1000}
+                  />
+                </div>
+              </div>
+              <div className="mxd-services-stack__inner justify-between bg-base-opp">
+                <div className="mxd-services-stack__controls">
+                  <Link
+                    className="btn btn-round btn-round-large btn-additional slide-right-up anim-no-delay"
+                    href={`/services`}
+                  >
+                    <i className="ph ph-arrow-up-right" />
+                  </Link>
+                </div>
+                <div className="mxd-services-stack__title width-60">
+                  <h3 className="opposite">
+                    Pilot
+                  </h3>
+
+                </div>
+                <h6 style={{ color: "white" }}>Skills Learned:</h6>
+
+                <div className="mxd-services-stack__info width-60">
+                  <div className="mxd-services-cards__tags">
+                    <span className="tag tag-default tag-outline-opposite">
+                      Focus and decision-making
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Coordination and spatial awareness
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Responsibility and leadership
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Technical curiosity and discipline
+                    </span>
+
+                  </div>
+                  <p className="t-small-mobile t-opposite">
+                    What Kids Do:
+                  </p>
+                  <p className="t-small-mobile t-opposite">
+                    Take the captain’s seat and navigate the skies. Kids experience the excitement of flying an aircraft using real controls and teamwork to ensure a safe, successful flight.                  </p>
                 </div>
                 <div className="services-stack__image">
                   <Image

@@ -20579,3 +20579,27 @@ form textarea:required:valid {
     font-size: 3.4rem;
   }
 }
+
+.mxd-article__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.mxd-article__col--left > .mxd-article__block + .mxd-article__block {
+  margin-top: 32px;
+}
+
+.mxd-article-author__info {
+  margin-top: 32px;
+}
+
+/* Mobile: stack columns */
+@media (max-width: 991px) {
+  .mxd-article__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+

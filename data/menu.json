@@ -27,6 +27,19 @@
       { "label": "Project details", "href": "/project-details" }
     ]
   },
+
+  {
+    "title": "Experience",
+    "href": "/experience"
+  },
+   {
+    "title": "Education & CSR",
+    "href": "/education&CSR"
+  },
+  {
+    "title": "Rranchise Opportunity",
+    "href": "/franchise-opportunity"
+  },
   {
     "title": "Pages",
     "submenu": [

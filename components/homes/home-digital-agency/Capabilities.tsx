@@ -46,7 +46,7 @@ export default function Capabilities() {
                 <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrtitle">
                     <RevealText as="h2" className="reveal-type">
-                      Our capabilities
+                      Event
                     </RevealText>
                   </div>
                 </div>

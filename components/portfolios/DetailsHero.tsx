@@ -26,7 +26,7 @@ export default function DetailsHero() {
               <div className="col-12 col-xl-10 mxd-grid-item no-margin">
                 <div className="mxd-block__content">
                   <div className="mxd-block__inner-headline loading__item">
-                    <h1 className="inner-headline__title">Studio template</h1>
+                    <h1 className="inner-headline__title">Where Every Day Is a New Role to Play</h1>
                   </div>
                 </div>
               </div>
@@ -41,11 +41,11 @@ export default function DetailsHero() {
               <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                 <div className="inner-headline__paragraph loading__item">
                   <p>
-                    Inspiring ideas, creative insights, and the latest in design
-                    and tech. Fueling innovation for your digital journey.
+                    In KidzMondo, every visit is an adventure. One day your child is a doctor, the next a pilot, reporter, or artist. <br></br>
+                    Each experience is designed to ignite curiosity, teach responsibility, and celebrate creativity because the best way to learn is to live it.
                   </p>
                 </div>
-                <div className="inner-headline__data">
+                {/* <div className="inner-headline__data">
                   <div className="mxd-data-list">
                     <div className="container-fluid p-0">
                       <div className="row g-0">
@@ -78,7 +78,7 @@ export default function DetailsHero() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               {/* Inner Headline Paragraph & Data End */}
               {/* Inner Headline Tags Start */}

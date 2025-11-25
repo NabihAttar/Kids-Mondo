@@ -7,11 +7,9 @@ export default function Pricing() {
       {/* Section - Inner Page Headline Start */}
       <div className="mxd-section mxd-section-inner-headline padding-headline-pre-grid">
         <div className="mxd-container grid-container">
-          {/* Block - Inner Page Headline Start */}
           <div className="mxd-block loading-wrap">
-            <div className="container-fluid px-0">
+            {/* <div className="container-fluid px-0">
               <div className="row gx-0">
-                {/* Inner Headline Name Start */}
                 <div className="col-12 col-xl-2 mxd-grid-item no-margin">
                   <div className="mxd-block__name name-inner-headline loading__item">
                     <p className="mxd-point-subtitle">
@@ -40,25 +38,22 @@ export default function Pricing() {
                     </p>
                   </div>
                 </div>
-                {/* Inner Headline Name Start */}
-                {/* Inner Headline Content Start */}
+
                 <div className="col-12 col-xl-10 mxd-grid-item no-margin">
                   <div className="mxd-block__content">
                     <div className="mxd-block__inner-headline">
                       <h1 className="inner-headline__title headline-img-before headline-img-01 loading__item">
                         Creative solutions made simple
                       </h1>
-                      {/* <p class="inner-headline__text t-large t-bright">Subscriptions for continuous creative 
+                      <p className="inner-headline__text t-large t-bright">Subscriptions for continuous creative 
                   support or bundled projects to build or elevate your brand. We've got a package 
-                  that fits!</p> */}
+                  that fits!</p>
                     </div>
                   </div>
                 </div>
-                {/* Inner Headline Content End */}
               </div>
-            </div>
+            </div> */}
           </div>
-          {/* Block - Inner Page Headline End */}
         </div>
       </div>
       {/* Section - Inner Page Headline End */}

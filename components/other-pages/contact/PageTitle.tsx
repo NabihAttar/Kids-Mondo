@@ -57,10 +57,9 @@ export default function PageTitle() {
                       <i className="ph-bold ph-arrow-up-right" />
                     </a>
                     <p className="inner-headline__text t-large t-bright loading__item">
-                      Have questions? We&apos;ve got the answers! Here,
-                      you&apos;ll find clear and concise information about our
-                      services, process, and what to expect when working with
-                      us. If you need more details, feel free to reach out!
+                      We’d love to hear from you!<br />
+                      Whether you’re planning a visit, have a question, or want to explore partnership opportunities, our team is here to help.<br />
+                      Reach out through the form below and we’ll make sure your message gets to the right department.
                     </p>
                   </div>
                 </div>

@@ -20603,14 +20603,43 @@ form textarea:required:valid {
   }
 }
 
+/* Same visual style for all fields (inputs, textarea, selects) */
+.form.contact-form .contact-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3); /* <-- same line as your inputs */
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
 
-/* Make sure contact form is visible on /contact-us */
-.mxd-section-inner-form .loading__fade,
-.mxd-section-inner-form .anim-uni-in-up,
-.mxd-section-inner-form .form-container,
-.mxd-section-inner-form .contact-form {
-  opacity: 1 !important;
-  visibility: visible !important;
-  transform: none !important;
+/* Specifically for selects: remove native box but KEEP the bottom line */
+.form.contact-form select.contact-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  cursor: pointer;
+  padding-right: 32px; /* space for arrow */
+}
+
+/* Optional: softer color for placeholder option */
+.form.contact-form select.contact-select:invalid {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Optional: simple custom arrow on the right (keeps the underline) */
+.form.contact-form select.contact-select {
+  background-image:
+    linear-gradient(45deg, transparent 50%, currentColor 50%),
+    linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 50%,
+    calc(100% - 12px) 50%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
 }
 

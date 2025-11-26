@@ -6,6 +6,8 @@ import ContactForm from "@/components/other-pages/contact/ContactForm";
 import Locations from "@/components/other-pages/contact/Locations";
 import PageTitle from "@/components/other-pages/contact/PageTitle";
 import Socials from "@/components/other-pages/contact/Socials";
+import Cta2 from "@/components/common/Cta2";
+
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
@@ -22,20 +24,18 @@ export default function ContactPage() {
       >
         <PageTitle />
         <ContactForm />
-        <div className="mxd-section padding-grid-pre-mtext">
+        {/* <div className="mxd-section padding-grid-pre-mtext">
           <div className="mxd-container">
             <div className="mxd-divider">
               <BackgroundParallax className="mxd-divider__image divider-image-3 parallax-img" />
             </div>
           </div>
-        </div>
-        <div className="mxd-section padding-mtext">
+        </div> */}
+        {/* <div className="mxd-section padding-mtext">
           <div className="mxd-container fullwidth-container">
-            {/* Block - Marquee Text One Line Start */}
             <div className="mxd-block">
               <VelocityMarquee className="marquee marquee-right--gsap muted-extra">
                 <div className="marquee__toright">
-                  {/* single item */}
                   {Array.from({ length: 4 }).map((_, idx) => (
                     <div
                       key={idx}
@@ -67,12 +67,12 @@ export default function ContactPage() {
                 </div>
               </VelocityMarquee>
             </div>
-            {/* Block - Marquee Text One Line End */}
           </div>
         </div>
-        <Socials />
+        {/* <Socials />
         <Locations />
-        <Cta />
+        <Cta /> */}
+        <Cta2 />
       </main>
       <Footer2 />
     </>

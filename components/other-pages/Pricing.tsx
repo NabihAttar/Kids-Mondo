@@ -8,7 +8,7 @@ export default function Pricing() {
       <div className="mxd-section mxd-section-inner-headline padding-headline-pre-grid">
         <div className="mxd-container grid-container">
           <div className="mxd-block loading-wrap">
-            {/* <div className="container-fluid px-0">
+            <div className="container-fluid px-0">
               <div className="row gx-0">
                 <div className="col-12 col-xl-2 mxd-grid-item no-margin">
                   <div className="mxd-block__name name-inner-headline loading__item">
@@ -52,7 +52,7 @@ export default function Pricing() {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

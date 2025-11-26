@@ -1,6 +1,6 @@
 "use client";
 
-import { contactSchema, type ContactForm } from "@/schemas/contact";
+import { type ContactForm as ContactFormData, contactSchema } from "@/schemas/contact";
 import { useForm as useHookForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "@formspree/react";
@@ -8,19 +8,19 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AnimatedButton from "@/components/animation/AnimatedButton";
 
-export default function ContactForm() {
+export default function ContactFormKidz() {
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors, isSubmitting },
-  } = useHookForm<ContactForm>({
+  } = useHookForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
   });
 
-  const [fsState, fsSubmit] = useForm<ContactForm>("meoljlry");
+  const [fsState, fsSubmit] = useForm<ContactFormData>("meoljlry");
 
-  const onSubmit = async (data: ContactForm) => {
+  const onSubmit = async (data: ContactFormData) => {
     try {
       await fsSubmit(data);
       reset();
@@ -78,12 +78,10 @@ export default function ContactForm() {
                           {/* Visible Fields */}
                           <div className="container-fluid p-0">
                             <div className="row gx-0">
-                              {/* Full Name */}
                               <div className="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
                                 <input
                                   type="text"
-                                  className="contact-field"
-                                  placeholder="Full Name*"
+                                  placeholder="Your name*"
                                   {...register("Name")}
                                 />
                                 {errors.Name && (
@@ -93,12 +91,18 @@ export default function ContactForm() {
                                 )}
                               </div>
 
-                              {/* Email */}
+                              <div className="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
+                                <input
+                                  type="text"
+                                  placeholder="Company name"
+                                  {...register("Company")}
+                                />
+                              </div>
+
                               <div className="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
                                 <input
                                   type="email"
-                                  className="contact-field"
-                                  placeholder="Email Address*"
+                                  placeholder="Email*"
                                   {...register("E-mail")}
                                 />
                                 {errors["E-mail"] && (
@@ -108,112 +112,17 @@ export default function ContactForm() {
                                 )}
                               </div>
 
-                              {/* Phone */}
                               <div className="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
                                 <input
                                   type="tel"
-                                  className="contact-field"
-                                  placeholder="Phone Number"
+                                  placeholder="Phone"
                                   {...register("Phone")}
                                 />
                               </div>
 
-                              {/* Company */}
-                              <div className="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
-                                <input
-                                  type="text"
-                                  className="contact-field"
-                                  placeholder="Company Name"
-                                  {...register("Company")}
-                                />
-                              </div>
-
-                              {/* Subject */}
-                              <div className="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
-                                <input
-                                  type="text"
-                                  className="contact-field"
-                                  placeholder="Subject*"
-                                  {...register("Subject")}
-                                />
-                                {errors.Subject && (
-                                  <p className="error-message">
-                                    {errors.Subject.message}
-                                  </p>
-                                )}
-                              </div>
-
-                              {/* Inquiry Category (dropdown) */}
-                              <div className="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
-                                <select
-                                  className="contact-field contact-select"
-                                  {...register("InquiryCategory")}
-                                  defaultValue=""
-                                >
-                                  <option value="" disabled>
-                                    Inquiry Category
-                                  </option>
-                                  <option value="General Inquiry">
-                                    General Inquiry
-                                  </option>
-                                  <option value="Ticketing & Bookings">
-                                    Ticketing &amp; Bookings
-                                  </option>
-                                  <option value="School Visits & Educational Programs">
-                                    School Visits &amp; Educational Programs
-                                  </option>
-                                  <option value="Birthday & Event Planning">
-                                    Birthday &amp; Event Planning
-                                  </option>
-                                  <option value="Franchise Opportunities">
-                                    Franchise Opportunities
-                                  </option>
-                                  <option value="Partnerships & Sponsorships">
-                                    Partnerships &amp; Sponsorships
-                                  </option>
-                                  <option value="Media & Press">
-                                    Media &amp; Press
-                                  </option>
-                                  <option value="Careers">Careers</option>
-                                  <option value="Feedback & Suggestions">
-                                    Feedback &amp; Suggestions
-                                  </option>
-                                </select>
-                                {errors.InquiryCategory && (
-                                  <p className="error-message">
-                                    {errors.InquiryCategory.message}
-                                  </p>
-                                )}
-                              </div>
-
-                              {/* City / Location (dropdown) */}
-                              <div className="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
-                                <select
-                                  className="contact-field contact-select"
-                                  {...register("City")}
-                                  defaultValue=""
-                                >
-                                  <option value="" disabled>
-                                    City / Location
-                                  </option>
-                                  <option value="Doha">Doha</option>
-                                  <option value="Beirut">Beirut</option>
-                                  <option value="Riyadh">Riyadh</option>
-                                  <option value="Dubai">Dubai</option>
-                                  <option value="Jeddah">Jeddah</option>
-                                </select>
-                                {errors.City && (
-                                  <p className="error-message">
-                                    {errors.City.message}
-                                  </p>
-                                )}
-                              </div>
-
-                              {/* Message */}
                               <div className="col-12 mxd-grid-item anim-uni-in-up">
                                 <textarea
-                                  className="contact-field"
-                                  placeholder="Message"
+                                  placeholder="A few words about your project*"
                                   {...register("Message")}
                                 />
                                 {errors.Message && (
@@ -223,7 +132,6 @@ export default function ContactForm() {
                                 )}
                               </div>
 
-                              {/* Submit Button */}
                               <div className="col-12 mxd-grid-item anim-uni-in-up">
                                 <AnimatedButton
                                   text="Submit"

@@ -10,7 +10,7 @@ import PagesMarquee from "@/components/preview/PagesMarquee";
 import Features2 from "@/components/preview/Features2";
 import FeatureCards from "@/components/preview/FeatureCards";
 import Cta from "@/components/preview/Cta";
-import Footer1 from "@/components/footers/Footer1";
+import Footer2 from "@/components/footers/Footer2";
 import { Metadata } from "next";
 import Approch from "@/components/common/Approch";
 import Testimonials from "@/components/common/Testimonials";
@@ -42,7 +42,7 @@ export default function PreviewPage() {
         <FeatureCards />
         <Cta /> */}
       </main>
-      <Footer1 />
+      <Footer2 />
     </>
   );
 }

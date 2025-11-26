@@ -41,6 +41,10 @@
     "href": "/franchise-opportunity"
   },
   {
+    "title": "News & Blogs",
+    "href": "/news&blogs"
+  },
+  {
     "title": "Pages",
     "submenu": [
       { "label": "About me", "href": "/about-me" },
@@ -64,5 +68,9 @@
   {
     "title": "Contact",
     "href": "/contact"
+  },
+  {
+    "title": "Contact",
+    "href": "/contact-us"
   }
 ]

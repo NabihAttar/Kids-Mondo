@@ -20603,3 +20603,14 @@ form textarea:required:valid {
   }
 }
 
+
+/* Make sure contact form is visible on /contact-us */
+.mxd-section-inner-form .loading__fade,
+.mxd-section-inner-form .anim-uni-in-up,
+.mxd-section-inner-form .form-container,
+.mxd-section-inner-form .contact-form {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+

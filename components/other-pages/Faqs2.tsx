@@ -91,7 +91,7 @@ export default function Faqs2() {
                 <div className="col-12 col-xl-2 mxd-grid-item no-margin" />
                 {/* Inner Headline Name Start */}
                 {/* Inner Headline Content Start */}
-                <div className="col-12 col-xl-8 mxd-grid-item no-margin">
+                <div className="col-12 col-xl-8 mxd-grid-item no-margin" style={{color: "black"}}>
                   <div className="mxd-block__content">
                     <div className="mxd-accordion loading__fade">
                       {faqs.map((f: Faq, idx: number) => (

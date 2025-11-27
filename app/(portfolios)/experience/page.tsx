@@ -4,6 +4,7 @@ import Projects from "@/components/homes/home-1/Projects";
 import Awards from "@/components/common/Awards";
 import ServicesStack from "@/components/homes/home-1/ServicesStack";
 import Capabilities from "@/components/homes/home-digital-agency/Capabilities";
+import Hero2 from "@/components/homes/home-1/Hero2";
 
 import Challages from "@/components/portfolios/Challages";
 import DetailsHero from "@/components/portfolios/DetailsHero";
@@ -25,7 +26,8 @@ export default function Experience() {
                 id="mxd-page-content"
                 className="mxd-page-content inner-page-content"
             >
-                <DetailsHero />
+                <Hero2 />
+                {/* <DetailsHero /> */}
                 <ServicesStack />
                 <Capabilities />
 

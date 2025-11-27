@@ -103,7 +103,7 @@
   --base-shade--light: #e0dddb;
   --base-opp--light: #161616;
   --base-opp-tint--light: #1c1c1c;
-  --accent--light: #9f8be7;
+  --accent--light: #F8D222;
   --accent-rgb--light: 159, 139, 231;
   --additional--light: #ddf160;
   --additional-rgb--light: 221, 241, 96;
@@ -20603,7 +20603,6 @@ form textarea:required:valid {
   }
 }
 
-/* Same visual style for all fields (inputs, textarea, selects) */
 .form.contact-form .contact-field {
   width: 100%;
   box-sizing: border-box;
@@ -20616,22 +20615,19 @@ form textarea:required:valid {
   outline: none;
 }
 
-/* Specifically for selects: remove native box but KEEP the bottom line */
 .form.contact-form select.contact-select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 
   cursor: pointer;
-  padding-right: 32px; /* space for arrow */
+  padding-right: 32px; 
 }
 
-/* Optional: softer color for placeholder option */
 .form.contact-form select.contact-select:invalid {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* Optional: simple custom arrow on the right (keeps the underline) */
 .form.contact-form select.contact-select {
   background-image:
     linear-gradient(45deg, transparent 50%, currentColor 50%),
@@ -20641,5 +20637,75 @@ form textarea:required:valid {
     calc(100% - 12px) 50%;
   background-size: 6px 6px, 6px 6px;
   background-repeat: no-repeat;
+}
+
+
+.mxd-services-stack__info .stack-label {
+  font-size: 32px;           
+  font-weight: 600;
+  color: #ffffff;           
+  margin: 16px 0 8px;       
+}
+
+.stack-wrapper.in-content-stack .mxd-services-stack__inner {
+  margin-bottom: 32px;      
+}
+
+.mxd-section.padding-stacked-section {
+  padding-top: 96px;        
+  padding-bottom: 96px;
+}
+
+/* Bigger titles for the cards */
+.mxd-services-stack__title h3.opposite {
+  font-size: 60px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* Section spacing */
+.mxd-section.padding-stacked-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.stack-wrapper.in-content-stack .mxd-services-stack__inner {
+  margin-bottom: 32px;
+}
+
+.mxd-services-stack__info .stack-label {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff; 
+  margin: 16px 0 8px;
+}
+
+.mxd-services-cards__tags {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 per row by default */
+  gap: 8px 12px; 
+}
+
+@media (min-width: 992px) {
+  .mxd-services-cards__tags {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.mxd-services-cards__tags .tag {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+
+  padding: 10px 18px;       
+  min-height: 44px;        
+  font-size: 14px;          
+  border-radius: 999px;     
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.3;
 }
 

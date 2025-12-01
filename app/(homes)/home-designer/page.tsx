@@ -22,7 +22,7 @@ export default function HomeDesignerPage() {
         <About />
         <Services />
       </main>
-      <Footer2 text="alexwalker" />
+      <Footer2 text="KidzMondo" />
     </>
   );
 }

@@ -18,7 +18,7 @@ export default function Hero() {
                     <Image
                       className="mxd-pulse"
                       alt="Hero Image"
-                      src="/img/hero/01_hero-img.webp"
+                      src="/img/hero/chef-hat-icon-3d-rendering-vector-illustration 1.png"
                       width={700}
                       height={687}
                     />
@@ -27,7 +27,7 @@ export default function Hero() {
                     <Image
                       className="mxd-move"
                       alt="Hero Image"
-                      src="/img/hero/02_hero-img.webp"
+                      src="/img/hero/Frame 12.png"
                       width={700}
                       height={798}
                     />
@@ -36,7 +36,7 @@ export default function Hero() {
                     <Image
                       className="mxd-rotate"
                       alt="Hero Image"
-                      src="/img/hero/03_hero-img.webp"
+                      src="/img/hero/Frame 11.png"
                       width={700}
                       height={704}
                     />

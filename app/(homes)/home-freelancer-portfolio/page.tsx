@@ -43,7 +43,7 @@ export default function HomeFreelancerPortfolioPage() {
         <Blogs />
         <Cta />
       </main>
-      <Footer2 text="alexwalker" />
+      <Footer2 text="KidzMondo" />
     </>
   );
 }

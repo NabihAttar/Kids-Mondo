@@ -4,6 +4,7 @@ import Image from "next/image";
 import { approach1 } from "@/data/approach.json";
 import RevealText from "../animation/RevealText";
 import AnimatedButton from "../animation/AnimatedButton";
+
 export default function Approch() {
   return (
     <div className="mxd-section padding-pre-grid mobile-grid-s">
@@ -13,6 +14,7 @@ export default function Approch() {
           <div className="mxd-section-title">
             <div className="container-fluid p-0">
               <div className="row g-0">
+                {/* Title + Button Row */}
                 <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrtitle anim-uni-in-up">
                     <RevealText as="h2" className="reveal-type">
@@ -20,15 +22,8 @@ export default function Approch() {
                     </RevealText>
                   </div>
                 </div>
-                <div className="col-12 col-xl-3 mxd-grid-item no-margin">
-                  <div className="mxd-section-title__hrdescr">
-                    <p className="anim-uni-in-up">At KidzMondo, every child steps into a world built just for them: a living city where imagination meets responsibility, and curiosity turns into confidence.</p>
-                    <p className="anim-uni-in-up">Through hands-on experiences that mirror real life children explore professions, teamwork, and values in a safe, inclusive environment.</p>
-                    <p className="anim-uni-in-up">Our mission is to spark a lifelong love of learning by turning everyday play into a meaningful journey of discovery, creativity, and growth.</p>
 
-                  </div>
-                </div>
-                <div className="col-12 col-xl-3 mxd-grid-item no-margin">
+                <div className="col-12 col-xl-3 mxd-grid-item no-margin d-flex align-items-center">
                   <div className="mxd-section-title__hrcontrols anim-uni-in-up">
                     <AnimatedButton
                       text="Let's Chat"
@@ -39,11 +34,42 @@ export default function Approch() {
                     </AnimatedButton>
                   </div>
                 </div>
+
+                {/* Three-column description under the title */}
+                <div className="col-12 mxd-grid-item no-margin">
+                  <div className="mxd-section-title__hrdescr">
+                    <div className="row g-4">
+                      <div className="col-12 col-md-4">
+                        <p className="anim-uni-in-up">
+                          At KidzMondo, every child steps into a world built
+                          just for them: a living city where imagination meets
+                          responsibility, and curiosity turns into confidence.
+                        </p>
+                      </div>
+                      <div className="col-12 col-md-4">
+                        <p className="anim-uni-in-up">
+                          Through hands-on experiences that mirror real life,
+                          children explore professions, teamwork, and values in
+                          a safe, inclusive environment.
+                        </p>
+                      </div>
+                      <div className="col-12 col-md-4">
+                        <p className="anim-uni-in-up">
+                          Our mission is to spark a lifelong love of learning by
+                          turning everyday play into a meaningful journey of
+                          discovery, creativity, and growth.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
         {/* Block - Section Title End */}
+
         {/* Block - Approach and Philosophy List Start */}
         <div className="mxd-block">
           <div className="mxd-approach-list">
@@ -81,7 +107,7 @@ export default function Approch() {
             ))}
           </div>
         </div>
-        {/* Block - Approach and Philosophy List Start */}
+        {/* Block - Approach and Philosophy List End */}
       </div>
     </div>
   );

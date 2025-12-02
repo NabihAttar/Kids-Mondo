@@ -4224,7 +4224,7 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 768px) {
   .mxd-logo__image {
-    width: 5.6rem;
+    width: 8.6rem;
   }
 }
 .mxd-logo__text {
@@ -20754,4 +20754,41 @@ form textarea:required:valid {
 
 .footer-kidz .footer-input::placeholder {
   color: rgba(255, 255, 255, 0.7);
+}
+
+
+.footer-kidz {
+  /* Make sure footer text is white by default */
+  .footer-nav__link,
+  .footer-socials__link,
+  .footer-contact-link,
+  .footer-blocks__links a,
+  .footer-ecosystem-title,
+  .footer-text-white,
+  .footer-text-white a {
+    color: #ffffff;
+    transition: color 0.2s ease;
+  }
+
+  /* HOVER → Kidz yellow for ALL menu items */
+  .footer-nav__link:hover,
+  .footer-socials__link:hover,
+  .footer-contact-link:hover,
+  .footer-blocks__links a:hover
+   {
+    color: #F8D222;
+  }
+
+  /* Email/phone row icons: white → yellow on hover */
+  .mxd-point-subtitle svg {
+    fill: #ffffff;
+    transition: fill 0.2s ease;
+  }
+
+  .mxd-point-subtitle:hover svg {
+    fill: #F8D222;
+  }
+}
+.footer-contact-link:hover {
+  color: #F8D222 !important;
 }

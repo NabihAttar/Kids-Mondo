@@ -28,9 +28,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
       <div className="mxd-footer__footer-blocks">
         {/* single column */}
         <div className="footer-blocks__column animate-card-3">
-          {/* inner card */}
           <div className="footer-blocks__card fullheight-card">
-            {/* footer navigation */}
             <div className="footer-blocks__nav">
               <ul className="footer-nav">
                 {footerNav.map(
@@ -76,7 +74,6 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                 )}
               </ul>
             </div>
-            {/* links */}
             <div className="footer-blocks__links anim-uni-in-up">
               <AnimatedButton
                 text="Privacy Policy"
@@ -100,7 +97,6 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
 
         {/* single column */}
         <div className="footer-blocks__column animate-card-3">
-          {/* inner card */}
           <div className="footer-blocks__card">
             <p className="mxd-point-subtitle anim-uni-in-up">
               <svg
@@ -124,12 +120,15 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
             c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
                 />
               </svg>
-              <a href="mailto:example@example.com?subject=Message%20from%20your%20site">
-                hello@KidzMondo.com
-              </a>
+              <a
+  href="mailto:example@example.com?subject=Message%20from%20your%20site"
+  className="footer-contact-link"
+>
+  hello@KidzMondo.com
+</a>
             </p>
           </div>
-          {/* inner card */}
+
           <div className="footer-blocks__card">
             <p className="mxd-point-subtitle anim-uni-in-up">
               <svg
@@ -153,18 +152,18 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
             c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
                 />
               </svg>
-              <a href="tel:+12127089400">+1 212-708-9400</a>
+              <a href="tel:+12127089400" className="footer-contact-link">
+  +1 212-708-9400
+</a>
             </p>
           </div>
-          {/* inner card */}
+
           <div className="footer-blocks__card fill-card notify">
-            {/* card title */}
             <div className="footer-blocks__title anim-uni-in-up">
-              <p className="footer-blocks__title-m" style={{color:"white"}}>
+              <p className="footer-blocks__title-m footer-text-white">
                 Subscribe to our insights:
               </p>
             </div>
-            {/* subscribe form container */}
             <div className="form-container anim-uni-in-up">
               <div className="form__reply subscription-ok">
                 <span className="reply__text">
@@ -183,15 +182,13 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
 
         {/* single column */}
         <div className="footer-blocks__column animate-card-3">
-          {/* inner card */}
           <div className="footer-blocks__card fullheight-card">
-            {/* nav block */}
             <div className="footer-blocks__block">
-              {/* card title */}
               <div className="footer-blocks__title anim-uni-in-up">
-                <p className="footer-blocks__title-l" style={{color:"white"}}>Ecosystem</p>
+                <p className="footer-blocks__title-l footer-ecosystem-title">
+                  Ecosystem
+                </p>
               </div>
-              {/* footer socials */}
               <div className="footer-blocks__socials">
                 <ul className="footer-socials">
                   {socials.map((social, i) => (
@@ -208,14 +205,12 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                 </ul>
               </div>
             </div>
-            {/* links */}
             <div className="footer-blocks__links anim-uni-in-up">
-              <p className="t-xsmall t-muted">
+              <p className="t-xsmall t-muted footer-text-white">
                 <a
                   className="no-effect"
                   href="https://themeforest.net/user/ib-themes/portfolio"
                   target="_blank"
-                  style={{color:"white"}}
                 >
                   ib themes
                 </a>

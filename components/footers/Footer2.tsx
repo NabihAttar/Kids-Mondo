@@ -9,7 +9,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
   return (
     <footer id="mxd-footer" className="mxd-footer footer-kidz">
       {/* Footer Block - Fullwidth Text Start */}
-      <div className="mxd-footer__text-wrap">
+      {/* <div className="mxd-footer__text-wrap">
         <div className="fullwidth-text__tl-trigger" />
         <div className="mxd-footer__fullwidth-text anim-top-to-bottom">
           <Image
@@ -21,7 +21,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
             priority
           />
         </div>
-      </div>
+      </div> */}
       {/* Footer Block - Fullwidth Text End */}
 
       {/* Footer Block - Info Columns Start */}

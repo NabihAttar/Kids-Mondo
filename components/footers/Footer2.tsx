@@ -7,14 +7,13 @@ import SubscribeForm from "./SubscribeForm";
 
 export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
   return (
-    <footer id="mxd-footer" className="mxd-footer">
+    <footer id="mxd-footer" className="mxd-footer footer-kidz">
       {/* Footer Block - Fullwidth Text Start */}
       <div className="mxd-footer__text-wrap">
         <div className="fullwidth-text__tl-trigger" />
         <div className="mxd-footer__fullwidth-text anim-top-to-bottom">
-          {/* New logo image instead of Rayo SVG */}
           <Image
-            src="/img/hero/odoo.svg" // file: public/img/hero/odoo.svg
+            src="/img/hero/odoo.svg"
             alt={text}
             width={400}
             height={72}
@@ -161,13 +160,12 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
           <div className="footer-blocks__card fill-card notify">
             {/* card title */}
             <div className="footer-blocks__title anim-uni-in-up">
-              <p className="footer-blocks__title-m">
+              <p className="footer-blocks__title-m" style={{color:"white"}}>
                 Subscribe to our insights:
               </p>
             </div>
             {/* subscribe form container */}
             <div className="form-container anim-uni-in-up">
-              {/* reply messages */}
               <div className="form__reply subscription-ok">
                 <span className="reply__text">
                   Done! Thanks for subscribing.
@@ -178,7 +176,6 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                   Ooops! Something went wrong. Please try again later.
                 </span>
               </div>
-              {/* subscribe form */}
               <SubscribeForm />
             </div>
           </div>
@@ -192,7 +189,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
             <div className="footer-blocks__block">
               {/* card title */}
               <div className="footer-blocks__title anim-uni-in-up">
-                <p className="footer-blocks__title-l">Ecosystem</p>
+                <p className="footer-blocks__title-l" style={{color:"white"}}>Ecosystem</p>
               </div>
               {/* footer socials */}
               <div className="footer-blocks__socials">
@@ -218,6 +215,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                   className="no-effect"
                   href="https://themeforest.net/user/ib-themes/portfolio"
                   target="_blank"
+                  style={{color:"white"}}
                 >
                   ib themes
                 </a>

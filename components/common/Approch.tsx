@@ -38,29 +38,35 @@ export default function Approch() {
                 {/* Three-column description under the title */}
                 <div className="col-12 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrdescr">
-                    <div className="row gy-4 gx-5"  style={{ marginTop: "25px" }}>
-                      <div className="col-12 col-md-4" >
-                        <p className="anim-uni-in-up">
-                          At KidzMondo, every child steps into a world built
-                          just for them: a living city where imagination meets
-                          responsibility, and curiosity turns into confidence.
-                        </p>
-                      </div>
-                      <div className="col-12 col-md-4">
-                        <p className="anim-uni-in-up">
-                          Through hands-on experiences that mirror real life,
-                          children explore professions, teamwork, and values in
-                          a safe, inclusive environment.
-                        </p>
-                      </div>
-                      <div className="col-12 col-md-4">
-                        <p className="anim-uni-in-up">
-                          Our mission is to spark a lifelong love of learning by
-                          turning everyday play into a meaningful journey of
-                          discovery, creativity, and growth.
-                        </p>
-                      </div>
-                    </div>
+                   <div
+  className="row g-5 big-gap"
+  style={{ marginTop: "25px" }}
+>
+  <div className="col-12 col-md-4">
+    <p className="anim-uni-in-up">
+      At KidzMondo, every child steps into a world built
+      just for them: a living city where imagination meets
+      responsibility, and curiosity turns into confidence.
+    </p>
+  </div>
+
+  <div className="col-12 col-md-4">
+    <p className="anim-uni-in-up">
+      Through hands-on experiences that mirror real life,
+      children explore professions, teamwork, and values in
+      a safe, inclusive environment.
+    </p>
+  </div>
+
+  <div className="col-12 col-md-4">
+    <p className="anim-uni-in-up">
+      Our mission is to spark a lifelong love of learning by
+      turning everyday play into a meaningful journey of
+      discovery, creativity, and growth.
+    </p>
+  </div>
+</div>
+
                   </div>
                 </div>
 

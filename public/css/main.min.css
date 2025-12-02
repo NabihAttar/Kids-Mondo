@@ -20709,3 +20709,49 @@ form textarea:required:valid {
   line-height: 1.3;
 }
 
+.big-gap {
+  --bs-gutter-x: 9rem;
+  --bs-gutter-y: 3rem;
+}
+
+
+
+.footer-kidz {
+  color: #ffffff; 
+
+  .footer-blocks__card {
+    background-color: #1262A4; 
+    color: #ffffff;            
+    border-color: transparent; 
+  }
+
+  a,
+  .footer-nav__link,
+  .mxd-point-subtitle,
+  .footer-socials__link,
+  .t-xsmall,
+  .t-muted {
+    color: #ffffff;
+  }
+
+  svg,
+  svg path {
+    fill: #ffffff;
+  }
+
+  .btn.btn-line-xsmall.btn-muted {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+
+.footer-kidz .footer-input {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+}
+
+.footer-kidz .footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}

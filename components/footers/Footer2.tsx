@@ -13,7 +13,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
         <div className="fullwidth-text__tl-trigger" />
         <div className="mxd-footer__fullwidth-text anim-top-to-bottom">
           <Image
-            src="/img/hero/odoo.svg"
+            src="/img/hero/KidzMondo.svg"
             alt={text}
             width={400}
             height={72}
@@ -185,7 +185,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
           <div className="footer-blocks__card fullheight-card">
             <div className="footer-blocks__block">
               <div className="footer-blocks__title anim-uni-in-up">
-                <p className="footer-blocks__title-l footer-ecosystem-title">
+                <p className="footer-blocks__title-l ">
                   Ecosystem
                 </p>
               </div>

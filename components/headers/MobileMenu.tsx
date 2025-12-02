@@ -43,7 +43,6 @@ export default function MobileMenu() {
     link?.split("/")[1] === pathname.split("/")[1];
 
   useEffect(() => {
-    // Get scrollHeight for each submenu and store in state
     const heights = submenuRefs.current.map((submenu) =>
       submenu ? submenu.scrollHeight : 0
     );
@@ -109,15 +108,17 @@ export default function MobileMenu() {
 
         {/* menu container */}
         <div className="mxd-menu__contain" ref={menuContainRef}>
-          <div
-            className="mxd-menu__inner"
-           
-          >
+          <div className="mxd-menu__inner">
             {/* left side */}
             <div className="mxd-menu__left">
               <p
                 className="mxd-menu__caption fade-in-elm"
-                style={{ transitionDelay: "0.4s" }}
+                style={{
+                  transitionDelay: "0.4s",
+                  fontSize: "28px",   // 👈 caption 28px
+                  lineHeight: "1.3",
+                  fontWeight: 500,
+                }}
               >
                 🦄 Innovative design
                 <br />
@@ -146,6 +147,10 @@ export default function MobileMenu() {
                                 text={item.title}
                                 as="span"
                                 className="main-menu__link btn btn-anim"
+                                style={{
+                                  fontSize: "28px",   // 👈 main item 28px
+                                  fontWeight: 600,
+                                }}
                               />
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -171,18 +176,24 @@ export default function MobileMenu() {
                                 submenuRefs.current[index] = el;
                               }}
                             >
-                              {item.submenu.map(
-                                (sub: any, i: number) => (
-                                  <li
-                                    key={i}
-                                    className={`submenu__item ${
-                                      isMenuActive(sub.href) ? "active" : ""
-                                    }`}
+                              {item.submenu.map((sub: any, i: number) => (
+                                <li
+                                  key={i}
+                                  className={`submenu__item ${
+                                    isMenuActive(sub.href) ? "active" : ""
+                                  }`}
+                                >
+                                  <Link
+                                    href={sub.href}
+                                    style={{
+                                      fontSize: "28px",  // 👈 submenu 28px
+                                      fontWeight: 500,
+                                    }}
                                   >
-                                    <Link href={sub.href}>{sub.label}</Link>
-                                  </li>
-                                )
-                              )}
+                                    {sub.label}
+                                  </Link>
+                                </li>
+                              ))}
                             </ul>
                           </>
                         ) : (
@@ -192,6 +203,10 @@ export default function MobileMenu() {
                                 text={item.title}
                                 className="main-menu__link btn btn-anim"
                                 href={item.href}
+                                style={{
+                                  fontSize: "28px",   // 👈 single item 28px
+                                  fontWeight: 600,
+                                }}
                               />
                             ) : null}
                           </>
@@ -209,7 +224,10 @@ export default function MobileMenu() {
                 <div className="menu-promo__content">
                   <p
                     className="menu-promo__caption fade-in-elm"
-                    style={{ transitionDelay: "0.4s" }}
+                    style={{
+                      transitionDelay: "0.4s",
+                      fontSize: "14px",
+                    }}
                   >
                     👋 New Rayo template is here!
                     <br />
@@ -249,7 +267,7 @@ export default function MobileMenu() {
             {/* data bottom line */}
             <div
               className="mxd-menu__data fade-in-up-elm"
-              style={{ transitionDelay: "0.4s" }}
+              style={{ transitionDelay: "0.4s", fontSize: "12px" }}
             >
               <p className="t-xsmall">
                 Made with <i className="ph-fill ph-heart t-additional" /> by{" "}

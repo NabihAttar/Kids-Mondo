@@ -33,10 +33,10 @@ export default function AboutMePage() {
       >
         <Hero />
 
-        <ProjectsMarqueeSlider />
+         <ProjectsMarqueeSlider />
         <About1 />
-        <Services />
-        <Testimonials />
+       {/*  <Services />*/}
+       <Testimonials /> 
 
 
         {/* 

@@ -13,7 +13,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
         <div className="fullwidth-text__tl-trigger" />
         <div className="mxd-footer__fullwidth-text anim-top-to-bottom">
           <Image
-            src="/img/hero/KidzMondo.svg"
+            src="/img/hero/kidmondo.svg"
             alt={text}
             width={400}
             height={72}
@@ -219,6 +219,19 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+       <div className="mxd-footer__text-wrap">
+        <div className="fullwidth-text__tl-trigger" />
+        <div className="mxd-footer__fullwidth-text anim-top-to-bottom">
+          <Image
+            src="/img/hero/kidmondo.svg"
+            alt={text}
+            width={400}
+            height={72}
+            className="mxd-footer__svg-v2"
+            priority
+          />
         </div>
       </div>
       {/* Footer Block - Info Columns End */}

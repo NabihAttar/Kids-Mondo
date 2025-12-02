@@ -115,7 +115,7 @@ export default function MobileMenu() {
                 className="mxd-menu__caption fade-in-elm"
                 style={{
                   transitionDelay: "0.4s",
-                  fontSize: "28px",   // 👈 caption 28px
+                  fontSize: "28px",  
                   lineHeight: "1.3",
                   fontWeight: 500,
                 }}
@@ -148,7 +148,7 @@ export default function MobileMenu() {
                                 as="span"
                                 className="main-menu__link btn btn-anim"
                                 style={{
-                                  fontSize: "28px",   // 👈 main item 28px
+                                  fontSize: "28px",   
                                   fontWeight: 600,
                                 }}
                               />
@@ -186,7 +186,7 @@ export default function MobileMenu() {
                                   <Link
                                     href={sub.href}
                                     style={{
-                                      fontSize: "28px",  // 👈 submenu 28px
+                                      fontSize: "28px",  
                                       fontWeight: 500,
                                     }}
                                   >
@@ -204,7 +204,7 @@ export default function MobileMenu() {
                                 className="main-menu__link btn btn-anim"
                                 href={item.href}
                                 style={{
-                                  fontSize: "28px",   // 👈 single item 28px
+                                  fontSize: "50px",   
                                   fontWeight: 600,
                                 }}
                               />

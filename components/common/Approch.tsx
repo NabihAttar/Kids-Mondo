@@ -38,8 +38,8 @@ export default function Approch() {
                 {/* Three-column description under the title */}
                 <div className="col-12 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrdescr">
-                    <div className="row g-4">
-                      <div className="col-12 col-md-4">
+                    <div className="row gy-4 gx-5"  style={{ marginTop: "25px" }}>
+                      <div className="col-12 col-md-4" >
                         <p className="anim-uni-in-up">
                           At KidzMondo, every child steps into a world built
                           just for them: a living city where imagination meets

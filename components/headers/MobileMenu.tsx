@@ -1,6 +1,7 @@
 "use client";
+
 import Link from "next/link";
-import menuItems from "@/data/menu.json"; // adjust path accordingly
+import menuItems from "@/data/menu.json";
 
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
@@ -16,39 +17,30 @@ export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState(-1);
+
   const submenuRefs = useRef<(HTMLUListElement | null)[]>([]);
-  // refs for the two *containers* the element will move between
-  const hamburgerBtnRef = useRef<HTMLAnchorElement | null>(null); // .mxd-nav__hamburger
-  const menuContainRef = useRef<HTMLDivElement | null>(null); // .mxd-menu__contain
+  const hamburgerBtnRef = useRef<HTMLAnchorElement | null>(null);
+  const menuContainRef = useRef<HTMLDivElement | null>(null);
+  const flipBaseRef = useRef<HTMLDivElement | null>(null);
 
-  // the single element that flips between the two containers
-  const flipBaseRef = useRef<HTMLDivElement | null>(null); // .hamburger__base
-
-  // Store scrollHeight values
   const [submenuHeights, setSubmenuHeights] = useState<number[]>([]);
+
   const handleToggle = () => {
     if (isActive) {
       setIsActive(false);
-      setTimeout(
-        () => {
-          setIsMenuOpen(false);
-        },
-
-        800
-      );
+      setTimeout(() => {
+        setIsMenuOpen(false);
+      }, 800);
     } else {
       setIsMenuOpen(true);
-      setTimeout(
-        () => {
-          setIsActive(true);
-        },
-
-        600
-      );
+      setTimeout(() => {
+        setIsActive(true);
+      }, 600);
     }
   };
+
   const isMenuActive = (link?: string) =>
-    link?.split("/")[1] == pathname.split("/")[1];
+    link?.split("/")[1] === pathname.split("/")[1];
 
   useEffect(() => {
     // Get scrollHeight for each submenu and store in state
@@ -66,32 +58,29 @@ export default function MobileMenu() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
-  // === FLIP ONLY on state change ===
   useLayoutEffect(() => {
     const flipEl = flipBaseRef.current;
     const toMenu = isMenuOpen;
 
     if (!flipEl || !hamburgerBtnRef.current || !menuContainRef.current) return;
 
-    // Capture current position/sizes before DOM move
     const state = Flip.getState(flipEl);
 
-    // Move the node to its new container
     if (toMenu) {
       menuContainRef.current.appendChild(flipEl);
     } else {
       hamburgerBtnRef.current.appendChild(flipEl);
     }
 
-    // Animate from previous to new layout
     Flip.from(state, {
       duration: 0.8,
       ease: "power4.inOut",
     });
   }, [isMenuOpen]);
+
   return (
     <nav
-      className={`mxd-nav__wrap  ${isActive ? "active_menu" : ""} `}
+      className={`mxd-nav__wrap ${isActive ? "active_menu" : ""}`}
       data-lenis-prevent=""
     >
       {/* Hamburger Start */}
@@ -112,13 +101,18 @@ export default function MobileMenu() {
         </a>
       </div>
       {/* Hamburger End */}
+
       {/* Main Navigation Start */}
-      <div className={`mxd-menu__wrapper ${isActive ? "active_menu" : ""} `}>
+      <div className={`mxd-menu__wrapper ${isActive ? "active_menu" : ""}`}>
         {/* background active layer */}
         <div className="mxd-menu__base" />
+
         {/* menu container */}
         <div className="mxd-menu__contain" ref={menuContainRef}>
-          <div className="mxd-menu__inner">
+          <div
+            className="mxd-menu__inner"
+           
+          >
             {/* left side */}
             <div className="mxd-menu__left">
               <p
@@ -132,7 +126,7 @@ export default function MobileMenu() {
               <div className="main-menu">
                 <nav className="main-menu__content">
                   <ul id="main-menu" className="main-menu__accordion">
-                    {menuItems.map((item, index) => (
+                    {menuItems.map((item: any, index: number) => (
                       <li
                         key={index}
                         className="main-menu__item fade-in-up-elm"
@@ -143,8 +137,8 @@ export default function MobileMenu() {
                             <div
                               className="main-menu__toggle"
                               onClick={() =>
-                                setActiveSubmenu((pre) =>
-                                  pre == index ? -1 : index
+                                setActiveSubmenu((prev) =>
+                                  prev === index ? -1 : index
                                 )
                               }
                             >
@@ -152,7 +146,7 @@ export default function MobileMenu() {
                                 text={item.title}
                                 as="span"
                                 className="main-menu__link btn btn-anim"
-                              ></AnimatedButton>
+                              />
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width={20}
@@ -177,16 +171,18 @@ export default function MobileMenu() {
                                 submenuRefs.current[index] = el;
                               }}
                             >
-                              {item.submenu.map((sub, i) => (
-                                <li
-                                  key={i}
-                                  className={`submenu__item ${
-                                    isMenuActive(sub.href) ? "active" : ""
-                                  }`}
-                                >
-                                  <Link href={sub.href}>{sub.label}</Link>
-                                </li>
-                              ))}
+                              {item.submenu.map(
+                                (sub: any, i: number) => (
+                                  <li
+                                    key={i}
+                                    className={`submenu__item ${
+                                      isMenuActive(sub.href) ? "active" : ""
+                                    }`}
+                                  >
+                                    <Link href={sub.href}>{sub.label}</Link>
+                                  </li>
+                                )
+                              )}
                             </ul>
                           </>
                         ) : (
@@ -196,10 +192,8 @@ export default function MobileMenu() {
                                 text={item.title}
                                 className="main-menu__link btn btn-anim"
                                 href={item.href}
-                              ></AnimatedButton>
-                            ) : (
-                              ""
-                            )}
+                              />
+                            ) : null}
                           </>
                         )}
                       </li>
@@ -208,6 +202,7 @@ export default function MobileMenu() {
                 </nav>
               </div>
             </div>
+
             {/* right side */}
             <div className="mxd-menu__right">
               <div className="menu-promo">
@@ -250,6 +245,7 @@ export default function MobileMenu() {
                 </div>
               </div>
             </div>
+
             {/* data bottom line */}
             <div
               className="mxd-menu__data fade-in-up-elm"
@@ -271,6 +267,7 @@ export default function MobileMenu() {
               </p>
             </div>
           </div>
+
           <div className="hamburger__parking-slot" />
         </div>
       </div>

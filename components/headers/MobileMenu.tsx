@@ -120,7 +120,7 @@ export default function MobileMenu() {
         <div className="mxd-menu__contain" ref={menuContainRef}>
           <div className="mxd-menu__inner">
             {/* left side */}
-            <div className="mxd-menu__left"z>
+            <div className="mxd-menu__left">
               <p
                 className="mxd-menu__caption fade-in-elm"
                 style={{ transitionDelay: "0.4s" }}

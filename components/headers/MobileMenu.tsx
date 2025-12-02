@@ -93,7 +93,6 @@ export default function MobileMenu() {
     <nav
       className={`mxd-nav__wrap  ${isActive ? "active_menu" : ""} `}
       data-lenis-prevent=""
-      
     >
       {/* Hamburger Start */}
       <div className="mxd-nav__contain loading__fade">
@@ -105,7 +104,6 @@ export default function MobileMenu() {
           }}
           className={`mxd-nav__hamburger ${isMenuOpen ? "nav-open" : ""}`}
           ref={hamburgerBtnRef}
-          
         >
           {/* flip element */}
           <div className="hamburger__base" ref={flipBaseRef} />
@@ -115,14 +113,14 @@ export default function MobileMenu() {
       </div>
       {/* Hamburger End */}
       {/* Main Navigation Start */}
-      <div className={`mxd-menu__wrapper ${isActive ? "active_menu" : ""} `} >
+      <div className={`mxd-menu__wrapper ${isActive ? "active_menu" : ""} `}>
         {/* background active layer */}
         <div className="mxd-menu__base" />
         {/* menu container */}
         <div className="mxd-menu__contain" ref={menuContainRef}>
           <div className="mxd-menu__inner">
             {/* left side */}
-            <div className="mxd-menu__left" >
+            <div className="mxd-menu__left"z>
               <p
                 className="mxd-menu__caption fade-in-elm"
                 style={{ transitionDelay: "0.4s" }}

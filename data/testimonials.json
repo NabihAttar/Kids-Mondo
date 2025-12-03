@@ -1,20 +1,7 @@
 [
+  
   {
-    "authorPhoto": "/img/avatars/300x300_ava-05.webp",
-    "authorPhotoWidth": 300,
-    "authorPhotoHeight": 300,
-    "companyLogo": "/img/brands/envato.svg",
-    "companyLogoWidth": 700,
-    "companyLogoHeight": 169,
-    "text": "“We’ve been to many family attractions in the UAE, but KidzMondo truly stands apart. My son didn’t just play he learned how to communicate, make decisions, and even save money. It’s amazing to see fun with real purpose.”",
-    "projectPage": "#",
-    "authorName": "Lea Tomato",
-    "authorPosition": "Senior designer in",
-    "authorCompany": "The Way",
-    "authorCompanyUrl": "#"
-  },
-  {
-    "authorPhoto": "/img/avatars/300x300_ava-04.webp",
+    "authorPhoto": "/img/avatars/Sara.jpg",
     "authorPhotoWidth": 300,
     "authorPhotoHeight": 300,
     "companyLogo": "/img/brands/envato.svg",
@@ -22,13 +9,13 @@
     "companyLogoHeight": 169,
     "text": "“At KidzMondo, I saw my children take charge, think for themselves, and care for othersall in one visit. It’s the kind of learning you can’t get from a classroom or a screen.”",
     "projectPage": "#",
-    "authorName": "Sara A, Dubai",
-    "authorPosition": "SEO in",
+    "authorName": "Sara A ",
+    "authorPosition": "Dubai",
     "authorCompany": "Eye Candy",
     "authorCompanyUrl": "#"
   },
   {
-    "authorPhoto": "/img/avatars/300x300_ava-06.webp",
+    "authorPhoto": "/img/avatars/Omar.jpg",
     "authorPhotoWidth": 300,
     "authorPhotoHeight": 300,
     "companyLogo": "/img/brands/envato.svg",
@@ -36,13 +23,13 @@
     "companyLogoHeight": 169,
     "text": "My son came home talking about teamwork, responsibility, and earning his own money. KidzMondo turns imagination into something meaningful a full day of learning without it ever feeling like school.",
     "projectPage": "#",
-    "authorName": "Omar H, Sharjah",
-    "authorPosition": "SEO in",
+    "authorName": "Omar H",
+    "authorPosition": "Sharjah",
     "authorCompany": "Instant Design",
     "authorCompanyUrl": "#"
   },
-  {
-    "authorPhoto": "/img/avatars/300x300_ava-03.webp",
+   {
+    "authorPhoto": "/img/avatars/Mohamamad.jpg",
     "authorPhotoWidth": 300,
     "authorPhotoHeight": 300,
     "companyLogo": "/img/brands/envato.svg",
@@ -50,9 +37,24 @@
     "companyLogoHeight": 169,
     "text": "“In a world full of screens, KidzMondo brings children back to real experiences. Watching my daughter play different roles with confidence was incredible. We can’t wait to visit again.”",
     "projectPage": "#",
-    "authorName": "Mohammad, Saudi Arabia",
-    "authorPosition": "Brand Manager in",
+    "authorName": "Mohammad",
+    "authorPosition": "Saudi Arabia",
+    "authorCompany": "Instant Design",
+    "authorCompanyUrl": "#"
+  },
+  {
+    "authorPhoto": "/img/avatars/Dunia.jpg",
+    "authorPhotoWidth": 300,
+    "authorPhotoHeight": 300,
+    "companyLogo": "/img/brands/envato.svg",
+    "companyLogoWidth": 700,
+    "companyLogoHeight": 169,
+    "text": "“My son came home talking about teamwork, responsibility, and earning his own money. KidzMondo turns imagination into something meaningful a full day of learning without it ever feeling like school.”",
+    "projectPage": "#",
+    "authorName": "Dunia S.",
+    "authorPosition": "Qatar",
     "authorCompany": "Instant Design",
     "authorCompanyUrl": "#"
   }
+ 
 ]

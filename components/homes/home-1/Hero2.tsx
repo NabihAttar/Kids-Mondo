@@ -108,7 +108,6 @@ export default function Hero() {
                     href="#projects"
                     className="btn-rotating btn-rotating-120-160"
                   >
-                    {/* SVG rotating text */}
                     <AnimateRotation
                       as="svg"
                       version="1.1"
@@ -139,7 +138,6 @@ export default function Hero() {
                         </text>
                       </g>
                     </AnimateRotation>
-                    {/* image */}
                     <Image
                       className="btn-rotating__image"
                       alt="Object"
@@ -151,12 +149,12 @@ export default function Hero() {
                 </div>
                 <div className="mxd-hero-01__data-descr loading__fade">
                   <p className="t-bright">
-                    We are a creative digital agency specializing in innovative
-                    design and cutting-edge development.
+                    In KidzMondo, every visit is an adventure. One day your child is a doctor, the next a pilot, reporter, or artist.<br /> <br />
+                     Each experience is designed to ignite curiosity, teach responsibility, and celebrate creativity because the best way to learn is to live it.
                   </p>
                 </div>
                 <div className="mxd-hero-01__data-socials loading__fade">
-                  <ul>
+                  {/* <ul>
                     <li>
                       <svg
                         version="1.1"
@@ -226,7 +224,7 @@ export default function Hero() {
                         Instagram
                       </a>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
               <div className="mxd-hero-01__video-wrap loading__item">

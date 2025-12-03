@@ -213,7 +213,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="mxd-hero-06__bottom loading__fade">
+          {/* <div className="mxd-hero-06__bottom loading__fade">
             <div className="mxd-hero-06__mark">
               <div className="mxd-hero__mark">
                 <span className="mark-icon" />
@@ -230,7 +230,7 @@ export default function Hero() {
                 <i className="ph-bold ph-arrow-elbow-right-down" />
               </AnimatedButton>
             </div>
-          </div>
+          </div> */}
           <div className="mxd-hero-06__btn-mobile">
             <a
               href="#"

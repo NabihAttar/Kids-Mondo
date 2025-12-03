@@ -23,7 +23,7 @@ export default function Approch() {
                   </div>
                 </div>
 
-                <div className="col-12 col-xl-3 mxd-grid-item no-margin d-flex align-items-center">
+                {/* <div className="col-12 col-xl-3 mxd-grid-item no-margin d-flex align-items-center">
                   <div className="mxd-section-title__hrcontrols anim-uni-in-up">
                     <AnimatedButton
                       text="Let's Chat"
@@ -33,7 +33,7 @@ export default function Approch() {
                       <i className="ph-bold ph-arrow-up-right" />
                     </AnimatedButton>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Three-column description under the title */}
                 <div className="col-12 mxd-grid-item no-margin">

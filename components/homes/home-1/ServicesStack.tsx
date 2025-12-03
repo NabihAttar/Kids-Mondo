@@ -11,11 +11,93 @@ export default function ServicesStack() {
         <div className="mxd-block mxd-grid-item no-margin">
           <div className="content__block">
             <StackCards className="stack-wrapper in-content-stack">
-              {/* Chef */}
+
+              {/* Pilot (1) */}
               <div
                 className="mxd-services-stack__inner justify-between bg-base-opp"
-                style={{ backgroundColor: "#F8D222" }}
+                style={{ backgroundColor: "#024B70" }}
               >
+                <div className="mxd-services-stack__controls">
+                  <Link
+                    className="btn btn-round btn-round-large btn-additional slide-right-up anim-no-delay"
+                    href={`/services`}
+                  >
+                    <i className="ph ph-arrow-up-right" />
+                  </Link>
+                </div>
+
+                <div className="mxd-services-stack__title width-60">
+                  <h3 className="opposite">Pilot</h3>
+                </div>
+
+                <div className="mxd-services-stack__info width-60">
+                  <h6 className="stack-label">What Kids Do:</h6>
+                  <p className="t-small-mobile t-opposite">
+                    Take the captain’s seat and navigate the skies. Kids
+                    experience the excitement of flying an aircraft using real
+                    controls and teamwork to ensure a safe, successful flight.
+                  </p>
+
+                  <h6 className="stack-label">Skills Learned:</h6>
+                  <div
+                    className="mxd-services-cards__tags"
+                    style={{ marginBottom: "1rem" }}
+                  >
+                    <span className="tag tag-default tag-outline-opposite">
+                      Focus
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Decision-Making
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Coordination
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Spatial Awareness
+                    </span>
+                  </div>
+
+                  <div className="mxd-services-cards__tags">
+                    <span className="tag tag-default tag-outline-opposite">
+                      Responsibility
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Leadership
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Technical Curiosity
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Discipline
+                    </span>
+                  </div>
+                </div>
+
+                <div className="services-stack__image">
+                  <Image
+                    className="service-img service-img-s"
+                    alt="Pilot small"
+                    src="/img/services/800x800_ser-04.webp"
+                    width={800}
+                    height={800}
+                  />
+                  <Image
+                    className="service-img service-img-m"
+                    alt="Pilot large"
+                    src="/img/services/pilot33.jpg"
+                    width={1000}
+                    height={1000}
+                  />
+                </div>
+              </div>
+
+              {/* Chef (2) */}
+              {/* Chef */}
+<div
+  className="mxd-services-stack__inner justify-between bg-base-opp is-light-card"
+  style={{ backgroundColor: "#F8D222" }}
+>
+
                 <div className="mxd-services-stack__controls">
                   <Link
                     className="btn btn-round btn-round-large btn-additional slide-right-up anim-no-delay"
@@ -39,7 +121,10 @@ export default function ServicesStack() {
                   </p>
 
                   <h6 className="stack-label">Skills Learned:</h6>
-                  <div className="mxd-services-cards__tags" style={{ marginBottom: "1rem" }}>
+                  <div
+                    className="mxd-services-cards__tags"
+                    style={{ marginBottom: "1rem" }}
+                  >
                     <span className="tag tag-default tag-outline-opposite">
                       Teamwork
                     </span>
@@ -53,9 +138,9 @@ export default function ServicesStack() {
                       Sensory Learning
                     </span>
                   </div>
-                  <div className="mxd-services-cards__tags" >
+                  <div className="mxd-services-cards__tags">
                     <span className="tag tag-default tag-outline-opposite">
-                      Following Instructions  
+                      Following Instructions
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
                       Creativity
@@ -87,74 +172,7 @@ export default function ServicesStack() {
                 </div>
               </div>
 
-              {/* Firefighter */}
-              <div
-                className="mxd-services-stack__inner justify-between bg-accent"
-                style={{ backgroundColor: "#D5242D" }}
-              >
-                <div className="mxd-services-stack__controls">
-                  <Link
-                    className="btn btn-round btn-round-large btn-base slide-right-up anim-no-delay"
-                    href={`/services`}
-                  >
-                    <i className="ph ph-arrow-up-right" />
-                  </Link>
-                </div>
-
-                <div className="mxd-services-stack__title width-60">
-                  <h3 className="opposite">Firefighter</h3>
-                </div>
-
-                <div className="mxd-services-stack__info width-60">
-                  <h6 className="stack-label">What Kids Do:</h6>
-                  <p className="t-small-mobile t-opposite">
-                    Suit up, ride in the fire truck, and respond to emergencies
-                    around the city. Children practice safety drills, teamwork,
-                    and problem-solving as they learn how to protect others.
-                  </p>
-
-                  <h6 className="stack-label">Skills Learned:</h6>
-                  <div className="mxd-services-cards__tags" style={{ marginBottom: "1rem" }}>
-                    <span className="tag tag-default tag-outline-opposite">
-                      Courage
-                    </span>
-                    <span className="tag tag-default tag-outline-opposite">
-                      Team Coordination
-                    </span>
-                    <span className="tag tag-default tag-outline-opposite">
-                      Empathy
-                    </span>
-                  </div>
-
-                  <div className="mxd-services-cards__tags" >
-                    <span className="tag tag-default tag-outline-opposite">
-                      Safety Awareness
-                    </span>
-                    <span className="tag tag-default tag-outline-opposite">
-                      Responsibilty
-                    </span>
-                  </div>
-                </div>
-
-                <div className="services-stack__image">
-                  <Image
-                    className="service-img service-img-s"
-                    alt="Firefighter small"
-                    src="/img/services/800x800_ser-02.webp"
-                    width={800}
-                    height={800}
-                  />
-                  <Image
-                    className="service-img service-img-m"
-                    alt="Firefighter large"
-                    src="/img/services/firefighter33.jpg"
-                    width={1000}
-                    height={1000}
-                  />
-                </div>
-              </div>
-
-              {/* Reporter */}
+              {/* Reporter (3) */}
               <div
                 className="mxd-services-stack__inner justify-between bg-base-opp"
                 style={{ backgroundColor: "#1262A4" }}
@@ -181,7 +199,10 @@ export default function ServicesStack() {
                   </p>
 
                   <h6 className="stack-label">Skills Learned:</h6>
-                  <div className="mxd-services-cards__tags" style={{ marginBottom: "1rem" }}>
+                  <div
+                    className="mxd-services-cards__tags"
+                    style={{ marginBottom: "1rem" }}
+                  >
                     <span className="tag tag-default tag-outline-opposite">
                       Storytelling
                     </span>
@@ -196,7 +217,7 @@ export default function ServicesStack() {
                     </span>
                   </div>
 
-                  <div className="mxd-services-cards__tags" >
+                  <div className="mxd-services-cards__tags">
                     <span className="tag tag-default tag-outline-opposite">
                       Midea Literacy
                     </span>
@@ -230,7 +251,77 @@ export default function ServicesStack() {
                 </div>
               </div>
 
-              {/* Doctor */}
+              {/* Firefighter (4) */}
+              <div
+                className="mxd-services-stack__inner justify-between bg-accent"
+                style={{ backgroundColor: "#D5242D" }}
+              >
+                <div className="mxd-services-stack__controls">
+                  <Link
+                    className="btn btn-round btn-round-large btn-base slide-right-up anim-no-delay"
+                    href={`/services`}
+                  >
+                    <i className="ph ph-arrow-up-right" />
+                  </Link>
+                </div>
+
+                <div className="mxd-services-stack__title width-60">
+                  <h3 className="opposite">Firefighter</h3>
+                </div>
+
+                <div className="mxd-services-stack__info width-60">
+                  <h6 className="stack-label">What Kids Do:</h6>
+                  <p className="t-small-mobile t-opposite">
+                    Suit up, ride in the fire truck, and respond to emergencies
+                    around the city. Children practice safety drills, teamwork,
+                    and problem-solving as they learn how to protect others.
+                  </p>
+
+                  <h6 className="stack-label">Skills Learned:</h6>
+                  <div
+                    className="mxd-services-cards__tags"
+                    style={{ marginBottom: "1rem" }}
+                  >
+                    <span className="tag tag-default tag-outline-opposite">
+                      Courage
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Team Coordination
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Empathy
+                    </span>
+                  </div>
+
+                  <div className="mxd-services-cards__tags">
+                    <span className="tag tag-default tag-outline-opposite">
+                      Safety Awareness
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Responsibilty
+                    </span>
+                  </div>
+                </div>
+
+                <div className="services-stack__image">
+                  <Image
+                    className="service-img service-img-s"
+                    alt="Firefighter small"
+                    src="/img/services/800x800_ser-02.webp"
+                    width={800}
+                    height={800}
+                  />
+                  <Image
+                    className="service-img service-img-m"
+                    alt="Firefighter large"
+                    src="/img/services/firefighter33.jpg"
+                    width={1000}
+                    height={1000}
+                  />
+                </div>
+              </div>
+
+              {/* Doctor (5) */}
               <div
                 className="mxd-services-stack__inner justify-between bg-base-opp"
                 style={{ backgroundColor: "#2196C4" }}
@@ -258,7 +349,10 @@ export default function ServicesStack() {
                   </p>
 
                   <h6 className="stack-label">Skills Learned:</h6>
-                  <div className="mxd-services-cards__tags" style={{ marginBottom: "1rem" }}>
+                  <div
+                    className="mxd-services-cards__tags"
+                    style={{ marginBottom: "1rem" }}
+                  >
                     <span className="tag tag-default tag-outline-opposite">
                       Empathy
                     </span>
@@ -273,7 +367,7 @@ export default function ServicesStack() {
                     </span>
                   </div>
 
-                  <div className="mxd-services-cards__tags" >
+                  <div className="mxd-services-cards__tags">
                     <span className="tag tag-default tag-outline-opposite">
                       Attention to Detail
                     </span>
@@ -304,83 +398,6 @@ export default function ServicesStack() {
                 </div>
               </div>
 
-              {/* Pilot */}
-              <div
-                className="mxd-services-stack__inner justify-between bg-base-opp"
-                style={{ backgroundColor: "#024B70" }}
-              >
-                <div className="mxd-services-stack__controls">
-                  <Link
-                    className="btn btn-round btn-round-large btn-additional slide-right-up anim-no-delay"
-                    href={`/services`}
-                  >
-                    <i className="ph ph-arrow-up-right" />
-                  </Link>
-                </div>
-
-                <div className="mxd-services-stack__title width-60">
-                  <h3 className="opposite">Pilot</h3>
-                </div>
-
-                <div className="mxd-services-stack__info width-60">
-                  <h6 className="stack-label">What Kids Do:</h6>
-                  <p className="t-small-mobile t-opposite">
-                    Take the captain’s seat and navigate the skies. Kids
-                    experience the excitement of flying an aircraft using real
-                    controls and teamwork to ensure a safe, successful flight.
-                  </p>
-
-                  <h6 className="stack-label">Skills Learned:</h6>
-                  <div className="mxd-services-cards__tags" style={{ marginBottom: "1rem" }}>
-                    <span className="tag tag-default tag-outline-opposite">
-                      Focus
-                    </span>
-                    <span className="tag tag-default tag-outline-opposite">
-                      Decision-Making
-                    </span>
-                    <span className="tag tag-default tag-outline-opposite">
-                      Coordination
-                    </span>
-                    <span className="tag tag-default tag-outline-opposite">
-                      Spatial Awareness
-                    </span>
-                  </div>
-
-                  <div className="mxd-services-cards__tags">
-                    <span className="tag tag-default tag-outline-opposite">
-                      Responsibility
-                    </span>
-                    <span className="tag tag-default tag-outline-opposite">
-                      Leadership
-                    </span>
-                    <span className="tag tag-default tag-outline-opposite">
-                      Technical Curiosity
-                    </span>
-                    <span className="tag tag-default tag-outline-opposite">
-                      Discipline
-                    </span>
-                  </div>
-                </div>
-
-
-
-                <div className="services-stack__image">
-                  <Image
-                    className="service-img service-img-s"
-                    alt="Pilot small"
-                    src="/img/services/800x800_ser-04.webp"
-                    width={800}
-                    height={800}
-                  />
-                  <Image
-                    className="service-img service-img-m"
-                    alt="Pilot large"
-                    src="/img/services/pilot33.jpg"
-                    width={1000}
-                    height={1000}
-                  />
-                </div>
-              </div>
             </StackCards>
           </div>
         </div>

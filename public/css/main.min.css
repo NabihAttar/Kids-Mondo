@@ -86,8 +86,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap);
 :root {
   --_size: 1.8rem;
-  --_font-default: "Funnel Sans", sans-serif;
-  --_font-accent: "Funnel Display", sans-serif;
+ --_font-default: "HauracherellNC", sans-serif;
+  --_font-accent: "HauracherellNC", sans-serif;
   --_radius-s: 1rem;
   --_radius-m: 1.6rem;
   --_radius-pt-m: 1.6rem;
@@ -20799,4 +20799,41 @@ form textarea:required:valid {
 }
 .footer-contact-link:hover {
   color: #F8D222 !important;
+}
+
+
+/* For yellow / light background cards */
+.mxd-services-stack__inner.is-light-card .opposite,
+.mxd-services-stack__inner.is-light-card .t-opposite,
+.mxd-services-stack__inner.is-light-card .stack-label {
+  color: #000; /* black text */
+}
+
+/* Tags: black text + black outline on yellow */
+.mxd-services-stack__inner.is-light-card .tag-outline-opposite {
+  color: #000;
+  border-color: #000;
+}
+
+
+
+
+
+
+
+/* Hide images on tablet + mobile */
+@media only screen and (max-width: 1024px) {
+  .services-stack__image {
+    display: none;
+  }
+
+  /* Let text take full width when image is hidden */
+  .mxd-services-stack__title.width-60,
+  .mxd-services-stack__info.width-60 {
+    width: 100%;
+  }
+  .mxd-services-cards__tags {
+    margin-bottom: 1.2rem; /* or 16px/24px — tweak as you like */
+  }
+
 }

@@ -10887,6 +10887,15 @@ table {
   }
 }
 @font-face {
+  font-family: "HauracherellNC"; /* you can choose this name */
+src: url("/fonts/Phosphor/Hauracherell%20NC.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
   font-family: Phosphor-Bold;
   src:
     url(../fonts/Phosphor/Phosphor-Bold.woff2) format("woff2"),

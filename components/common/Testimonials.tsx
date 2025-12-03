@@ -97,13 +97,13 @@ export default function Testimonials() {
                             data-swiper-parallax-opacity={0}
                           >
                             <p className="t-large">{item.text}</p>
-                            <AnimatedButton
+                            {/* <AnimatedButton
                               text="Project Page"
                               className="btn btn-anim btn-default btn-small btn-opposite slide-right-up"
                               href={item.projectPage}
                             >
                               <i className="ph ph-arrow-up-right" />
-                            </AnimatedButton>
+                            </AnimatedButton> */}
                           </div>
                         </div>
                         <div

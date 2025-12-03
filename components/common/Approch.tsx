@@ -17,7 +17,7 @@ export default function Approch() {
                 {/* Title + Button Row */}
                 <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrtitle anim-uni-in-up">
-                    <RevealText as="h2" className="reveal-type">
+                    <RevealText as="h2" className="reveal-type" style={{marginTop:"100px"}}>
                       The City That Raises Dreamers
                     </RevealText>
                   </div>
@@ -85,15 +85,17 @@ export default function Approch() {
                 <div className="mxd-approach-list__inner">
                   <div className="container-fluid px-0">
                     <div className="row gx-0">
-                      <div className="col-12 col-xl-2 mxd-grid-item no-margin">
-                        <div className="mxd-approach-list__image anim-uni-in-up">
-                          <Image
-                            alt="Icon"
-                            src={item.icon}
-                            width={210}
-                            height={210}
-                          />
-                        </div>
+                      <div className="col-12 col-xl-n mxd-grid-item no-margin">
+                       <div className="mxd-approach-list__image anim-uni-in-up">
+  <img
+    alt="Icon"
+    src={item.icon}
+    width={"130%"}
+    height={"auto"}
+    className="mxd-approach-list__icon"
+  />
+</div>
+
                       </div>
                       <div className="col-12 col-xl-4 mxd-grid-item no-margin">
                         <div className="mxd-approach-list__title anim-uni-in-up">

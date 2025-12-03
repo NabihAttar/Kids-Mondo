@@ -17,14 +17,21 @@ export default function ServicesStack() {
                 className="mxd-services-stack__inner justify-between bg-base-opp"
                 style={{ backgroundColor: "#024B70" }}
               >
-                <div className="mxd-services-stack__controls">
-                  <Link
-                    className="btn btn-round btn-round-large btn-additional slide-right-up anim-no-delay"
-                    href={`/services`}
-                  >
-                    <i className="ph ph-arrow-up-right" />
-                  </Link>
-                </div>
+                {/* <div className="mxd-services-stack__controls">
+  <Link
+    className="btn btn-round btn-round-large btn-additional slide-right-up anim-no-delay"
+    href={`/services`}
+  >
+    <Image
+      src="/img/services/pilot icon (1).png" 
+      alt="View services"
+      width={25}
+      height={25}
+      style={{ objectFit: "contain" }}
+    />
+  </Link>
+</div> */}
+
 
                 <div className="mxd-services-stack__title width-60">
                   <h3 className="opposite">Pilot</h3>
@@ -93,19 +100,19 @@ export default function ServicesStack() {
 
               {/* Chef (2) */}
               {/* Chef */}
-<div
-  className="mxd-services-stack__inner justify-between bg-base-opp is-light-card"
-  style={{ backgroundColor: "#F8D222" }}
->
+              <div
+                className="mxd-services-stack__inner justify-between bg-base-opp is-light-card"
+                style={{ backgroundColor: "#F8D222" }}
+              >
 
-                <div className="mxd-services-stack__controls">
+                {/* <div className="mxd-services-stack__controls">
                   <Link
                     className="btn btn-round btn-round-large btn-additional slide-right-up anim-no-delay"
                     href={`/services`}
                   >
                     <i className="ph ph-arrow-up-right" />
                   </Link>
-                </div>
+                </div> */}
 
                 <div className="mxd-services-stack__title width-60">
                   <h3 className="opposite">Chef</h3>
@@ -177,14 +184,14 @@ export default function ServicesStack() {
                 className="mxd-services-stack__inner justify-between bg-base-opp"
                 style={{ backgroundColor: "#1262A4" }}
               >
-                <div className="mxd-services-stack__controls">
+                {/* <div className="mxd-services-stack__controls">
                   <Link
                     className="btn btn-round btn-round-large btn-additional slide-right-up anim-no-delay"
                     href={`/services`}
                   >
                     <i className="ph ph-arrow-up-right" />
                   </Link>
-                </div>
+                </div> */}
 
                 <div className="mxd-services-stack__title width-60">
                   <h3 className="opposite">Reporter</h3>
@@ -256,14 +263,14 @@ export default function ServicesStack() {
                 className="mxd-services-stack__inner justify-between bg-accent"
                 style={{ backgroundColor: "#D5242D" }}
               >
-                <div className="mxd-services-stack__controls">
+                {/* <div className="mxd-services-stack__controls">
                   <Link
                     className="btn btn-round btn-round-large btn-base slide-right-up anim-no-delay"
                     href={`/services`}
                   >
                     <i className="ph ph-arrow-up-right" />
                   </Link>
-                </div>
+                </div> */}
 
                 <div className="mxd-services-stack__title width-60">
                   <h3 className="opposite">Firefighter</h3>
@@ -326,14 +333,14 @@ export default function ServicesStack() {
                 className="mxd-services-stack__inner justify-between bg-base-opp"
                 style={{ backgroundColor: "#2196C4" }}
               >
-                <div className="mxd-services-stack__controls">
+                {/* <div className="mxd-services-stack__controls">
                   <Link
                     className="btn btn-round btn-round-large btn-additional slide-right-up anim-no-delay"
                     href={`/services`}
                   >
                     <i className="ph ph-arrow-up-right" />
                   </Link>
-                </div>
+                </div> */}
 
                 <div className="mxd-services-stack__title width-60">
                   <h3 className="opposite">Doctor</h3>

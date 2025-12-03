@@ -2945,7 +2945,7 @@ p.t-semibold {
 .btn-outline {
   background-color: transparent;
   border-style: solid;
-  border-color: var(--st-bright);
+  border-color: var(--t-bright);
   color: var(--t-bright);
 }
 .btn-outline.opposite {
@@ -20817,6 +20817,17 @@ form textarea:required:valid {
 
 
 
+.mxd-approach-list__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mxd-approach-list__icon {
+  width: 200%;
+  max-width: 520px;  
+  height: auto;
+}
 
 
 

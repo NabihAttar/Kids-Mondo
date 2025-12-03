@@ -78,7 +78,7 @@ export default function Hero() {
                 {/* title text */}
                 <h1 className="hero-01-title">
                   <span className="hero-01-title__row loading__item">
-                    <em className="hero-01-title__item"> Where Every</em>
+                    <em className="hero-01-title__item">  Every</em>
                     <em className="hero-01-title__item title-item-transparent">
                       Day
                     </em>

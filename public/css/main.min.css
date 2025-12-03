@@ -118,7 +118,7 @@
   --fw-bold--light: 800;
   --fw-regular-opp--light: 300;
   --fw-medium-opp--light: 500;
-  --t-bright--light: #161616;
+  --t-bright--light: #1262a4;
   --t-medium--light: #303030;
   --t-muted--light: #585858;
   --t-muted-extra--light: #b2aead;
@@ -16855,7 +16855,7 @@ form textarea:required:valid {
     max-width: 490px;
   }
 }
-.mxd-services-cards__tags {
+/* .mxd-services-cards__tags {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -16864,7 +16864,7 @@ form textarea:required:valid {
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 3.2rem;
-}
+} */
 @media only screen and (min-width: 1600px) {
   .mxd-services-cards__tags {
     gap: 1.4rem;
@@ -20681,19 +20681,25 @@ form textarea:required:valid {
   margin: 16px 0 8px;
 }
 
+
+
 .mxd-services-cards__tags {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 per row by default */
-  gap: 8px 12px; 
+  display: flex;
+  /* flex-wrap: wrap;          */
+  column-gap: 10px;         /* horizontal gap between pills */
+  row-gap: 10px;            /* vertical gap between rows */
 }
 
-@media (min-width: 992px) {
-  .mxd-services-cards__tags {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+/* Make each pill only as wide as its text */
+.mxd-services-cards__tags > .tag {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto !important;  /* don't stretch */
+  width: auto !important;     /* override any width: 100% */
+  white-space: nowrap;        /* keep each label on one line */
 }
 
-.mxd-services-cards__tags .tag {
+/* .mxd-services-cards__tags .tag {
   width: 100%;
   box-sizing: border-box;
   text-align: center;
@@ -20707,7 +20713,9 @@ form textarea:required:valid {
   align-items: center;
   justify-content: center;
   line-height: 1.3;
-}
+} */
+
+ 
 
 .big-gap {
   --bs-gutter-x: 9rem;

@@ -39,18 +39,32 @@ export default function ServicesStack() {
                   </p>
 
                   <h6 className="stack-label">Skills Learned:</h6>
-                  <div className="mxd-services-cards__tags">
+                  <div className="mxd-services-cards__tags" style={{ marginBottom: "1rem" }}>
                     <span className="tag tag-default tag-outline-opposite">
-                      Teamwork and communication
+                      Teamwork
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Following instructions and precision
+                      Time Management
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Creativity and sensory learning
+                      Precision
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Time management and organization
+                      Sensory Learning
+                    </span>
+                  </div>
+                  <div className="mxd-services-cards__tags" >
+                    <span className="tag tag-default tag-outline-opposite">
+                      Following Instructions  
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Creativity
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Communication
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Organization
                     </span>
                   </div>
                 </div>
@@ -66,7 +80,7 @@ export default function ServicesStack() {
                   <Image
                     className="service-img service-img-m"
                     alt="Chef large"
-                    src="/img/services/Chef1.jpg"
+                    src="/img/services/Chef33.jpg"
                     width={1000}
                     height={1000}
                   />
@@ -100,15 +114,24 @@ export default function ServicesStack() {
                   </p>
 
                   <h6 className="stack-label">Skills Learned:</h6>
-                  <div className="mxd-services-cards__tags">
+                  <div className="mxd-services-cards__tags" style={{ marginBottom: "1rem" }}>
                     <span className="tag tag-default tag-outline-opposite">
-                      Responsibility and courage
+                      Courage
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Team coordination
+                      Team Coordination
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Safety awareness and empathy
+                      Empathy
+                    </span>
+                  </div>
+
+                  <div className="mxd-services-cards__tags" >
+                    <span className="tag tag-default tag-outline-opposite">
+                      Safety Awareness
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Responsibilty
                     </span>
                   </div>
                 </div>
@@ -124,7 +147,7 @@ export default function ServicesStack() {
                   <Image
                     className="service-img service-img-m"
                     alt="Firefighter large"
-                    src="/img/services/firefighter.jpg"
+                    src="/img/services/firefighter33.jpg"
                     width={1000}
                     height={1000}
                   />
@@ -158,18 +181,33 @@ export default function ServicesStack() {
                   </p>
 
                   <h6 className="stack-label">Skills Learned:</h6>
-                  <div className="mxd-services-cards__tags">
+                  <div className="mxd-services-cards__tags" style={{ marginBottom: "1rem" }}>
                     <span className="tag tag-default tag-outline-opposite">
-                      Communication and public speaking
+                      Storytelling
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Critical thinking and curiosity
+                      Public Speaking
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Writing and storytelling
+                      Writing
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Confidence and media literacy
+                      Critical Thinking
+                    </span>
+                  </div>
+
+                  <div className="mxd-services-cards__tags" >
+                    <span className="tag tag-default tag-outline-opposite">
+                      Midea Literacy
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Curiosity
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Communication
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Confidence
                     </span>
                   </div>
                 </div>
@@ -185,7 +223,7 @@ export default function ServicesStack() {
                   <Image
                     className="service-img service-img-m"
                     alt="Reporter large"
-                    src="/img/services/Reporter.jpg"
+                    src="/img/services/reporter33.jpg"
                     width={1000}
                     height={1000}
                   />
@@ -220,18 +258,30 @@ export default function ServicesStack() {
                   </p>
 
                   <h6 className="stack-label">Skills Learned:</h6>
-                  <div className="mxd-services-cards__tags">
+                  <div className="mxd-services-cards__tags" style={{ marginBottom: "1rem" }}>
                     <span className="tag tag-default tag-outline-opposite">
-                      Empathy and compassion
+                      Empathy
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Attention to detail
+                      Compassion
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Problem-solving and observation
+                      Responsibility
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Health awareness and responsibility
+                      Observation
+                    </span>
+                  </div>
+
+                  <div className="mxd-services-cards__tags" >
+                    <span className="tag tag-default tag-outline-opposite">
+                      Attention to Detail
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Problem-Solving
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Health Awareness
                     </span>
                   </div>
                 </div>
@@ -247,7 +297,7 @@ export default function ServicesStack() {
                   <Image
                     className="service-img service-img-m"
                     alt="Doctor large"
-                    src="/img/services/doctor.jpg"
+                    src="/img/services/doctor33.jpg"
                     width={1000}
                     height={1000}
                   />
@@ -281,21 +331,38 @@ export default function ServicesStack() {
                   </p>
 
                   <h6 className="stack-label">Skills Learned:</h6>
+                  <div className="mxd-services-cards__tags" style={{ marginBottom: "1rem" }}>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Focus
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Decision-Making
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Coordination
+                    </span>
+                    <span className="tag tag-default tag-outline-opposite">
+                      Spatial Awareness
+                    </span>
+                  </div>
+
                   <div className="mxd-services-cards__tags">
                     <span className="tag tag-default tag-outline-opposite">
-                      Focus and decision-making
+                      Responsibility
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Coordination and spatial awareness
+                      Leadership
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Responsibility and leadership
+                      Technical Curiosity
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Technical curiosity and discipline
+                      Discipline
                     </span>
                   </div>
                 </div>
+
+
 
                 <div className="services-stack__image">
                   <Image
@@ -308,7 +375,7 @@ export default function ServicesStack() {
                   <Image
                     className="service-img service-img-m"
                     alt="Pilot large"
-                    src="/img/services/Pilot.jpg"
+                    src="/img/services/pilot33.jpg"
                     width={1000}
                     height={1000}
                   />

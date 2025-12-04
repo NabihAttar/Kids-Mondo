@@ -45,7 +45,7 @@ export default function Hero() {
                     <h1 className="inner-headline__title animated-type loading__item">
                       <TypedText />
                     </h1>
-                    <p className="inner-headline__text t-large t-bright loading__item">
+                    <p className="inner-headline__text t-large t-bright loading__item" style={{color: "black"}}>
                       KidzMondo is a city built for children, a place where learning feels real and play has purpose. Inside its details kids take the lead: they explore careers, make decisions, and experience the world on their own terms. Every corner is designed to spark imagination, encourage independence, and teach through experience rather than instruction. It’s where curiosity becomes confidence, and every visit helps shape tomorrow’s thinkers, doers, and dreamers.
 
                     </p>

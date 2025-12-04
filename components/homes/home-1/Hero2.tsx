@@ -132,8 +132,8 @@ export default function Hero() {
                         <text>
                           {/* button text here!!! */}
                           <textPath xlinkHref="#textPath">
-                            Scroll for More * Scroll for More * Scroll for More
-                            *
+                            Start Your Adventure * Start Your Adventure * Start Your Adventure
+                             *
                           </textPath>
                         </text>
                       </g>
@@ -141,7 +141,7 @@ export default function Hero() {
                     <Image
                       className="btn-rotating__image"
                       alt="Object"
-                      src="/img/icons/300x300_obj-btn-01.webp"
+                      src="/img/icons/psd-police-hat-3d-illustration 1.png"
                       width={300}
                       height={300}
                     />

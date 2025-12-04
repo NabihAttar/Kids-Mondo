@@ -46,19 +46,19 @@ export default function Capabilities() {
                 <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrtitle">
                     <RevealText as="h2" className="reveal-type">
-                      Event
+                      Events
                     </RevealText>
                   </div>
                 </div>
-                <div className="col-12 col-xl-3 mxd-grid-item no-margin">
+                {/* <div className="col-12 col-xl-3 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrdescr">
                     <p className="anim-uni-in-up">Design</p>
                     <p className="anim-uni-in-up">Development</p>
                     <p className="anim-uni-in-up">Mastership</p>
                   </div>
-                </div>
+                </div> */}
                 <div className="col-12 col-xl-3 mxd-grid-item no-margin">
-                  <div className="mxd-section-title__hrcontrols anim-uni-in-up">
+                  {/* <div className="mxd-section-title__hrcontrols anim-uni-in-up">
                     <AnimatedButton
                       text="Works"
                       className="btn btn-anim btn-default btn-outline slide-right-up"
@@ -66,7 +66,7 @@ export default function Capabilities() {
                     >
                       <i className="ph-bold ph-arrow-up-right" />
                     </AnimatedButton>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

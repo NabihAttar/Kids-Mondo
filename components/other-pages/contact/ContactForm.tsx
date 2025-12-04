@@ -119,16 +119,18 @@ export default function ContactForm() {
                               </div>
 
                               {/* Company */}
-                              <div className="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
+                              {/* <div className="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
                                 <input
                                   type="text"
                                   className="contact-field"
                                   placeholder="Company Name"
                                   {...register("Company")}
                                 />
-                              </div>
+                              </div> */}
 
                               {/* Subject */}
+
+                              
                               <div className="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
                                 <input
                                   type="text"

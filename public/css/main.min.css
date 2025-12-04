@@ -20802,6 +20802,25 @@ form textarea:required:valid {
 }
 
 
+.mxd-philosophy-list {
+  list-style: disc;        /* show bullets */
+  margin: 16px 0 24px;
+  padding-left: 1.5rem;    /* indent so bullets are visible */
+}
+
+.mxd-philosophy-list li {
+  color: #000;             /* match your paragraph color */
+  line-height: 1.5;
+}
+
+/* Optional: if something is still overriding list-style */
+.mxd-philosophy-list {
+  list-style: disc !important;
+}
+
+
+
+
 /* For yellow / light background cards */
 .mxd-services-stack__inner.is-light-card .opposite,
 .mxd-services-stack__inner.is-light-card .t-opposite,

@@ -40,7 +40,7 @@ export default function ProjectsMarqueeSlider() {
                 <text>
                   {/* button text here!!! */}
                   <textPath xlinkHref="#textPath">
-                    Download CV * Download CV * Download CV *
+                    Book Your Visist * Book Your Visist * Book Your Visist *
                   </textPath>
                 </text>
               </g>
@@ -49,7 +49,7 @@ export default function ProjectsMarqueeSlider() {
             <Image
               className="btn-rotating__image"
               alt="Object"
-              src="/img/icons/300x300_obj-btn-03.webp"
+              src="/img/illustrations/employee-lifecycle-icon-pack 1.png"
               width={300}
               height={300}
             />

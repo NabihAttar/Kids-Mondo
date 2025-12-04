@@ -61,7 +61,7 @@ export default function ServicesStack() {
                             {/* services stack single item */}
 
                             <div className="mxd-services-stack__inner justify-between bg-accent">
-                                <div className="mxd-services-stack__controls">
+                                <div className="mxd-services-stack__controls" >
                                     <Link
                                         className="btn btn-round btn-round-large btn-base slide-right-up anim-no-delay"
                                         href={`/services`}
@@ -70,19 +70,19 @@ export default function ServicesStack() {
                                     </Link>
                                 </div>
                                 <div className="mxd-services-stack__title width-60">
-                                    <h3 className="opposite">
+                                    <h3 className="opposite" style ={{color :"black"}}>
                                         KidzMondo Beirut — Where It All Began
                                     </h3>
                                 </div>
 
                                 <div className="mxd-services-stack__info width-60">
 
-                                    <p className="t-small-mobile t-opposite">
+                                    <p className="t-small-mobile t-opposite"style ={{color :"black"}}>
                                         Nestled in the heart of Beirut, KidzMondo’s first city continues to inspire generations of children through the power of play.
                                     </p>
                                 </div>
                                 <div className="mxd-services-cards__tags">
-                                    <span className="tag tag-default tag-outline-opposite">
+                                    <span className="tag tag-default tag-outline-opposite"style ={{color :"black", borderColor :"black"}}>
                                         Book Your Visit to KidzMondo Beirut
                                     </span>
                                 </div>

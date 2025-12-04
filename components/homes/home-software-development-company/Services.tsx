@@ -14,13 +14,13 @@ export default function Services() {
                   <div className="mxd-services-cards-s__inner justify-between bg-base-tint radius-l padding-4">
                     <div className="mxd-services-cards-s__title">
                       <h3 className="anim-uni-in-up">
-                        AI-powered
+                        Motor, Cognitive & Social 
                         <br />
-                        solutions
+                        Skill Development
                       </h3>
                     </div>
                     <div className="mxd-services-cards-s__info width-50">
-                      <div className="mxd-services-cards-s__tags">
+                      {/* <div className="mxd-services-cards-s__tags">
                         <span className="tag tag-default tag-outline anim-uni-in-up">
                           UI/UX
                         </span>
@@ -36,16 +36,20 @@ export default function Services() {
                         <span className="tag tag-default tag-outline anim-uni-in-up">
                           3D models
                         </span>
-                      </div>
+                      </div> */}
                       <p className="anim-uni-in-up">
-                        Intelligent automation, predictive analytics, and
-                        machine learning-driven applications.
+                        KidzMondo’s curriculum supports healthy growth across four developmental pillars:
+                        Cognitive Development: attention, logic, memory, creativity, scientific thinking
+                        Emotional Intelligence: confidence building, identity expression, conflict resolution
+                        Psychomotor Skills: coordination, sensory awareness, object handling, motor skills
+                        Social Development: teamwork, cultural awareness, moral values, real-world readiness
+                        Together, these concepts shape a world where learning becomes living.
                       </p>
                     </div>
                     <div className="mxd-services-cards-s__image image-right">
                       <Image
                         alt="Illustration"
-                        src="/img/illustrations/1200x1200_service-image-01.webp"
+                        src="/img/illustrations/3d-hardware-gears 1.png"
                         width={910}
                         height={1200}
                       />
@@ -54,12 +58,12 @@ export default function Services() {
                 </div>
                 {/* item */}
                 <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-left">
-                  <div className="mxd-services-cards-s__inner justify-end bg-accent radius-l padding-4">
+                  <div className="mxd-services-cards-s__inner justify-end bg-accent radius-l padding-4" style={{ backgroundColor: "#2196C4" }}>
                     <div className="mxd-services-cards-s__title">
-                      <h3 className="opposite anim-uni-in-up">Fintech</h3>
+                      <h3 className="opposite anim-uni-in-up">Citizenship & Financial Literacy</h3>
                     </div>
                     <div className="mxd-services-cards-s__info">
-                      <div className="mxd-services-cards-s__tags">
+                      {/* <div className="mxd-services-cards-s__tags">
                         <span className="tag tag-default tag-outline-opposite anim-uni-in-up">
                           Frontend
                         </span>
@@ -69,17 +73,17 @@ export default function Services() {
                         <span className="tag tag-default tag-outline-opposite anim-uni-in-up">
                           Backend
                         </span>
-                      </div>
+                      </div> */}
                       <p className="t-opposite anim-uni-in-up">
-                        Innovative financial solutions, from digital banking to
-                        payment processing and investment platforms.
+                        Each child becomes a citizen of KidzMondo earning and spending the city’s official currency, Kidlar.
+                        Through this simple economy, kids understand money management, contribution, and responsibility in a community.
                       </p>
                     </div>
                     <div className="mxd-services-cards-s__image image-top-right">
                       <Image
                         className="mxd-move"
                         alt="Illustration"
-                        src="/img/illustrations/1200x1200_service-image-02.webp"
+                        src="/img/illustrations/finance-icons-digital-applications 3.png"
                         width={1200}
                         height={1200}
                       />
@@ -87,13 +91,13 @@ export default function Services() {
                   </div>
                 </div>
                 {/* item */}
-                <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-right">
-                  <div className="mxd-services-cards-s__inner bg-additional radius-l padding-4">
+                <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-right" >
+                  <div className="mxd-services-cards-s__inner bg-additional radius-l padding-4" style={{ backgroundColor: "#F8D323" }}>
                     <div className="mxd-services-cards-s__title">
-                      <h3 className="anim-uni-in-up">Blockchain</h3>
+                      <h3 className="anim-uni-in-up"style={{color:"black"}}>Playful Learning Via Edutainment</h3>
                     </div>
                     <div className="mxd-services-cards-s__info">
-                      <div className="mxd-services-cards-s__tags">
+                      {/* <div className="mxd-services-cards-s__tags">
                         <span className="tag tag-default tag-outline anim-uni-in-up">
                           Strategy
                         </span>
@@ -103,17 +107,16 @@ export default function Services() {
                         <span className="tag tag-default tag-outline anim-uni-in-up">
                           SEO
                         </span>
-                      </div>
-                      <p className="t-bright anim-uni-in-up">
-                        Secure and transparent decentralized applications,
-                        including smart contracts and cryptocurrencies.
+                      </div> */}
+                      <p className="t-bright anim-uni-in-up" style={{color:"black"}}>
+                        Every activity combines education with fun, helping children learn by doing while enjoying the freedom to explore their interests and follow their imagination.
                       </p>
                     </div>
                     <div className="mxd-services-cards-s__image image-bottom">
                       <Image
                         className="mxd-rotate-slow"
                         alt="Illustration"
-                        src="/img/illustrations/1200x1200_service-image-03.webp"
+                        src="/img/illustrations/Helmet.png"
                         width={1200}
                         height={1200}
                       />
@@ -122,12 +125,12 @@ export default function Services() {
                 </div>
                 {/* item */}
                 <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in">
-                  <div className="mxd-services-cards-s__inner bg-base-opp radius-l padding-4">
+                  <div className="mxd-services-cards-s__inner bg-base-opp radius-l padding-4"style={{backgroundColor:"#024B70"}}>
                     <div className="mxd-services-cards-s__title">
-                      <h3 className="opposite anim-uni-in-up">Cybersecurity</h3>
+                      <h3 className="opposite anim-uni-in-up">A Real City for Real Learning</h3>
                     </div>
                     <div className="mxd-services-cards-s__info">
-                      <div className="mxd-services-cards-s__tags">
+                      {/* <div className="mxd-services-cards-s__tags">
                         <span className="tag tag-default tag-outline-opposite anim-uni-in-up">
                           Brand strategy
                         </span>
@@ -137,24 +140,24 @@ export default function Services() {
                         <span className="tag tag-default tag-outline-opposite anim-uni-in-up">
                           Guidelines
                         </span>
-                      </div>
+                      </div> */}
                       <p className="t-opposite anim-uni-in-up">
-                        Advanced threat detection, encryption solutions, and
-                        secure data protection.
+                        KidzMondo is a fully immersive miniature city designed for children ages 2 to 14.
+                        Through vocational role-play in realistic establishments, from hospitals to banks and fire stations kids experience over 120 professions in a world built just for them.
                       </p>
                     </div>
-                    <div className="mxd-services-cards-s__image image-bottom image-bottom-2">
+                    {/* <div className="mxd-services-cards-s__image image-bottom image-bottom-2">
                       <Image
                         alt="Illustration"
-                        src="/img/illustrations/1200x1200_service-image-04.webp"
+                        src="/img/illustrations/3d-office-icon.png"
                         width={891}
                         height={1200}
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 {/* item */}
-                <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-left">
+                {/* <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-left">
                   <div className="mxd-services-cards-s__inner justify-end bg-base-tint radius-l padding-4">
                     <div className="mxd-services-cards-s__title">
                       <h3 className="anim-uni-in-up">Gaming</h3>
@@ -185,7 +188,7 @@ export default function Services() {
                       />
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -8,12 +8,12 @@ export default function ServicesStack() {
         <div className="mxd-section padding-stacked-section">
             <div className="mxd-container grid-container">
                 {/* Block - Services/Features Stacking Cards Start */}
-                <div className="mxd-block mxd-grid-item no-margin">
+                <div className="mxd-block mxd-grid-item no-margin" >
                     <div className="content__block">
-                        <StackCards className="stack-wrapper in-content-stack">
+                        <StackCards className="stack-wrapper in-content-stack" >
                             {/* services stack single item */}
 
-                            <div className="mxd-services-stack__inner justify-between bg-base-opp">
+                            <div className="mxd-services-stack__inner justify-between bg-base-opp" style={{ backgroundColor: "#024b70"}}>
                                 <div className="mxd-services-stack__controls">
                                     <Link
                                         className="btn btn-round btn-round-large btn-additional slide-right-up anim-no-delay"

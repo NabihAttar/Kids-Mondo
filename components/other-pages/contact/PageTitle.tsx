@@ -56,7 +56,7 @@ export default function PageTitle() {
                       <span className="btn-caption">hello@rayo.com</span>
                       <i className="ph-bold ph-arrow-up-right" />
                     </a>
-                    <p className="inner-headline__text t-large t-bright loading__item">
+                    <p className="inner-headline__text t-large t-bright loading__item" style={{color:"black"}}>
                       We’d love to hear from you!<br />
                       Whether you’re planning a visit, have a question, or want to explore partnership opportunities, our team is here to help.<br />
                       Reach out through the form below and we’ll make sure your message gets to the right department.

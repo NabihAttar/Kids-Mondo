@@ -96,7 +96,7 @@ export default function Testimonials() {
                             data-swiper-parallax-x={-300}
                             data-swiper-parallax-opacity={0}
                           >
-                            <p className="t-large">{item.text}</p>
+                            <p className="t-large" style={{color:"black"}}>{item.text}</p>
                             {/* <AnimatedButton
                               text="Project Page"
                               className="btn btn-anim btn-default btn-small btn-opposite slide-right-up"

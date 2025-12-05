@@ -29,7 +29,7 @@ export default function Hero() {
                   />
                   <p>Creative development studio</p>
                 </div>
-                <div className="mxd-hero-04__aboutblock loading__item">
+                <div className="mxd-hero-04__aboutblock loading__item" >
                   <p>
                     We are a creative digital agency specializing in innovative
                     design and cutting-edge development.

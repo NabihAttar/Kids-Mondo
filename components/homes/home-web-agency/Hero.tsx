@@ -144,7 +144,7 @@ export default function Hero() {
                 </video>
               </div>
               <div className="mxd-hero-05-videoblock__descr">
-                <p className="t-large t-caption t-bright">
+                <p className="t-large t-caption t-bright" >
                   We are a creative digital agency specializing in innovative
                   design and cutting-edge development.
                 </p>

@@ -148,7 +148,7 @@ export default function Hero() {
                   </a>
                 </div>
                 <div className="mxd-hero-01__data-descr loading__fade">
-                  <p className="t-bright">
+                  <p className="t-bright" style={{color:"black"}}>
                     In KidzMondo, every visit is an adventure. One day your child is a doctor, the next a pilot, reporter, or artist.<br /> <br />
                      Each experience is designed to ignite curiosity, teach responsibility, and celebrate creativity because the best way to learn is to live it.
                   </p>

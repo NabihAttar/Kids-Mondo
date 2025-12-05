@@ -150,7 +150,7 @@ export default function Hero() {
                   </a>
                 </div>
                 <div className="mxd-hero-01__data-descr loading__fade">
-                  <p className="t-bright">
+                  <p className="t-bright" >
                     We are a creative digital agency specializing in innovative
                     design and cutting-edge development.
                   </p>

@@ -45,7 +45,7 @@ export default function Pricing() {
                       <h1 className="inner-headline__title headline-img-before headline-img-01 loading__item">
                         Creative solutions made simple
                       </h1>
-                      <p className="inner-headline__text t-large t-bright">Subscriptions for continuous creative 
+                      <p className="inner-headline__text t-large t-bright" style={{color:"black"}}>Subscriptions for continuous creative 
                   support or bundled projects to build or elevate your brand. We've got a package 
                   that fits!</p>
                     </div>

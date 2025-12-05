@@ -15305,7 +15305,7 @@ form textarea:required:valid {
 }
 .mxd-pinned__img {
   width: auto;
-  height: 30rem;
+  height: 40rem;
   -o-object-fit: cover;
   object-fit: cover;
   -moz-border-radius: 2em;

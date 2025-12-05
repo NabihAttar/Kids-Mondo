@@ -58,9 +58,9 @@ export default function About() {
                     </div> */}
                     <div className="mxd-paragraph__controls anim-uni-in-up">
                       <AnimatedButton
-                        text="Get to Know Us More!"
+                        text="Start Your Adventure!"
                         className="btn btn-anim btn-default btn-outline slide-right-up"
-                        href={`/about-us`}
+                        href={`/visit`}
                       >
                         <i className="ph-bold ph-arrow-up-right" />
                       </AnimatedButton>

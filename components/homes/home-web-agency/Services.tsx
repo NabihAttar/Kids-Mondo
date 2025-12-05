@@ -13,6 +13,15 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Services() {
   const pinnedRef = useRef<HTMLDivElement | null>(null);
 
+  // Map titles to background colors (for the IMAGE box)
+  const bgColors: Record<string, string> = {
+    Kozmo: "#D5242D",
+    "Ëena": "#F8D222",
+    Dogzilla: "#1262A4",
+    Leeloo: "#2196C4",
+    "Digital marketing solutions": "#F8D222", // both last items
+  };
+
   useEffect(() => {
     const root = pinnedRef.current;
     if (!root) return;
@@ -24,7 +33,6 @@ export default function Services() {
       root.querySelectorAll<HTMLElement>(".mxd-pinned__img-item")
     );
 
-    // Guard if lists mismatch/empty
     const count = Math.min(textItems.length, imgItems.length);
     if (count === 0) return;
 
@@ -35,10 +43,8 @@ export default function Services() {
       imgItems[idx]?.classList.add("is-active");
     };
 
-    // Initial active
     setActive(0);
 
-    // Create ScrollTriggers for each text item
     const triggers: ScrollTrigger[] = [];
     textItems.slice(0, count).forEach((el, idx) => {
       const st = ScrollTrigger.create({
@@ -52,10 +58,8 @@ export default function Services() {
       triggers.push(st);
     });
 
-    // Optional: refresh after mount to measure correctly
     ScrollTrigger.refresh();
 
-    // Cleanup
     return () => {
       triggers.forEach((st) => st.kill());
     };
@@ -64,17 +68,20 @@ export default function Services() {
   return (
     <div className="mxd-section padding-pinned-img-pre-mtext">
       <div className="mxd-container">
-        {/* Block - Services Pinned Image Start */}
         <div className="mxd-block">
           <div className="mxd-pinned" ref={pinnedRef}>
             <div className="mxd-pinned__visual page-padding">
               <div className="mxd-pinned__img-wrap">
                 <div className="mxd-pinned__img-list" role="list">
-                  {services.map((item: { img: string }, idx: number) => (
+                  {services.map((item: Service, idx: number) => (
                     <div
                       className="mxd-pinned__img-item"
                       role="listitem"
                       key={idx}
+                      style={{
+                        backgroundColor:
+                          bgColors[item.title] || "transparent",
+                      }}
                     >
                       <Image
                         className="mxd-pinned__img"
@@ -111,7 +118,8 @@ export default function Services() {
                         {item.title}
                       </h2>
 
-                      <div className="mxd-pinned__tags">
+                      {/* tags still commented out */}
+                      {/* <div className="mxd-pinned__tags">
                         {item.tags.map((tag, tagIdx) => (
                           <span
                             className="tag tag-default tag-outline anim-uni-in-up"
@@ -120,7 +128,7 @@ export default function Services() {
                             {tag}
                           </span>
                         ))}
-                      </div>
+                      </div> */}
 
                       <p className="anim-uni-in-up">{item.desc}</p>
                     </div>

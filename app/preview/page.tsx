@@ -41,6 +41,7 @@ export default function PreviewPage() {
         <Features2 />
         <FeatureCards />
         <Cta /> */}
+        
       </main>
       {/* <Footer2 /> */}
             <Footer2 text="KidzMondo" />

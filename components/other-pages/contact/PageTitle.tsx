@@ -41,9 +41,9 @@ export default function PageTitle() {
                 <div className="mxd-block__content">
                   <div className="mxd-block__inner-headline loading__item">
                     <h1 className="inner-headline__title">
-                      Let&apos;s talk
+                      Let&apos;s Talk
                       <br />
-                      about your project!
+                      About your Project!
                       {/* <a class="btn btn-line-headline slide-right-up anim-no-delay" href="mailto:example@example.com?subject=Message%20from%20your%20site">
                     <span class="btn-caption">hello@rayo.com</span>
                     <i class="ph-bold ph-arrow-up-right"></i>

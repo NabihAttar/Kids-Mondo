@@ -7,6 +7,8 @@ import Services from "@/components/homes/home-software-development-company/Servi
 import Testimonials from "@/components/homes/home-1/Testimonials";
 import About from "@/components/homes/home-software-development-company/About";
 import Testimonials2 from "@/components/common/Testimonials2";
+import Services1 from "@/components/homes/home-web-agency/Services";
+
 export const metadata: Metadata = {
   title:
     "About Me || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
@@ -23,7 +25,9 @@ export default function AboutMePage() {
         <Hero />
 
         <ProjectsMarqueeSlider />
-        <About1 />
+        <Services1 />
+        {/* <About1 /> */}
+
         <Services />
         <About />
         <Testimonials2 />

@@ -15236,6 +15236,7 @@ form textarea:required:valid {
 .mxd-pinned__visual {
   display: none;
 }
+
 @media only screen and (min-width: 1200px) {
   .mxd-pinned__visual {
     position: sticky;
@@ -15255,6 +15256,7 @@ form textarea:required:valid {
     height: 100vh;
   }
 }
+
 .mxd-pinned__img-wrap {
   width: 30em;
   height: 40em;
@@ -15264,17 +15266,20 @@ form textarea:required:valid {
   -moz-border-radius: var(--_radius-l);
   border-radius: var(--_radius-l);
 }
+
 @media only screen and (min-width: 1200px) {
   .mxd-pinned__img-wrap {
     width: 100%;
     height: 100%;
   }
 }
+
 .mxd-pinned__img-list {
   position: relative;
   width: 100%;
   height: 100%;
 }
+
 .mxd-pinned__img-item {
   position: absolute;
   top: 0;
@@ -15300,48 +15305,85 @@ form textarea:required:valid {
   -moz-transition: opacity var(--_animspeed-medium);
   transition: opacity var(--_animspeed-medium);
 }
+
 .mxd-pinned__img-item.is-active {
   opacity: 1;
 }
+
+/* DESKTOP PINNED IMAGE */
 .mxd-pinned__img {
   width: auto;
-  height: 40rem;
+  height: var(--pinned-img-height, 40rem);
   -o-object-fit: cover;
   object-fit: cover;
   -moz-border-radius: 2em;
   border-radius: 2em;
 }
+
 @media only screen and (min-width: 1600px) {
   .mxd-pinned__img {
-    height: 40rem;
+    height: var(--pinned-img-height, 40rem);
   }
 }
+
 .mxd-pinned__content {
   padding: 0;
 }
+
 @media only screen and (min-width: 1200px) {
   .mxd-pinned__content {
     padding: 6rem 0;
   }
 }
+
 @media only screen and (min-width: 1600px) {
   .mxd-pinned__content {
     padding: 9rem 0;
   }
 }
+
 .mxd-pinned__text-wrap {
   padding: 0;
 }
+
 @media only screen and (min-width: 1200px) {
   .mxd-pinned__text-wrap {
     padding: 0 9rem 0 3rem;
   }
 }
+
 @media only screen and (min-width: 1600px) {
   .mxd-pinned__text-wrap {
     padding: 0 9rem 0 6rem;
   }
 }
+
+/* HIDE MOBILE IMAGE ON DESKTOP (we already have sticky visual there) */
+@media only screen and (min-width: 1200px) {
+  .mxd-pinned__img-mobile {
+    display: none;
+  }
+}
+
+/* MOBILE/TABLET IMAGE */
+.mxd-pinned__img-mobile-img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/* TABLET: match desktop height per card (55rem for first 3, 40rem for others) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .mxd-pinned__img-mobile-img {
+    width: 100%;
+    height: var(--pinned-img-height, 40rem);
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+  }
+}
+
 .mxd-pinned__text-list {
   display: -webkit-box;
   display: -moz-box;

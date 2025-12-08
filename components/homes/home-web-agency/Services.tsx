@@ -39,8 +39,9 @@ export default function Services() {
     const setActive = (idx: number) => {
       textItems.forEach((el) => el.classList.remove("is-active"));
       imgItems.forEach((el) => el.classList.remove("is-active"));
-      textItems[idx]?.classList.add("is-active");
-      imgItems[idx]?.classList.add("is-active");
+
+      if (textItems[idx]) textItems[idx].classList.add("is-active");
+      if (imgItems[idx]) imgItems[idx].classList.add("is-active");
     };
 
     // initial active
@@ -73,21 +74,24 @@ export default function Services() {
         {/* Block - Services Pinned Image Start */}
         <div className="mxd-block">
           <div className="mxd-pinned" ref={pinnedRef}>
-            {/* LEFT: IMAGES */}
+            {/* LEFT: STICKY VISUAL (DESKTOP) */}
             <div className="mxd-pinned__visual page-padding">
               <div className="mxd-pinned__img-wrap">
                 <div className="mxd-pinned__img-list" role="list">
                   {services.map((item: Service, idx: number) => {
                     const bg = bgColors[item.title] || "transparent";
+                    const imageHeight = idx < 3 ? "55rem" : "40rem";
+
                     return (
                       <div
                         className="mxd-pinned__img-item"
                         role="listitem"
-                        key={idx}
+                        key={`img-${idx}`}
                         style={{
                           backgroundColor: bg,
                           borderRadius: "24px",
                           overflow: "hidden",
+                          ["--pinned-img-height" as string]: imageHeight,
                         }}
                       >
                         <Image
@@ -104,19 +108,24 @@ export default function Services() {
               </div>
             </div>
 
-            {/* RIGHT: TEXT */}
+            {/* RIGHT: TEXT + MOBILE/TABLET IMAGE */}
             <div className="mxd-pinned__content page-padding">
               <div className="mxd-pinned__text-wrap">
                 <div className="mxd-pinned__text-list" role="list">
                   {services.map((item: Service, idx: number) => {
                     const bg = bgColors[item.title] || "transparent";
+                    const imageHeight = idx < 3 ? "55rem" : "40rem";
+
                     return (
                       <div
                         className="mxd-pinned__text-item"
                         role="listitem"
-                        key={idx}
+                        key={`text-${idx}`}
+                        style={{
+                          ["--pinned-img-height" as string]: imageHeight,
+                        }}
                       >
-                        {/* MOBILE IMAGE with same colored box */}
+                        {/* MOBILE / TABLET IMAGE */}
                         <div
                           className="mxd-pinned__img-mobile anim-uni-in-up"
                           style={{
@@ -131,25 +140,13 @@ export default function Services() {
                             src={item.img}
                             width={800}
                             height={800}
+                            className="mxd-pinned__img-mobile-img"
                           />
                         </div>
 
                         <h2 className="mxd-pinned__title h2-small anim-uni-in-up">
                           {item.title}
                         </h2>
-
-                        {/* If you want tags back, uncomment this
-                        <div className="mxd-pinned__tags">
-                          {item.tags?.map((tag, tagIdx) => (
-                            <span
-                              className="tag tag-default tag-outline anim-uni-in-up"
-                              key={tagIdx}
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                        */}
 
                         <p className="anim-uni-in-up">{item.desc}</p>
                       </div>

@@ -51,7 +51,7 @@ export default function ServicesStack() {
                                     <Image
                                         className="service-img service-img-m"
                                         alt="Service/Feature Image"
-                                        src="/img/services/1000x1000_ser-01.webp"
+                                        src="/img/services/Doha.jpg"
                                         width={1000}
                                         height={1000}
                                     />
@@ -97,7 +97,7 @@ export default function ServicesStack() {
                                     <Image
                                         className="service-img service-img-m"
                                         alt="Service/Feature Image"
-                                        src="/img/services/1000x1000_ser-02.webp"
+                                        src="/img/services/Beirut.jpg"
                                         width={1000}
                                         height={1000}
                                     />

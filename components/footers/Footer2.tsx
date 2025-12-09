@@ -225,7 +225,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
         <div className="fullwidth-text__tl-trigger" />
         <div className="mxd-footer__fullwidth-text anim-top-to-bottom">
           <Image
-            src="/img/hero/kidmondo.svg"
+            src="/img/hero/kidzmondo (1).svg"
             alt={text}
             width={400}
             height={72}

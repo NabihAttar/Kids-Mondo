@@ -111,7 +111,7 @@ export default function MobileMenu() {
           <div className="mxd-menu__inner">
             {/* left side */}
             <div className="mxd-menu__left">
-              <p
+              {/* <p
                 className="mxd-menu__caption fade-in-elm"
                 style={{
                   transitionDelay: "0.4s",
@@ -123,7 +123,7 @@ export default function MobileMenu() {
                 🦄 Innovative design
                 <br />
                 and cutting-edge development
-              </p>
+              </p> */}
               <div className="main-menu">
                 <nav className="main-menu__content">
                   <ul id="main-menu" className="main-menu__accordion">
@@ -219,7 +219,7 @@ export default function MobileMenu() {
             </div>
 
             {/* right side */}
-            <div className="mxd-menu__right">
+            {/* <div className="mxd-menu__right">
               <div className="menu-promo">
                 <div className="menu-promo__content">
                   <p
@@ -262,10 +262,10 @@ export default function MobileMenu() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* data bottom line */}
-            <div
+            {/* <div
               className="mxd-menu__data fade-in-up-elm"
               style={{ transitionDelay: "0.4s", fontSize: "12px" }}
             >
@@ -283,7 +283,7 @@ export default function MobileMenu() {
                 <i className="ph ph-copyright" />
                 2025
               </p>
-            </div>
+            </div> */}
           </div>
 
           <div className="hamburger__parking-slot" />

@@ -322,7 +322,7 @@ export default function Blogs5() {
               {/* socials */}
               <div className="mxd-sidebar__widget bg-base-tint radius-m widget-socials">
                 <div className="widget__title">
-                  <p>Ecosystem</p>
+                  <p>Platforms</p>
                 </div>
                 <div className="widget__descr">
                   <p className="t-small">

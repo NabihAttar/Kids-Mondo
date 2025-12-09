@@ -122,7 +122,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
               </svg>
               <a
                 href="mailto:example@example.com?subject=Message%20from%20your%20site"
-                className="footer-contact-link"
+                className="footer-contact-link" 
               >
                 hello@KidzMondo.com
               </a>
@@ -158,15 +158,15 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
             </p>
           </div>
 
-          <div className="footer-blocks__card fill-card notify">
-            <div className="footer-blocks__title anim-uni-in-up">
+          <div className="footer-blocks__card fill-card notify" >
+            <div className="footer-blocks__title anim-uni-in-up" >
               <p className="footer-blocks__title-m footer-text-white">
                 Subscribe to our City Updates :
               </p>
             </div>
             <div className="form-container anim-uni-in-up">
               <div className="form__reply subscription-ok">
-                <span className="reply__text">
+                <span className="reply__text" >
                   Done! Thanks for subscribing.
                 </span>
               </div>

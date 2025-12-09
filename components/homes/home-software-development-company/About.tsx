@@ -56,7 +56,7 @@ export default function About() {
                         </div>
                       </div>
                     </div> */}
-                    <div className="mxd-paragraph__controls anim-uni-in-up">
+                    {/* <div className="mxd-paragraph__controls anim-uni-in-up">
                       <AnimatedButton
                         text="Start Your Adventure!"
                         className="btn btn-anim btn-default btn-outline slide-right-up"
@@ -64,7 +64,7 @@ export default function About() {
                       >
                         <i className="ph-bold ph-arrow-up-right" />
                       </AnimatedButton>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

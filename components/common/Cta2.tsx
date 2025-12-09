@@ -40,9 +40,9 @@ export default function Cta() {
                 </p>
                 <div className="mxd-promo__controls anim-uni-in-up" >
                   <AnimatedButton
-                    text=" Get in Touch " 
+                    text=" About Us " 
                     className="btn btn-anim btn-default btn-large btn-additional slide-right-up"
-                    href={`/contact`}
+                    href={`/about-me`}
                     style={{backgroundColor:"#2E9FDC", color:"white"}}
                   >
                     <i className="ph-bold ph-arrow-up-right" />

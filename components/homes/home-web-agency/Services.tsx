@@ -16,7 +16,7 @@ const bgColors: Record<string, string> = {
   "Ëena": "#F8D222",
   Dogzilla: "#1262A4",
   Leeloo: "#2196C4",
-  "Digital marketing solutions": "#F8D222", // both last items
+  "": "#F8D222",
 };
 
 export default function Services() {
@@ -71,6 +71,18 @@ export default function Services() {
   return (
     <div className="mxd-section padding-pinned-img-pre-mtext">
       <div className="mxd-container">
+        {/* SECTION TITLE + SUBTITLE */}
+        <div className="mxd-section__heading text-center">
+          <h2 className="mxd-section__title anim-uni-in-up">
+            The Characters Behind KidzMondo
+          </h2>
+          <p className="mxd-section__subtitle anim-uni-in-up">
+            Every great city begins with a vision and so is KidzMondo, brought
+            to life by four symbolic founders who turned imagination into order
+            and play into purpose.
+          </p>
+        </div>
+
         {/* Block - Services Pinned Image Start */}
         <div className="mxd-block">
           <div className="mxd-pinned" ref={pinnedRef}>

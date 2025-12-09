@@ -20,7 +20,7 @@ export default function news() {
         <Blogs4 />
         <Blogs5 />
 
-        <Cta />
+        {/* <Cta /> */}
       </main>
       <Footer2 />
     </>

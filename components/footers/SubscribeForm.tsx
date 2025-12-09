@@ -11,6 +11,7 @@ export default function SubscribeForm() {
         placeholder="Your Email"
         required
         className="footer-input"
+        style={{borderRadius:"10px", padding:"12px 20px"}}
       />
       <button
         className="btn btn-form btn-absolute-right btn-muted slide-right-up anim-no-delay"

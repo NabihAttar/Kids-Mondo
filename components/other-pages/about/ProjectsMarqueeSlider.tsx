@@ -68,14 +68,14 @@ export default function ProjectsMarqueeSlider() {
                   key={idx}
                   className="marquee__item one-line item-large image"
                 >
-                  <Link className="marquee__link" href={href}>
+                  {/* <Link className="marquee__link" href={href}> */}
                     <Image
                       alt={item.title || "Image"}
                       src={src}
                       width={1400}
                       height={1080}
                     />
-                  </Link>
+                  {/* </Link> */}
                 </div>
               );
             })}

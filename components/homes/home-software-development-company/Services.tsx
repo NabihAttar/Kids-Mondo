@@ -14,7 +14,7 @@ export default function Services() {
                   <div className="mxd-services-cards-s__inner justify-between bg-base-tint radius-l padding-4">
                     <div className="mxd-services-cards-s__title">
                       <h3 className="anim-uni-in-up">
-                        Motor, Cognitive & Social 
+                        Motor, Cognitive & Social
                         <br />
                         Skill Development
                       </h3>
@@ -94,7 +94,7 @@ export default function Services() {
                 <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-right" >
                   <div className="mxd-services-cards-s__inner bg-additional radius-l padding-4" style={{ backgroundColor: "#F8D323" }}>
                     <div className="mxd-services-cards-s__title">
-                      <h3 className="anim-uni-in-up"style={{color:"black"}}>Playful Learning Via Edutainment</h3>
+                      <h3 className="anim-uni-in-up" style={{ color: "black" }}>Playful Learning Via Edutainment</h3>
                     </div>
                     <div className="mxd-services-cards-s__info">
                       {/* <div className="mxd-services-cards-s__tags">
@@ -108,7 +108,7 @@ export default function Services() {
                           SEO
                         </span>
                       </div> */}
-                      <p className="t-bright anim-uni-in-up" style={{color:"black"}}>
+                      <p className="t-bright anim-uni-in-up" style={{ color: "black" }}>
                         Every activity combines education with fun, helping children learn by doing while enjoying the freedom to explore their interests and follow their imagination.
                       </p>
                     </div>
@@ -125,7 +125,7 @@ export default function Services() {
                 </div>
                 {/* item */}
                 <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in">
-                  <div className="mxd-services-cards-s__inner bg-base-opp radius-l padding-4"style={{backgroundColor:"#024B70"}}>
+                  <div className="mxd-services-cards-s__inner bg-base-opp radius-l padding-4" style={{ backgroundColor: "#024B70" }}>
                     <div className="mxd-services-cards-s__title">
                       <h3 className="opposite anim-uni-in-up">A Real City for Real Learning</h3>
                     </div>

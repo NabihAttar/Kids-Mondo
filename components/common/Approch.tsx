@@ -17,7 +17,7 @@ export default function Approch() {
                 {/* Title + Button Row */}
                 <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrtitle anim-uni-in-up">
-                    <RevealText as="h2" className="reveal-type" style={{marginTop:"100px"}}>
+                    <RevealText as="h2" className="reveal-type" style={{ marginTop: "100px" }}>
                       The City That Raises Dreamers
                     </RevealText>
                   </div>
@@ -38,34 +38,34 @@ export default function Approch() {
                 {/* Three-column description under the title */}
                 <div className="col-12 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrdescr">
-                   <div
-  className="row g-5 big-gap"
-  style={{ marginTop: "25px" }}
->
-  <div className="col-12 col-md-4">
-    <p className="anim-uni-in-up">
-      At KidzMondo, every child steps into a world built
-      just for them: a living city where imagination meets
-      responsibility, and curiosity turns into confidence.
-    </p>
-  </div>
+                    <div
+                      className="row g-5 big-gap"
+                      style={{ marginTop: "25px" }}
+                    >
+                      <div className="col-12 col-md-4">
+                        <p className="anim-uni-in-up">
+                          At KidzMondo, every child steps into a world built
+                          just for them: a living city where imagination meets
+                          responsibility, and curiosity turns into confidence.
+                        </p>
+                      </div>
 
-  <div className="col-12 col-md-4">
-    <p className="anim-uni-in-up">
-      Through hands-on experiences that mirror real life,
-      children explore professions, teamwork, and values in
-      a safe, inclusive environment.
-    </p>
-  </div>
+                      <div className="col-12 col-md-4">
+                        <p className="anim-uni-in-up">
+                          Through hands-on experiences that mirror real life,
+                          children explore professions, teamwork, and values in
+                          a safe, inclusive environment.
+                        </p>
+                      </div>
 
-  <div className="col-12 col-md-4">
-    <p className="anim-uni-in-up">
-      Our mission is to spark a lifelong love of learning by
-      turning everyday play into a meaningful journey of
-      discovery, creativity, and growth.
-    </p>
-  </div>
-</div>
+                      <div className="col-12 col-md-4">
+                        <p className="anim-uni-in-up">
+                          Our mission is to spark a lifelong love of learning by
+                          turning everyday play into a meaningful journey of
+                          discovery, creativity, and growth.
+                        </p>
+                      </div>
+                    </div>
 
                   </div>
                 </div>
@@ -86,15 +86,15 @@ export default function Approch() {
                   <div className="container-fluid px-0">
                     <div className="row gx-0">
                       <div className="col-12 col-xl-n mxd-grid-item no-margin">
-                       <div className="mxd-approach-list__image anim-uni-in-up">
-  <img
-    alt="Icon"
-    src={item.icon}
-    width={"130%"}
-    height={"auto"}
-    className="mxd-approach-list__icon"
-  />
-</div>
+                        <div className="mxd-approach-list__image anim-uni-in-up">
+                          <img
+                            alt="Icon"
+                            src={item.icon}
+                            width={"130%"}
+                            height={"auto"}
+                            className="mxd-approach-list__icon"
+                          />
+                        </div>
 
                       </div>
                       <div className="col-12 col-xl-4 mxd-grid-item no-margin">

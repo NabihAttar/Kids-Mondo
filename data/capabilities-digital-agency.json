@@ -2,19 +2,19 @@
   {
     "title": "Birthdays",
     "num": "/ 01",
-    "hoverImage": "/img/illustrations/600x730_cpb-04.webp",
+    "hoverImage": "/img/illustrations/birthdays.jpg",
     "mainImage": "/img/illustrations/1200x800_cpb-04.webp"
   },
   {
     "title": "Private Parties and Group Bookings",
     "num": "/ 02",
-    "hoverImage": "/img/illustrations/600x730_cpb-01.webp",
+    "hoverImage": "/img/illustrations/events.jpg",
     "mainImage": "/img/illustrations/1200x800_cpb-01.webp"
   },
   {
     "title": "School Tours and Educational Visits",
     "num": "/ 03",
-    "hoverImage": "/img/illustrations/600x730_cpb-03.webp",
+    "hoverImage": "/img/illustrations/schools.jpg",
     "mainImage": "/img/illustrations/1200x800_cpb-03.webp"
   }
 ]

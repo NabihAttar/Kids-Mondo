@@ -20909,3 +20909,45 @@ form textarea:required:valid {
   }
 
 }
+.twentytwenty-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.twentytwenty-container img {
+  display: block;
+}
+
+.twentytwenty-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Simple handle style – you can customize */
+.twentytwenty-handle::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.twentytwenty-left-arrow,
+.twentytwenty-right-arrow {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.twentytwenty-left-arrow {
+  border-right: 8px solid #fff;
+  margin-right: 8px;
+}
+
+.twentytwenty-right-arrow {
+  border-left: 8px solid #fff;
+  margin-left: 8px;
+}

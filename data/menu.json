@@ -13,11 +13,11 @@
     "title": "Locations",
     "href": "/loactions"
   },
-  {
+  
+ {
     "title": "News & Blogs",
     "href": "/news&blogs"
   },
- 
   {
     "title": "About Us",
     "href": "/about-me"
@@ -25,9 +25,5 @@
   {
     "title": "Contact",
     "href": "/contact"
-  },
-  {
-    "title": "Book Your Visit'",
-    "href": "/visit"
   }
 ]

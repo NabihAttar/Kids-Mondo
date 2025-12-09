@@ -74,7 +74,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                 )}
               </ul>
             </div>
-            <div className="footer-blocks__links anim-uni-in-up">
+            {/* <div className="footer-blocks__links anim-uni-in-up">
               <AnimatedButton
                 text="Privacy Policy"
                 as={"a"}
@@ -91,7 +91,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
               >
                 <i className="ph ph-arrow-right" />
               </AnimatedButton>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -121,11 +121,11 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                 />
               </svg>
               <a
-  href="mailto:example@example.com?subject=Message%20from%20your%20site"
-  className="footer-contact-link"
->
-  hello@KidzMondo.com
-</a>
+                href="mailto:example@example.com?subject=Message%20from%20your%20site"
+                className="footer-contact-link"
+              >
+                hello@KidzMondo.com
+              </a>
             </p>
           </div>
 
@@ -153,15 +153,15 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                 />
               </svg>
               <a href="tel:+12127089400" className="footer-contact-link">
-  +1 212-708-9400
-</a>
+                +1 212-708-9400
+              </a>
             </p>
           </div>
 
           <div className="footer-blocks__card fill-card notify">
             <div className="footer-blocks__title anim-uni-in-up">
               <p className="footer-blocks__title-m footer-text-white">
-                Subscribe to our insights:
+                Subscribe to our City Updates :
               </p>
             </div>
             <div className="form-container anim-uni-in-up">
@@ -185,8 +185,8 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
           <div className="footer-blocks__card fullheight-card">
             <div className="footer-blocks__block">
               <div className="footer-blocks__title anim-uni-in-up">
-                <p className="footer-blocks__title-l ">
-                  Ecosystem
+                <p className="footer-blocks__title-l " style={{ color: "white" }}>
+                  Find Us Online
                 </p>
               </div>
               <div className="footer-blocks__socials">
@@ -206,7 +206,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
               </div>
             </div>
             <div className="footer-blocks__links anim-uni-in-up">
-              <p className="t-xsmall t-muted footer-text-white">
+              {/* <p className="t-xsmall t-muted footer-text-white">
                 <a
                   className="no-effect"
                   href="https://themeforest.net/user/ib-themes/portfolio"
@@ -216,12 +216,12 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                 </a>
                 <i className="ph-bold ph-copyright" />
                 {new Date().getFullYear()}
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
       </div>
-       <div className="mxd-footer__text-wrap">
+      <div className="mxd-footer__text-wrap">
         <div className="fullwidth-text__tl-trigger" />
         <div className="mxd-footer__fullwidth-text anim-top-to-bottom">
           <Image

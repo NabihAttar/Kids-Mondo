@@ -3,18 +3,18 @@
     "title": "Birthdays",
     "num": "/ 01",
     "hoverImage": "/img/illustrations/birthdays.jpg",
-    "mainImage": "/img/illustrations/1200x800_cpb-04.webp"
+    "mainImage": "/img/illustrations/birthdaysMobile.png"
   },
   {
     "title": "Private Parties and Group Bookings",
     "num": "/ 02",
     "hoverImage": "/img/illustrations/events.jpg",
-    "mainImage": "/img/illustrations/1200x800_cpb-01.webp"
+    "mainImage": "/img/illustrations/eventsMobile.png"
   },
   {
     "title": "School Tours and Educational Visits",
     "num": "/ 03",
     "hoverImage": "/img/illustrations/schools.jpg",
-    "mainImage": "/img/illustrations/1200x800_cpb-03.webp"
+    "mainImage": "/img/illustrations/schoolsMobile.png"
   }
 ]

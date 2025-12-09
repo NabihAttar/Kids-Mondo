@@ -1,24 +1,24 @@
 [
   {
     "label": "Home",
-    "href": "/home-main"
+    "href": "/"
   },
   {
-    "label": "About us",
-    "href": "/about-us"
+    "label": "Experience",
+    "href": "/experience"
   },
   {
-    "label": "Works",
-    "href": "/works-simple",
+    "label": "Locations",
+    "href": "/loactions",
     "counter": 10
   },
   {
-    "label": "Services",
-    "href": "/services"
+    "label": "News & Blogs",
+    "href": "/news&blogs"
   },
   {
-    "label": "Insights",
-    "href": "/blog-standard"
+    "label": "About Us",
+    "href": "/about-me"
   },
   {
     "label": "Contact",

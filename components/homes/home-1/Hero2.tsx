@@ -227,23 +227,25 @@ export default function Hero() {
                   </ul> */}
                 </div>
               </div>
-              <div className="mxd-hero-01__video-wrap loading__item">
-                <video
-                  className="mxd-hero-01__video"
-                  preload="auto"
-                  autoPlay
-                  loop
-                  muted
-                  poster="video/540x310_video-01.webp"
-                >
-                  <source type="video/mp4" src="video/540x310_video-01.mp4" />
-                  <source type="video/webm" src="video/540x310_video-01.webm" />
-                  <source type="video/ogv" src="video/540x310_video-01.ogv" />
-                </video>
-                <div className="mxd-hero-01__video-btn">
-                  <VideoModalButton videoSrc="https://vimeo.com/65036292" />
-                </div>
-              </div>
+             <div className="mxd-hero-01__video-wrap loading__item">
+  <video
+    className="mxd-hero-01__video"
+    preload="auto"
+    autoPlay
+    loop
+    muted
+    poster="video/540x310_video-01.webp"
+  >
+    <source type="video/mp4" src="video/540x310_video-01.mp4" />
+    <source type="video/webm" src="video/540x310_video-01.webm" />
+    <source type="video/ogv" src="video/540x310_video-01.ogv" />
+  </video>
+
+  <div className="mxd-hero-01__video-btn">
+    <VideoModalButton videoSrc="https://www.youtube.com/embed/Xz15a1TPZpM" />
+  </div>
+</div>
+
             </div>
           </div>
         </div>

@@ -430,7 +430,7 @@
   background-image: url(/img/illustrations/400x200_hdl-04.webp);
 }
 .headline-img-05::before {
-  background-image: url(/img/illustrations/400x200_hdl-05.webp);
+  background-image: url(/img/illustrations/map.png);
 }
 .headline-img-06::before {
   background-image: url(/img/illustrations/400x200_hdl-06.webp);
@@ -6324,11 +6324,11 @@ form textarea:required:valid {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding-bottom: 3rem;
+  /* padding-bottom: 3rem; */
 }
 @media only screen and (min-width: 768px) {
   .mxd-footer {
-    padding-bottom: 6rem;
+    /* padding-bottom: 6rem; */
   }
 }
 
@@ -6381,14 +6381,14 @@ form textarea:required:valid {
 }
 @media only screen and (min-width: 768px) {
   .mxd-footer__fullwidth-text {
-    padding: 0 6rem;
+    padding: 0 0rem;
     padding-top: 10.5rem;
     margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
   .mxd-footer__fullwidth-text.personal {
-    margin-bottom: 5rem;
+    margin-bottom: rem;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -20889,7 +20889,7 @@ form textarea:required:valid {
 }
 
 .mxd-approach-list__icon {
-  width: 200%;
+  width: 160%;
   max-width: 520px;  
   height: auto;
 }
@@ -20954,4 +20954,60 @@ form textarea:required:valid {
 .twentytwenty-right-arrow {
   border-left: 8px solid #fff;
   margin-left: 8px;
+}
+
+
+
+.partners-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0; /* override bootstrap row gaps if needed */
+}
+
+.partners-col {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+  .partners-col {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .partners-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+/* Default = desktop */
+.opposite-responsive {
+  font-size: 50px;
+}
+
+/* Tablet (≤ 991px) */
+@media (max-width: 991px) {
+  .opposite-responsive {
+    font-size: 50px;
+  }
+}
+
+/* Mobile (≤ 575px) */
+@media (max-width: 575px) {
+  .opposite-responsive {
+    font-size: 30px;
+  }
 }

@@ -33,7 +33,7 @@ export default function Hero() {
                   <div className="mxd-paragraph__lists">
                     <div className="container-fluid p-0">
                       <div className="row g-0">
-                        <div className="col-6 col-lg-4 col-xl-2 loading__item">
+                        {/* <div className="col-6 col-lg-4 col-xl-2 loading__item">
                           <ul>
                             <li>
                               <p className="t-small">Innovations</p>
@@ -51,8 +51,8 @@ export default function Hero() {
                               <p className="t-small">Passion</p>
                             </li>
                           </ul>
-                        </div>
-                        <div className="col-6 col-lg-4 col-xl-2 loading__item">
+                        </div> */}
+                        {/* <div className="col-6 col-lg-4 col-xl-2 loading__item">
                           <ul>
                             <li>
                               <p className="t-small">IU/UX</p>
@@ -70,7 +70,7 @@ export default function Hero() {
                               <p className="t-small">Motion</p>
                             </li>
                           </ul>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -78,8 +78,7 @@ export default function Hero() {
                 <div className="mxd-hero-06__headline">
                   <div className="hero-06-headline__descr">
                     <p className="loading__item">
-                      👽 Hey! I’m Alex Walker, digital designer and illustrator
-                      based in Odesa, Ukraine
+                      Step into KidzMondo, the world built just for kids, where they learn, create, and dream through the power of play.
                     </p>
                     <div className="hero-06-headline__btn loading__item">
                       <a
@@ -112,7 +111,7 @@ export default function Hero() {
                             <text>
                               {/* button text here!!! */}
                               <textPath xlinkHref="#textPath">
-                                Download CV * Download CV * Download CV *
+                                Live the Role * Live the Role * Live the Role *
                               </textPath>
                             </text>
                           </g>
@@ -121,7 +120,7 @@ export default function Hero() {
                         <Image
                           className="btn-rotating__image"
                           alt="Object"
-                          src="/img/icons/300x300_obj-btn-03.webp"
+                          src="/img/icons/blue-airplane-illustration 1.png"
                           width={300}
                           height={300}
                         />
@@ -130,13 +129,13 @@ export default function Hero() {
                   </div>
                   <div className="hero-06-headline__content">
                     <h1 className="hero-06-headline__title">
-                      Digital designer, creative developer, illustrator
+                      Welcome , KidzMondo!, KidzMondo!
                     </h1>
                     <div className="mxd-hero-06__marquee loading__item">
                       <VelocityMarquee className="marquee marquee-right--gsap permanent-desktop">
                         {/* single item */}
                         <div className="marquee__item one-line item-regular text">
-                          <p className="marquee__text">Digital designer</p>
+                          <p className="marquee__text">Welcome to KidzMondo! </p>
                           <div className="marquee__image">
                             <svg
                               version="1.1"
@@ -160,7 +159,7 @@ export default function Hero() {
                         </div>
                         {/* single item */}
                         <div className="marquee__item one-line item-regular text">
-                          <p className="marquee__text">Creative developer</p>
+                          <p className="marquee__text"> Welcome to KidzMondo! </p>
                           <div className="marquee__image">
                             <svg
                               version="1.1"
@@ -184,7 +183,7 @@ export default function Hero() {
                         </div>
                         {/* single item */}
                         <div className="marquee__item one-line item-regular text">
-                          <p className="marquee__text">Illustrator</p>
+                          <p className="marquee__text"> Welcome to KidzMondo!</p>
                           <div className="marquee__image">
                             <svg
                               version="1.1"
@@ -231,12 +230,11 @@ export default function Hero() {
               </AnimatedButton>
             </div>
           </div> */}
-          <div className="mxd-hero-06__btn-mobile">
+          {/* <div className="mxd-hero-06__btn-mobile">
             <a
               href="#"
               className="btn-rotating btn-rotating-blur-outline ver-04 permanent-desktop"
             >
-              {/* SVG rotating text */}
               <AnimateRotation
                 as="svg"
                 version="1.1"
@@ -260,14 +258,12 @@ export default function Hero() {
                 <g>
                   <use xlinkHref="#textPath" fill="none" />
                   <text>
-                    {/* button text here!!! */}
                     <textPath xlinkHref="#textPath">
-                      Download CV * Download CV * Download CV *
+                      Live the Role * Live the Role * Live the Role *
                     </textPath>
                   </text>
                 </g>
               </AnimateRotation>
-              {/* image */}
               <Image
                 className="btn-rotating__image"
                 alt="Object"
@@ -276,7 +272,7 @@ export default function Hero() {
                 height={300}
               />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

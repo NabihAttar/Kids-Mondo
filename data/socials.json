@@ -1,8 +1,23 @@
 [
-  { "title": "Dribbble", "url": "https://dribbble.com/" },
-  { "title": "Behance", "url": "https://www.behance.net/" },
-  { "title": "Instagram", "url": "https://www.instagram.com/" },
-  { "title": "Github", "url": "https://github.com/" },
-  { "title": "Codepen", "url": "https://codepen.io/" },
-  { "title": "Figma Community", "url": "https://www.figma.com/community" }
+  {
+    "title": "Facebook",
+    "url": "https://www.facebook.com/KidzMondobeirut/"
+  },
+  
+  {
+    "title": "Instagram",
+    "url": "https://www.instagram.com/kidzmondodoha/?hl=en"
+  },
+  {
+    "title": "YouTube",
+    "url": "https://www.youtube.com/user/KidzMondoTV"
+  },
+  {
+    "title": "LinkedIn",
+    "url": "https://www.linkedin.com/company/kidzmondo/"
+  },
+  {
+    "title": "X",
+    "url": "https://x.com/kidzmondobeirut"
+  }
 ]

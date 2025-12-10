@@ -1,3 +1,5 @@
+"use client";
+
 import AnimatedButton from "@/components/animation/AnimatedButton";
 import AnimateRotation from "@/components/animation/AnimateRotation";
 import VelocityMarquee from "@/components/animation/VelocityMarquee";
@@ -10,6 +12,7 @@ export default function Hero() {
         <div className="mxd-hero-06__wrap loading-wrap">
           <div className="mxd-hero-06__top">
             <div className="mxd-hero-06__content">
+              {/* VIDEO BACKGROUND */}
               <div className="mxd-hero-06__video">
                 <video
                   className="video"
@@ -17,69 +20,36 @@ export default function Hero() {
                   autoPlay
                   loop
                   muted
-                  poster="video/1920x1080_video-03.webp"
+                  playsInline
+                  // optional: add a poster if you export one frame as webp
+                  // poster="/video/Hero_Banner_Animation_Request_poster.webp"
                 >
-                  <source type="video/mp4" src="video/1920x1080_video-03.mp4" />
                   <source
-                    type="video/webm"
-                    src="video/1920x1080_video-03.webm"
+                    type="video/mp4"
+                    src="/video/Hero_Banner_Animation_Request.mp4"
                   />
-                  <source type="video/ogv" src="video/1920x1080_video-03.ogv" />
                 </video>
                 <div className="hero-06-video__cover" />
               </div>
+
               <div className="mxd-hero-06__data">
                 <div className="mxd-hero-06__list">
                   <div className="mxd-paragraph__lists">
                     <div className="container-fluid p-0">
                       <div className="row g-0">
-                        {/* <div className="col-6 col-lg-4 col-xl-2 loading__item">
-                          <ul>
-                            <li>
-                              <p className="t-small">Innovations</p>
-                            </li>
-                            <li>
-                              <p className="t-small">Creativity</p>
-                            </li>
-                            <li>
-                              <p className="t-small">Experience</p>
-                            </li>
-                            <li>
-                              <p className="t-small">Competence</p>
-                            </li>
-                            <li>
-                              <p className="t-small">Passion</p>
-                            </li>
-                          </ul>
-                        </div> */}
-                        {/* <div className="col-6 col-lg-4 col-xl-2 loading__item">
-                          <ul>
-                            <li>
-                              <p className="t-small">IU/UX</p>
-                            </li>
-                            <li>
-                              <p className="t-small">App design</p>
-                            </li>
-                            <li>
-                              <p className="t-small">Development</p>
-                            </li>
-                            <li>
-                              <p className="t-small">Branding</p>
-                            </li>
-                            <li>
-                              <p className="t-small">Motion</p>
-                            </li>
-                          </ul>
-                        </div> */}
+                        {/* you can re-add list columns here if needed */}
                       </div>
                     </div>
                   </div>
                 </div>
+
                 <div className="mxd-hero-06__headline">
                   <div className="hero-06-headline__descr">
                     <p className="loading__item">
-                      Step into KidzMondo, the world built just for kids, where they learn, create, and dream through the power of play.
+                      Step into KidzMondo, the world built just for kids, where
+                      they learn, create, and dream through the power of play.
                     </p>
+
                     <div className="hero-06-headline__btn loading__item">
                       <a
                         href="#"
@@ -109,14 +79,14 @@ export default function Hero() {
                           <g>
                             <use xlinkHref="#textPath" fill="none" />
                             <text>
-                              {/* button text here!!! */}
                               <textPath xlinkHref="#textPath">
                                 Live the Role * Live the Role * Live the Role *
                               </textPath>
                             </text>
                           </g>
                         </AnimateRotation>
-                        {/* image */}
+
+                        {/* center icon */}
                         <Image
                           className="btn-rotating__image"
                           alt="Object"
@@ -127,15 +97,19 @@ export default function Hero() {
                       </a>
                     </div>
                   </div>
+
                   <div className="hero-06-headline__content">
                     <h1 className="hero-06-headline__title">
                       Welcome , KidzMondo!, KidzMondo!
                     </h1>
+
                     <div className="mxd-hero-06__marquee loading__item">
                       <VelocityMarquee className="marquee marquee-right--gsap permanent-desktop">
                         {/* single item */}
                         <div className="marquee__item one-line item-regular text">
-                          <p className="marquee__text">Welcome to KidzMondo! </p>
+                          <p className="marquee__text">
+                            Welcome to KidzMondo!{" "}
+                          </p>
                           <div className="marquee__image">
                             <svg
                               version="1.1"
@@ -157,9 +131,13 @@ export default function Hero() {
                             </svg>
                           </div>
                         </div>
+
                         {/* single item */}
                         <div className="marquee__item one-line item-regular text">
-                          <p className="marquee__text"> Welcome to KidzMondo! </p>
+                          <p className="marquee__text">
+                            {" "}
+                            Welcome to KidzMondo!{" "}
+                          </p>
                           <div className="marquee__image">
                             <svg
                               version="1.1"
@@ -181,9 +159,13 @@ export default function Hero() {
                             </svg>
                           </div>
                         </div>
+
                         {/* single item */}
                         <div className="marquee__item one-line item-regular text">
-                          <p className="marquee__text"> Welcome to KidzMondo!</p>
+                          <p className="marquee__text">
+                            {" "}
+                            Welcome to KidzMondo!
+                          </p>
                           <div className="marquee__image">
                             <svg
                               version="1.1"
@@ -212,67 +194,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          {/* <div className="mxd-hero-06__bottom loading__fade">
-            <div className="mxd-hero-06__mark">
-              <div className="mxd-hero__mark">
-                <span className="mark-icon" />
-                <span className="mark-text">Available for freelance</span>
-              </div>
-            </div>
-            <div className="mxd-hero-06__more">
-              <AnimatedButton
-                text="Scroll for more"
-                as={"a"}
-                className="btn btn-line-medium btn-anim btn-anim-medium slide-down"
-                href="#projects"
-              >
-                <i className="ph-bold ph-arrow-elbow-right-down" />
-              </AnimatedButton>
-            </div>
-          </div> */}
-          {/* <div className="mxd-hero-06__btn-mobile">
-            <a
-              href="#"
-              className="btn-rotating btn-rotating-blur-outline ver-04 permanent-desktop"
-            >
-              <AnimateRotation
-                as="svg"
-                version="1.1"
-                id="scrollDown"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 160 160"
-                enableBackground={"new 0 0 160 160"}
-                xmlSpace="preserve"
-                className="btn-rotating__text animate-rotation"
-                value={360}
-              >
-                <defs>
-                  <path
-                    id="textPath"
-                    d="M149.7,80c0,38.5-31.2,69.7-69.7,69.7S10.3,118.5,10.3,80S41.5,10.3,80,10.3S149.7,41.5,149.7,80z"
-                  />
-                </defs>
-                <g>
-                  <use xlinkHref="#textPath" fill="none" />
-                  <text>
-                    <textPath xlinkHref="#textPath">
-                      Live the Role * Live the Role * Live the Role *
-                    </textPath>
-                  </text>
-                </g>
-              </AnimateRotation>
-              <Image
-                className="btn-rotating__image"
-                alt="Object"
-                src="/img/icons/300x300_obj-btn-03.webp"
-                width={300}
-                height={300}
-              />
-            </a>
-          </div> */}
+          {/* Bottom CTA area is commented out in your original code */}
         </div>
       </div>
     </div>

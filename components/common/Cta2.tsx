@@ -11,15 +11,15 @@ export default function Cta() {
         {/* Block - CTA Start */}
         <div className="mxd-block" >
           <div className="mxd-promo">
-            <div className="mxd-promo__inner anim-zoom-out-container"style={{backgroundColor:"#FEC52E"}}>
+            <div className="mxd-promo__inner anim-zoom-out-container" style={{ backgroundColor: "#FEC52E" }}>
               {/* background */}
-              <div className="mxd-promo__bg" 
-              style={{
-    backgroundImage: 'url("/img/illustrations/cartoon-headphone.png")',
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  }}/>
+              <div className="mxd-promo__bg"
+                style={{
+                  backgroundImage: 'url("/img/illustrations/cartoon-headphone.png")',
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }} />
               {/* caption */}
               <div className="mxd-promo__content">
                 <p className="mxd-promo__title anim-uni-in-up">
@@ -34,16 +34,16 @@ export default function Cta() {
                   <RevealText
                     as="span"
                     className="mxd-promo__caption reveal-type"
-                  style={{color:"black"}}>
+                    style={{ color: "black" }}>
                     Let’s talk about <br></br>your project!
                   </RevealText>
                 </p>
                 <div className="mxd-promo__controls anim-uni-in-up" >
                   <AnimatedButton
-                    text=" About Us " 
+                    text=" About Us "
                     className="btn btn-anim btn-default btn-large btn-additional slide-right-up"
                     href={`/about-me`}
-                    style={{backgroundColor:"#2E9FDC", color:"white"}}
+                    style={{ backgroundColor: "#2E9FDC", color: "white" }}
                   >
                     <i className="ph-bold ph-arrow-up-right" />
                   </AnimatedButton>

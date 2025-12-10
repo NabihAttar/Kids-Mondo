@@ -72,7 +72,7 @@ export default function ContactPage() {
         {/* <Socials />
         <Locations />
         <Cta /> */}
-        <Cta2 />
+        {/* <Cta2 /> */}
       </main>
       <Footer2 />
     </>

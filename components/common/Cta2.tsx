@@ -6,12 +6,12 @@ import AnimatedButton from "../animation/AnimatedButton";
 
 export default function Cta() {
   return (
-    <div className="mxd-section overflow-hidden">
+    <div className="mxd-section overflow-hidden" >
       <div className="mxd-container">
         {/* Block - CTA Start */}
         <div className="mxd-block" >
           <div className="mxd-promo">
-            <div className="mxd-promo__inner anim-zoom-out-container" style={{ backgroundColor: "#FEC52E" }}>
+            <div className="mxd-promo__inner anim-zoom-out-container" style={{ backgroundColor: "#FEC52E", marginBottom:"100px" }}>
               {/* background */}
               <div className="mxd-promo__bg"
                 style={{
@@ -42,7 +42,7 @@ export default function Cta() {
                   <AnimatedButton
                     text=" About Us "
                     className="btn btn-anim btn-default btn-large btn-additional slide-right-up"
-                    href={`/about-me`}
+                    href={`/contact`}
                     style={{ backgroundColor: "#2E9FDC", color: "white" }}
                   >
                     <i className="ph-bold ph-arrow-up-right" />

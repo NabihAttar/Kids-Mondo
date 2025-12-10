@@ -15,6 +15,8 @@ import { Metadata } from "next";
 import Approch from "@/components/common/Approch";
 import Testimonials from "@/components/common/Testimonials";
 import Partners from "@/components/homes/home-1/Partners";
+import Cta2 from "@/components/common/Cta2";
+
 export const metadata: Metadata = {
   title:
     "Preview || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
@@ -30,6 +32,8 @@ export default function PreviewPage() {
         <Testimonials />
         <MarqueeSection2 />
         <Partners />
+        <Cta2  />
+
 
 
         {/* <Demos />

@@ -35,12 +35,12 @@ export default function Cta() {
                     as="span"
                     className="mxd-promo__caption reveal-type"
                     style={{ color: "black" }}>
-                    Let’s talk about <br></br>your project!
+                    We’d Love to <br></br>Hear From You
                   </RevealText>
                 </p>
                 <div className="mxd-promo__controls anim-uni-in-up" >
                   <AnimatedButton
-                    text=" About Us "
+                    text=" Get in Touch "
                     className="btn btn-anim btn-default btn-large btn-additional slide-right-up"
                     href={`/contact`}
                     style={{ backgroundColor: "#2E9FDC", color: "white" }}

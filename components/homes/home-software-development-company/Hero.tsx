@@ -222,9 +222,8 @@ export default function Hero() {
             </div>
           </div>
           {/* bottom part */}
-          <div className="mxd-hero-03__bottom">
+          {/* <div className="mxd-hero-03__bottom">
             <div className="mxd-container">
-              {/* video divider */}
               <div className="mxd-divider">
                 <div className="mxd-divider__video">
                   <VideoParallax
@@ -235,7 +234,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

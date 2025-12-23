@@ -19,9 +19,8 @@ export default function About() {
   return (
     <div className="mxd-wrapper mxd-wrapper-opposite padding-top-pre-title margin-bottom-pre-title anim-zoom-in-container">
       {/* Section - Culture & Value Start */}
-      <div className="mxd-section padding-grid-pre-mtext">
+      {/* <div className="mxd-section padding-grid-pre-mtext">
         <div className="mxd-container grid-container">
-          {/* Block - Section Title Start */}
           <div className="mxd-block">
             <div className="mxd-section-title">
               <div className="container-fluid p-0">
@@ -62,8 +61,6 @@ export default function About() {
               </div>
             </div>
           </div>
-          {/* Block - Section Title End */}
-          {/* Block - Images & Description Start */}
           <div className="mxd-block">
             <div className="mxd-values">
               <div className="container-fluid p-0">
@@ -88,9 +85,8 @@ export default function About() {
               </div>
             </div>
           </div>
-          {/* Block - Images & Description Start */}
         </div>
-      </div>
+      </div> */}
       {/* Section - Culture & Value End */}
       {/* Section - Marquee Text One Line Start */}
       <div className="mxd-section padding-mtext">

@@ -31,17 +31,17 @@ export default function HomeMainPage() {
         <Devider />
         <About />
         <Facts />
-        <Marquee />
-        <Projects />
+        {/* <Marquee /> */}
+        {/* <Projects />
         <ServicesStack />
-        <Approch />
+        <Approch />*/}
         <MarqueeSlider />
-        <Awards />
+        {/* <Awards /> */}
         <Testimonials />
         <MarqueeSection2 />
         <Partners />
         <Blogs />
-        <Cta />
+        <Cta /> 
       </main>
       <Footer2 />
     </>

@@ -1,4 +1,5 @@
-import Hero from "@/components/homes/home-freelancer-portfolio/Hero";
+// import Hero from "@/components/homes/home-freelancer-portfolio/Hero";
+import Hero from "@/components/homes/home-software-development-company/Hero";
 
 import Demos from "@/components/preview/Demos";
 import MarqueeSection from "@/components/preview/MarqueeSection";
@@ -16,6 +17,11 @@ import Approch from "@/components/common/Approch";
 import Testimonials from "@/components/common/Testimonials";
 import Partners from "@/components/homes/home-1/Partners";
 import Cta2 from "@/components/common/Cta2";
+import About from "@/components/homes/home-creative-developer/About";
+import ParallaxDivider from "@/components/homes/home-creative-developer/ParallaxDivider";
+import About2 from "@/components/other-pages/team/About";
+import MarqueeSlider from "@/components/common/MarqueeSlider";
+
 
 export const metadata: Metadata = {
   title:
@@ -29,7 +35,12 @@ export default function PreviewPage() {
       <main id="mxd-page-content" className="mxd-page-content">
         <Hero />
         <Approch />
-        <Testimonials />
+        {/* <About /> */}
+        {/* <ParallaxDivider /> */}
+        <About2 />
+        <MarqueeSlider />
+
+        {/* <Testimonials /> */}
         <MarqueeSection2 />
         <Partners />
         <Cta2  />

@@ -42,7 +42,6 @@ export default function Testimonials() {
               modules={[Navigation, Pagination, Parallax]}
               className="swiper-testimonials no-padding"
             >
-              {/* additional required wrapper */}
 
               {testimonialsPortfolioData.map((item, idx) => (
                 <SwiperSlide

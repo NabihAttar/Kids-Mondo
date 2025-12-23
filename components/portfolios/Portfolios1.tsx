@@ -8,13 +8,11 @@ export default function Portfolios1() {
   return (
     <>
       {/* Section - Inner Page Headline Start */}
-      <div className="mxd-section mxd-section-inner-headline padding-headline-pre-stack">
+      {/* <div className="mxd-section mxd-section-inner-headline padding-headline-pre-stack">
         <div className="mxd-container grid-container">
-          {/* Block - Inner Page Headline Start */}
           <div className="mxd-block loading-wrap">
             <div className="container-fluid px-0">
               <div className="row gx-0">
-                {/* Inner Headline Name Start */}
                 <div className="col-12 col-xl-2 mxd-grid-item no-margin">
                   <div className="mxd-block__name name-inner-headline loading__item">
                     <p className="mxd-point-subtitle">
@@ -44,27 +42,21 @@ export default function Portfolios1() {
                     </p>
                   </div>
                 </div>
-                {/* Inner Headline Name Start */}
-                {/* Inner Headline Content Start */}
                 <div className="col-12 col-xl-10 mxd-grid-item no-margin">
                   <div className="mxd-block__content">
                     <div className="mxd-block__inner-headline loading__item">
                       <h1 className="inner-headline__title headline-img-after headline-img-03">
                         Where bold ideas take shape
                       </h1>
-                      {/* <p class="inner-headline__text t-large t-bright">I wonder if I've been changed 
-                  in the night? Let me think. Was I the same when I got up this morning? 
-                  I almost think I can remember feeling a little different.</p> */}
+                 
                     </div>
                   </div>
                 </div>
-                {/* Inner Headline Content End */}
               </div>
             </div>
           </div>
-          {/* Block - Inner Page Headline End */}
         </div>
-      </div>
+      </div> */}
       {/* Section - Inner Page Headline End */}
       {/* Section - Projects Stacking Cards Start */}
       <div className="mxd-section padding-stacked-section">

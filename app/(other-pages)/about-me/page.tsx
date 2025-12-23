@@ -8,6 +8,8 @@ import Testimonials from "@/components/homes/home-1/Testimonials";
 import About from "@/components/homes/home-software-development-company/About";
 import Testimonials2 from "@/components/common/Testimonials2";
 import Services1 from "@/components/homes/home-web-agency/Services";
+import Portfolios1 from "@/components/portfolios/Portfolios1";
+
 
 export const metadata: Metadata = {
   title:
@@ -25,8 +27,10 @@ export default function AboutMePage() {
         <Hero />
 
         <ProjectsMarqueeSlider />
-        <Services1 />
+        {/* <Services1 /> */}
         {/* <About1 /> */}
+                <Portfolios1 />
+
 
         <Services />
         <About />

@@ -14,7 +14,7 @@ export default function Hero() {
               {/* Marquee Start */}
               <VelocityMarquee className="marquee marquee-right--gsap">
                 {/* item */}
-                <div className="marquee__item one-line">
+                {/* <div className="marquee__item one-line">
                   <div className="hero-03-marquee__video">
                     <video
                       preload="auto"
@@ -37,21 +37,21 @@ export default function Hero() {
                       />
                     </video>
                   </div>
-                </div>
+                </div> */}
                 {/* item */}
                 <div className="marquee__item one-line">
                   <div className="hero-03-marquee__image">
                     <Image
                       className="mxd-move"
                       alt="Image"
-                      src="/img/hero/29_hero-img.webp"
+                      src="/img/hero/savety-vest 1.png"
                       width={1000}
                       height={1532}
                     />
                   </div>
                 </div>
                 {/* item */}
-                <div className="marquee__item one-line">
+                {/* <div className="marquee__item one-line">
                   <div className="hero-03-marquee__video">
                     <video
                       preload="auto"
@@ -81,7 +81,7 @@ export default function Hero() {
                     <Image
                       className="mxd-rotate-slow"
                       alt="Image"
-                      src="/img/hero/28_hero-img.webp"
+                      src="/img/hero/helmet.png"
                       width={1410}
                       height={1056}
                     />
@@ -93,7 +93,7 @@ export default function Hero() {
                     <Image
                       className="mxd-move"
                       alt="Image"
-                      src="/img/hero/30_hero-img.webp"
+                      src="/img/hero/rendering-firefighter.png"
                       width={2152}
                       height={2015}
                     />
@@ -105,7 +105,7 @@ export default function Hero() {
                     <Image
                       className="mxd-pulse-small"
                       alt="Image"
-                      src="/img/hero/24_hero-img.webp"
+                      src="/img/hero/blue-bowl-with-spoon-it-that-says-egg-it 2.png"
                       width={800}
                       height={780}
                     />
@@ -116,13 +116,13 @@ export default function Hero() {
             </div>
             {/* headline */}
             <div className="mxd-hero-03__headline">
-              <p className="hero-03-headline__caption loading__item">
+              {/* <p className="hero-03-headline__caption loading__item">
                 Cutting-edge
                 <br />
                 software development
                 <br />
                 company
-              </p>
+              </p> */}
               <h1 className="hero-03-headline__title loading__item">
                 <span className="hero-03-headline__hidden">Rayo Studio</span>
                 <svg

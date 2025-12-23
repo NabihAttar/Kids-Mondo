@@ -59,46 +59,65 @@ export default function Portfolios1() {
       </div> */}
       {/* Section - Inner Page Headline End */}
       {/* Section - Projects Stacking Cards Start */}
-      <div className="mxd-section padding-stacked-section">
+       <div className="mxd-section padding-pinned-img-pre-mtext">
+      <div className="mxd-container">
+        {/* SECTION TITLE + SUBTITLE */}
+        <div className="mxd-section__heading text-center">
+          <h2 className="mxd-section__title anim-uni-in-up" style={{marginBottom:"30px"}}>
+            The Characters Behind KidzMondo
+          </h2>
+          <p className="mxd-section__subtitle anim-uni-in-up">
+            Every great city begins with a vision and so is KidzMondo, brought
+            to life by four symbolic founders who turned imagination into order
+            and play into purpose.
+          </p>
+        </div>
+      <div className=" ">
         <div className="mxd-container grid-container">
           {/* Block - Projects Stacking Cards #01 Start */}
           <div className="mxd-block mxd-grid-item no-margin">
             <div className="content__block loading__fade">
               <StackCards stackName="projects-stack" className="stack-wrapper">
-                {projects10.map((s) => (
+                {projects10.map((s, idx) => (
                   <Link
                     key={s.id}
                     className="mxd-projects-stack__inner justify-between"
                     href={`/project-details`}
                   >
                     <div className="mxd-projects-stack__image">
-                      <Image
-                        alt="Project Preview"
-                        src={s.image}
-                        width={1920}
-                        height={1080}
-                      />
+                      <Image alt="Project Preview" src={s.image} width={1920} height={1080} />
                     </div>
-                    <div className="mxd-projects-stack__tags">
-                      {s.tags.map((t, i) => (
-                        <span
-                          key={i}
-                          className="tag tag-default tag-outline-permanent"
-                        >
-                          {t}
-                        </span>
-                      ))}
-                    </div>
+
                     <div className="mxd-projects-stack__title no-margin">
-                      <h2 className="permanent-light">{s.title}</h2>
+                      <h2
+                        className="permanent-light"
+                        style={{ color: idx === 1 ? "#000" : undefined }}
+                      >
+                        {s.title}
+                      </h2>
+                    </div>
+
+                    <div className="mxd-projects-stack__title no-margin">
+                      <h2
+                        className="permanent-light"
+                        style={{
+                          fontSize: "22px",
+                          color: idx === 1 || 4 ? "#000" : undefined,
+                        }}
+                      >
+                        {s.description}
+                      </h2>
                     </div>
                   </Link>
                 ))}
+
               </StackCards>
             </div>
           </div>
           {/* Block - Projects Stacking Cards #01 End */}
         </div>
+      </div>
+      </div>
       </div>
       {/* Section - Projects Stacking Cards End */}
     </>

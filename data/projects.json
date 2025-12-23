@@ -474,21 +474,38 @@
   "projects10": [
     {
       "id": 48,
-      "image": "/img/works/preview/1920x1080_prv-04.webp",
+      "image": "/img/works/preview/Modified (2).png",
       "tags": ["Brand", "Illustrations", "Web"],
-      "title": "Studio template"
+      "title": "kozmo",
+      "description": "Kozmo, the bold explorer embodies curiosity and courage where he's the drive to go beyond."
     },
     {
       "id": 49,
-      "image": "/img/works/preview/1920x1080_prv-01.webp",
+      "image": "/img/works/preview/Modifiedyellow.png",
       "tags": ["Sora", "AI", "Editorial"],
-      "title": "AI Experiments"
+      "title": "Ëena",
+      "description": "Ëena, the thoughtful creator, represents the mind — innovation, learning, and discovery."
     },
     {
       "id": 50,
-      "image": "/img/works/preview/1920x1080_prv-05.webp",
+      "image": "/img/works/preview/Modified (3).png",
       "tags": ["Design", "UI/UX", "Android"],
-      "title": "Mobile app design"
+      "title": "Dogzilla",
+      "description": "Dogzilla, the steadfast guardian, stands for protection, loyalty, and strength.."
+    },
+    {
+      "id": 50,
+      "image": "/img/works/preview/Modified (4).png",
+      "tags": ["Design", "UI/UX", "Android"],
+      "title": "Leeloo",
+      "description": "Leeloo, the quiet sage, carries the wisdom that binds them all together."
+    },
+    {
+      "id": 50,
+      "image": "/img/works/preview/Modified (5).png",
+      "tags": ["Design", "UI/UX", "Android"],
+      "title": " ",
+      "description": "Together, they made the KidzMondo Constitution, a promise that every child would grow in a world built on respect, equality, and empathy. Their spirit shapes everything within the city: its culture, its play, and its purpose. Through them, KidzMondo isn’t just imagined, it’s governed by values that turn every child into a citizen of possibility."
     }
   ]
 }

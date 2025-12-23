@@ -77,7 +77,7 @@ export default function Approch() {
         {/* Block - Section Title End */}
 
         {/* Block - Approach and Philosophy List Start */}
-        <div className="mxd-block">
+        {/* <div className="mxd-block">
           <div className="mxd-approach-list">
             {approach1.map((item, idx) => (
               <div className="mxd-approach-list__item" key={idx}>
@@ -114,7 +114,7 @@ export default function Approch() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
         {/* Block - Approach and Philosophy List End */}
       </div>
     </div>

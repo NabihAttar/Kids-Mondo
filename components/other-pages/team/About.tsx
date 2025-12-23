@@ -17,7 +17,7 @@ import VelocityMarquee from "@/components/animation/VelocityMarquee";
 import AnimatedButton from "@/components/animation/AnimatedButton";
 export default function About() {
   return (
-    <div className="mxd-wrapper mxd-wrapper-opposite padding-top-pre-title margin-bottom-pre-title anim-zoom-in-container">
+    <div className="mxd-wrapper mxd-wrapper-opposite padding-top-pre-title margin-bottom-pre-title anim-zoom-in-container"  style={{backgroundColor:"#024b70"}}>
       {/* Section - Culture & Value Start */}
       {/* <div className="mxd-section padding-grid-pre-mtext">
         <div className="mxd-container grid-container">
@@ -89,13 +89,11 @@ export default function About() {
       </div> */}
       {/* Section - Culture & Value End */}
       {/* Section - Marquee Text One Line Start */}
-      <div className="mxd-section padding-mtext">
-        <div className="mxd-container fullwidth-container">
-          {/* Block - Marquee Text One Line Start */}
+      {/* <div className="mxd-section padding-mtext">
+         <div className="mxd-container fullwidth-container">
           <div className="mxd-block">
             <VelocityMarquee className="marquee marquee-right--gsap muted-extra">
               <div className="marquee__toright">
-                {/* single item */}
                 {Array.from({ length: 4 }).map((_, index) => (
                   <div
                     key={index}
@@ -127,14 +125,14 @@ export default function About() {
               </div>
             </VelocityMarquee>
           </div>
-          {/* Block - Marquee Text One Line End */}
-        </div>
-      </div>
+        </div> 
+      </div> */}
       {/* Section - Marquee Text One Line End */}
       {/* Section - Testimonials Slider #03 Start */}
       <div
         id="testimonials"
         className="mxd-section overflow-hidden padding-default"
+       
       >
         <div className="mxd-container grid-container">
           {/* Block - Testimonials Slider #03 Start */}
@@ -184,32 +182,32 @@ export default function About() {
                               data-swiper-parallax={-50}
                               data-swiper-parallax-opacity={0}
                             >
-                              <div className="mxd-testimonials-image__avatar">
+                              {/* <div className="mxd-testimonials-image__avatar">
                                 <Image
                                   alt="Review Author"
                                   src={t.avatar}
                                   width={300}
                                   height={300}
                                 />
-                              </div>
+                              </div> */}
                               <div className="mxd-testimonials-image__info">
                                 <h5 className="mxd-testimonials-image__name opposite">
                                   {t.author}
                                 </h5>{" "}
-                                <p className="mxd-testimonials-image__position t-small t-opposite-medium">
+                                {/* <p className="mxd-testimonials-image__position t-small t-opposite-medium">
                                   {t.position}{" "}
                                   <a className="link-small-underline" href="#">
                                     {" "}
                                     {t.company}
                                   </a>
-                                </p>
-                                <div className="mxd-testimonials-image__rating opposite">
+                                </p> */}
+                                {/* <div className="mxd-testimonials-image__rating opposite">
                                   {Array.from({ length: t.rating }).map(
                                     (_, i) => (
                                       <i key={i} className="ph-fill ph-star" />
                                     )
                                   )}
-                                </div>
+                                </div> */}
                               </div>
                             </div>
                             <div
@@ -218,14 +216,14 @@ export default function About() {
                               data-swiper-parallax-opacity={0}
                             >
                               <p className="t-large t-opposite">{t.text}</p>
-                              <AnimatedButton
+                              {/* <AnimatedButton
                                 className="btn btn-anim btn-default btn-small btn-base slide-right-up"
                                 as={"a"}
                                 text="Project Page"
                                 href={t.projectLink}
                               >
                                 <i className="ph ph-arrow-up-right" />
-                              </AnimatedButton>
+                              </AnimatedButton> */}
                             </div>
                           </div>
                           <div

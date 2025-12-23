@@ -19,7 +19,7 @@ export default function MarqueeSlider() {
 
 
       {testimonialsPortfolioData.map((item, idx) => (
-        <div className="col-12 col-lg-6 mxd-testimonials-photo__content mxd-grid-item no-margin">
+        <div className="col-12  mxd-testimonials-photo__content mxd-grid-item no-margin">
           <div
             className="mxd-testimonials-photo__author"
             data-swiper-parallax-x={-250}

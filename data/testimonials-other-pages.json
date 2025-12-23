@@ -1,21 +1,31 @@
 [
   {
-    "author": "John Lemon",
+    "author": "1. Vocational Role-Play",
     "avatar": "/img/avatars/300x300_ava-03.webp",
     "position": "Brand Manager in",
     "company": "Instant Design",
     "rating": 5,
-    "text": "Working with Alex was an absolute pleasure! He took the time to understand our business needs and translated them into a beautifully designed, user-friendly website.",
+    "text": "Learning the Real World by Living It\nAt the heart of KidzMondo lies a simple yet powerful idea children learn best when they become what they dream of.\nHere, every child takes charge of their own story: a firefighter saving lives, a doctor healing patients, a journalist breaking the news, and much more.\nThrough immersive role-play, kids gain real world insights, develop responsibility, and understand the value of teamwork and contribution all while having fun.",
     "projectLink": "#",
     "illustration": "/img/illustrations/1400x1400_values-01.webp"
   },
   {
-    "author": "Alex Tomato",
+    "author": "2. Replica of a Real-Life City",
     "avatar": "/img/avatars/300x300_ava-04.webp",
     "position": "Brand Manager in",
     "company": "Instant Design",
     "rating": 5,
-    "text": "Amazing job on our website! Alex understood exactly what we needed and made it look great and easy to use.",
+    "text": "A Miniature World Built on Authenticity and Belonging.Every KidzMondo city mirrors the rhythms and details of real urban life scaled for kids, designed for imagination. From hospitals and banks to theaters and streets with real traffic lights, the environment invites children to step into adulthood safely and confidently. Each city reflects the local culture, architecture, and language of its country creating a deep sense of connection, pride, and familiarity. It’s not just play in a building; it’s life, beautifully recreated at their level.",
+    "projectLink": "#",
+    "illustration": "/img/illustrations/1400x1400_values-02.webp"
+  },
+  {
+    "author": "3. Playful Learning",
+    "avatar": "/img/avatars/300x300_ava-04.webp",
+    "position": "Brand Manager in",
+    "company": "Instant Design",
+    "rating": 5,
+    "text": "Where Curiosity Becomes Capability KidzMondo transforms education into an experience that moves, challenges, and inspires. Our learning model combines four key pillars of child development cognitive, emotional, social, and physical ensuring every activity builds balanced growth. Through guided exploration and imaginative challenges, children learn empathy, problem-solving, and self-expression. Here, play isn’t a break from learning it’s the most powerful form of it.", 
     "projectLink": "#",
     "illustration": "/img/illustrations/1400x1400_values-02.webp"
   }

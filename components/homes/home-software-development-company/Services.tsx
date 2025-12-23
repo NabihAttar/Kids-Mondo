@@ -58,9 +58,9 @@ export default function Services() {
                 </div>
                 {/* item */}
                 <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-left">
-                  <div className="mxd-services-cards-s__inner justify-end bg-accent radius-l padding-4" style={{ backgroundColor: "#2196C4" }}>
+                  <div className="mxd-services-cards-s__inner justify-end bg-accent radius-l padding-4" style={{ backgroundColor: "#F8D323" }}>
                     <div className="mxd-services-cards-s__title">
-                      <h3 className="opposite anim-uni-in-up">Citizenship & Financial Literacy</h3>
+                      <h3 className="opposite anim-uni-in-up"style={{ color: "black" }}>Citizenship & Financial Literacy</h3>
                     </div>
                     <div className="mxd-services-cards-s__info">
                       {/* <div className="mxd-services-cards-s__tags">
@@ -74,7 +74,7 @@ export default function Services() {
                           Backend
                         </span>
                       </div> */}
-                      <p className="t-opposite anim-uni-in-up">
+                      <p className="t-opposite anim-uni-in-up" style={{ color: "black" }}>
                         Each child becomes a citizen of KidzMondo earning and spending the city’s official currency, Kidlar.
                         Through this simple economy, kids understand money management, contribution, and responsibility in a community.
                       </p>
@@ -157,13 +157,13 @@ export default function Services() {
                   </div>
                 </div>
                 {/* item */}
-                {/* <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-left">
-                  <div className="mxd-services-cards-s__inner justify-end bg-base-tint radius-l padding-4">
+                <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-left" >
+                  <div className="mxd-services-cards-s__inner justify-end bg-base-tint radius-l padding-4"style={{ backgroundColor: "#2196C4" }}>
                     <div className="mxd-services-cards-s__title">
-                      <h3 className="anim-uni-in-up">Gaming</h3>
+                      <h3 className="anim-uni-in-up" style={{ color: "white" }}>Gaming</h3>
                     </div>
                     <div className="mxd-services-cards-s__info">
-                      <div className="mxd-services-cards-s__tags">
+                      {/* <div className="mxd-services-cards-s__tags">
                         <span className="tag tag-default tag-outline anim-uni-in-up">
                           E-Commerce
                         </span>
@@ -173,8 +173,8 @@ export default function Services() {
                         <span className="tag tag-default tag-outline anim-uni-in-up">
                           Support
                         </span>
-                      </div>
-                      <p className="anim-uni-in-up">
+                      </div> */}
+                      <p className="anim-uni-in-up" style={{ color: "white" }}>
                         Immersive experiences, multiplayer platforms, and game
                         engine development.
                       </p>
@@ -188,7 +188,7 @@ export default function Services() {
                       />
                     </div>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>

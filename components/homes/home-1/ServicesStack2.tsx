@@ -5,6 +5,7 @@ import StackCards from "@/components/animation/StackCards";
 
 export default function ServicesStack() {
     return (
+        <>
         <div className="mxd-section padding-stacked-section">
             <div className="mxd-container grid-container">
                 {/* Block - Services/Features Stacking Cards Start */}
@@ -116,6 +117,30 @@ export default function ServicesStack() {
                     </div>
                 </div>
             </div>
+
+            
         </div>
+      <div className="mxd-container grid-container" style={{marginBottom:"150px"}}>
+  <div className="mxd-block">
+    <div className="container-fluid px-0">
+      <div className="row gx-0">
+        <div className="col-12">
+          <div style={{ marginTop: 24, overflow: "hidden" }}>
+            <Image
+              src="/img/hero/Map.jpeg"
+              alt="Map"
+              width={3920}
+              height={1900}
+              style={{ width: "100%", height: "auto", display: "block" }}
+              priority
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</>
     );
 }

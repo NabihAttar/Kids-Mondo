@@ -221,19 +221,28 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
           </div>
         </div>
       </div>
-      <div className="mxd-footer__text-wrap">
-        <div className="fullwidth-text__tl-trigger" />
-        <div className="mxd-footer__fullwidth-text anim-top-to-bottom">
-          <Image
-            src="/img/hero/kidzmondo (1).svg"
-            alt={text}
-            width={400}
-            height={72}
-            className="mxd-footer__svg-v2"
-            priority
-          />
-        </div>
-      </div>
+      <div className="mxd-footer__text-wrap" style={{ width: "100%" }}>
+  <div className="fullwidth-text__tl-trigger" />
+  <div
+    className="mxd-footer__fullwidth-text anim-top-to-bottom"
+    style={{ width: "100%" }}
+  >
+    <Image
+      src="/img/hero/Illustration.svg"
+      alt={text}
+      width={1920}
+      height={300}
+      priority
+      style={{
+        width: "100%",
+        height: "auto",
+        display: "block",
+        maxWidth: "100%",
+      }}
+    />
+  </div>
+</div>
+
       {/* Footer Block - Info Columns End */}
     </footer>
   );

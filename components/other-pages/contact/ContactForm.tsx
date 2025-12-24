@@ -7,6 +7,8 @@ import { useForm } from "@formspree/react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AnimatedButton from "@/components/animation/AnimatedButton";
+import Image from "next/image";
+
 
 export default function ContactForm() {
   const {
@@ -250,7 +252,11 @@ export default function ContactForm() {
             </div>
           </div>
         </div>
+
       </div>
+      {/* Map image at the bottom */}
+
+
 
       <ToastContainer position="bottom-right" />
     </>

@@ -44,7 +44,7 @@ export default function Hero() {
                     <Image
                       className="mxd-move"
                       alt="Image"
-                      src="/img/hero/savety-vest 1.png"
+                      src="/img/hero/Frame 67.png"
                       width={1000}
                       height={1532}
                     />
@@ -116,13 +116,13 @@ export default function Hero() {
             </div>
             {/* headline */}
             <div className="mxd-hero-03__headline">
-              {/* <p className="hero-03-headline__caption loading__item">
-                Cutting-edge
+              <p className="hero-03-headline__caption loading__item">
+                Where Kids
                 <br />
-                software development
+                Become Heroes of
                 <br />
-                company
-              </p> */}
+                Their Own Story
+              </p>
               <h1 className="hero-03-headline__title loading__item">
                 <span className="hero-03-headline__hidden">Rayo Studio</span>
                 <svg

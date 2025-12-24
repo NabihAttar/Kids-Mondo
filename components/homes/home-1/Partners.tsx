@@ -40,7 +40,7 @@ export default function Partners() {
                 {partners.map((partner, i) => (
                   <div
                     key={i}
-                    className="partners-col mxd-partners-cards__item mxd-grid-item animate-card-4"
+                    className="partners-col mxd-partners-cards__item mxd-grid-item "
                   >
                     <a
                       className="mxd-partners-cards__inner"
@@ -54,6 +54,7 @@ export default function Partners() {
                           src={partner.src}
                           width={984}
                           height={235}
+                          
                         />
                       </div>
                     </a>

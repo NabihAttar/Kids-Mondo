@@ -19174,7 +19174,7 @@ form textarea:required:valid {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--base-tint);
+  /* background-color: var(--base-tint); */
   -moz-border-radius: var(--_radius-m);
   border-radius: var(--_radius-m);
   z-index: -1;

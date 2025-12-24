@@ -294,41 +294,41 @@
   "projects6": [
     {
       "id": 26,
-      "src": "/img/marquee/about 44.jpg",
+      "src": "/img/marquee/marque1.png",
       "title": "Inspiring ideas"
     },
     {
       "id": 27,
-      "src": "/img/marquee/about 33.jpg"
+      "src": "/img/marquee/marque2.png"
     },
     {
       "id": 28,
-      "src": "/img/marquee/about 22.jpg",
+      "src": "/img/marquee/marque3.png",
       "title": "Creative minds"
     },
     {
       "id": 29,
-      "src": "/img/marquee/about 1.jpg"
+      "src": "/img/marquee/marque4.png"
     }
   ],
   "projects7": [
     {
       "id": 30,
-      "src": "/img/marquee/1200x1000_marquee-05.webp",
+      "src": "/img/marquee/about 111.jpg",
       "title": "Inspiring ideas"
     },
     {
       "id": 31,
-      "src": "/img/marquee/1200x1000_marquee-06.webp"
+      "src": "/img/marquee/about 222.png"
     },
     {
       "id": 32,
-      "src": "/img/marquee/1200x1000_marquee-07.webp",
+      "src": "/img/marquee/about 333.png",
       "title": "Creative minds"
     },
     {
       "id": 33,
-      "src": "/img/marquee/1200x1000_marquee-08.webp"
+      "src": "/img/marquee/about 444.jpg"
     }
   ],
   "projects8": [

@@ -19,25 +19,39 @@ export default function MarqueeSlider() {
 
 
       {testimonialsPortfolioData.map((item, idx) => (
-        <div className="col-12  mxd-testimonials-photo__content mxd-grid-item no-margin">
-          <div
-            className="mxd-testimonials-photo__author"
-            data-swiper-parallax-x={-250}
-            data-swiper-parallax-opacity={0}
-          >
-            <RevealText as="h2" className="reveal-type">
-              Discover What They Can Be
-            </RevealText>
-          </div>
-          <div
-            className="mxd-testimonials-photo__text"
-            data-swiper-parallax-x={-300}
-            data-swiper-parallax-opacity={0}
-          >
-            <p className="t-large" style={{ color: "black" }}>{item.text}</p>
+        <div
+          // key={item.id ?? idx}
+          className="mxd-section padding-pre-grid mobile-grid-s"
+          style={{marginBottom:"-100px"}}
+        >
+          <div className="mxd-container grid-container">
+            <div className="mxd-block">
+              <div className="mxd-section-title">
+                <div className="container-fluid p-0">
+                  <div className="row g-0">
+                    <div className="col-12 mxd-grid-item no-margin">
+                      <div className="mxd-section-title__hrtitle anim-uni-in-up">
+                        <RevealText as="h2" className="reveal-type">
+                          Discover What They Be
+                        </RevealText>
+                      </div>
+
+                      <RevealText
+                        as="h2"
+                        className="reveal-type"
+                        style={{ marginTop: "100px", width: "100%" }}
+                      >
+                        <p style={{ color: "black", width: "100%" }}>{item.text}</p>
+                      </RevealText>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       ))}
+
 
 
       <div className="mxd-section padding-pre-title">
@@ -62,7 +76,7 @@ export default function MarqueeSlider() {
                   {/* item */}
                   {item.title && (
                     <div className="marquee__item has-caption padding-4">
-                      <p>
+                      <p style={{color:"black" , fontSize:"100px"}}>
                         {item.title.split(" ")[0]}
                         <br />
                         {item.title.split(" ")[1]}
@@ -89,7 +103,7 @@ export default function MarqueeSlider() {
                   {/* item */}
                   {item.title && (
                     <div className="marquee__item has-caption padding-4">
-                      <p>
+                      <p style={{color:"black" , fontSize:"100px"}}>
                         {item.title.split(" ")[0]}
                         <br />
                         {item.title.split(" ")[1]}

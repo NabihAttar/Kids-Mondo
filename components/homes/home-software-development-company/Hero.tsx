@@ -116,7 +116,7 @@ export default function Hero() {
             </div>
             {/* headline */}
             <div className="mxd-hero-03__headline">
-              <p className="hero-03-headline__caption loading__item" style={{color:"black"}}>
+              <p className="hero-03-headline__caption loading__item" >
                 Where Kids
                 <br />
                 Become Heroes of
@@ -129,7 +129,7 @@ export default function Hero() {
   {/* Mobile logo */}
   <Image
     className="hero-03-headline__svg-mobile"
-    src="/img/avatars/KidzMondo%20(2).svg"
+    src="/img/avatars/KidzMondo(6).svg"
     alt="KidzMondo"
     width={238}
     height={108}
@@ -140,7 +140,7 @@ export default function Hero() {
   {/* Desktop logo */}
   <Image
     className="hero-03-headline__svg"
-    src="/img/avatars/KidzMondo%20(2).svg"
+    src="/img/avatars/KidzMondo(6).svg"
     alt="KidzMondo"
     width={400}
     height={72}

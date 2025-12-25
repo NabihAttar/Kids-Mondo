@@ -54,7 +54,7 @@ export default function Testimonials2() {
                             data-swiper-parallax-x={-250}
                             data-swiper-parallax-opacity={0}
                           >
-                            <RevealText as="h2" className="reveal-type">
+                            <RevealText as="h2" className="reveal-type" style={{fontSize:"4.5rem"}}>
                               Our philosophy centers on:
                             </RevealText>
                           </div>

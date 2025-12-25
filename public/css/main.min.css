@@ -8476,7 +8476,7 @@ form textarea:required:valid {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 1.5rem;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 .mxd-hero-03__headline svg {
   fill: #fff;

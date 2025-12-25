@@ -66,7 +66,7 @@ export default function Portfolios1() {
             <h2 className="mxd-section__title anim-uni-in-up" style={{ marginBottom: "30px" }}>
               The Characters Behind KidzMondo
             </h2>
-            <p className="mxd-section__subtitle anim-uni-in-up">
+            <p className="mxd-section__subtitle anim-uni-in-up" style={{fontSize:"2rem"}}>
               Every great city begins with a vision and so is KidzMondo, brought
               to life by four symbolic founders who turned imagination into order
               and play into purpose.

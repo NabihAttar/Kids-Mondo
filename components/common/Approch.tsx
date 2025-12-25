@@ -7,7 +7,7 @@ import AnimatedButton from "../animation/AnimatedButton";
 
 export default function Approch() {
   return (
-    <div className="mxd-section padding-pre-grid mobile-grid-s">
+    <div className="mxd-section padding-pre-grid mobile-grid-s" style={{paddingBottom:"0px"}}>
       <div className="mxd-container grid-container">
         {/* Block - Section Title Start */}
         <div className="mxd-block">
@@ -42,17 +42,17 @@ export default function Approch() {
                       className="row g-5 big-gap"
                       style={{ marginTop: "25px" }}
                     >
-                                          <RevealText as="h2" className="reveal-type" style={{ marginTop: "100px" }}>
+                      <RevealText as="h2" className="reveal-type" >
 
-                        <p className="anim-uni-in-up">
-                         At KidzMondo every child steps into a world built just for them a living city where imagination meets responsibility and curiosity grows into confidence. Our mission is to spark a lifelong love of learning by transforming everyday play into meaningful moments. We aim to build confident curious children ready to engage with the world
+                        <p className="anim-uni-in-up" style={{ fontSize: "20px" }}>
+                          At KidzMondo every child steps into a world built just for them a living city where imagination meets responsibility and curiosity grows into confidence. Our mission is to spark a lifelong love of learning by transforming everyday play into meaningful moments. We aim to build confident curious children ready to engage with the world
                         </p>
-                                            </RevealText>
+                      </RevealText>
 
                       {/* </div> */}
 
                       {/* <div className="col-12 col-md-4"> */}
-                        {/* <p className="anim-uni-in-up">
+                      {/* <p className="anim-uni-in-up">
                           Through hands-on experiences that mirror real life,
                           children explore professions, teamwork, and values in
                           a safe, inclusive environment.
@@ -60,7 +60,7 @@ export default function Approch() {
                       {/* </div> */}
 
                       {/* <div className="col-12 col-md-4"> */}
-                        {/* <p className="anim-uni-in-up">
+                      {/* <p className="anim-uni-in-up">
                           Our mission is to spark a lifelong love of learning by
                           turning everyday play into a meaningful journey of
                           discovery, creativity, and growth.

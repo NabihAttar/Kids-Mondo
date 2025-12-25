@@ -215,7 +215,7 @@ export default function About() {
                               data-swiper-parallax={-100}
                               data-swiper-parallax-opacity={0}
                             >
-                              <p className="t-large t-opposite">{t.text}</p>
+                              <p className="t-large t-opposite" style={{fontSize:"2rem"}}>{t.text}</p>
                               {/* <AnimatedButton
                                 className="btn btn-anim btn-default btn-small btn-base slide-right-up"
                                 as={"a"}

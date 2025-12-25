@@ -157,13 +157,13 @@ export default function Services() {
                   </div>
                 </div>
                 {/* item */}
-                <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-left" >
+                {/* <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-left" >
                   <div className="mxd-services-cards-s__inner justify-end bg-base-tint radius-l padding-4"style={{ backgroundColor: "#2196C4" }}>
                     <div className="mxd-services-cards-s__title">
                       <h3 className="anim-uni-in-up" style={{ color: "white" }}>Gaming</h3>
                     </div>
                     <div className="mxd-services-cards-s__info">
-                      {/* <div className="mxd-services-cards-s__tags">
+                       <div className="mxd-services-cards-s__tags">
                         <span className="tag tag-default tag-outline anim-uni-in-up">
                           E-Commerce
                         </span>
@@ -173,7 +173,7 @@ export default function Services() {
                         <span className="tag tag-default tag-outline anim-uni-in-up">
                           Support
                         </span>
-                      </div> */}
+                      </div> 
                       <p className="anim-uni-in-up" style={{ color: "white" }}>
                         Immersive experiences, multiplayer platforms, and game
                         engine development.
@@ -188,7 +188,7 @@ export default function Services() {
                       />
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

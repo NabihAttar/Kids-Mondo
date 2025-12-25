@@ -22,7 +22,7 @@ export default function MarqueeSlider() {
         <div
           // key={item.id ?? idx}
           className="mxd-section padding-pre-grid mobile-grid-s"
-          style={{marginBottom:"-100px"}}
+          style={{ marginBottom: "-100px", paddingTop: "0px" }}
         >
           <div className="mxd-container grid-container">
             <div className="mxd-block">
@@ -39,9 +39,9 @@ export default function MarqueeSlider() {
                       <RevealText
                         as="h2"
                         className="reveal-type"
-                        style={{ marginTop: "100px", width: "100%" }}
+                        style={{width: "100%" }}
                       >
-                        <p style={{ color: "black", width: "100%" }}>{item.text}</p>
+                        <p style={{ color: "black", width: "100%", fontSize:"2rem" }}>{item.text}</p>
                       </RevealText>
                     </div>
                   </div>
@@ -76,7 +76,7 @@ export default function MarqueeSlider() {
                   {/* item */}
                   {item.title && (
                     <div className="marquee__item has-caption padding-4">
-                      <p style={{color:"black" , fontSize:"100px"}}>
+                      <p style={{ color: "black", fontSize: "100px" }}>
                         {item.title.split(" ")[0]}
                         <br />
                         {item.title.split(" ")[1]}
@@ -103,7 +103,7 @@ export default function MarqueeSlider() {
                   {/* item */}
                   {item.title && (
                     <div className="marquee__item has-caption padding-4">
-                      <p style={{color:"black" , fontSize:"100px"}}>
+                      <p style={{ color: "black", fontSize: "100px" }}>
                         {item.title.split(" ")[0]}
                         <br />
                         {item.title.split(" ")[1]}

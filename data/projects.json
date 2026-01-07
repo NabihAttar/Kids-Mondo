@@ -5,7 +5,11 @@
       "title": "Creative studio",
       "description": "template for modern agencies",
       "previewClass": "preview-image-1",
-      "tags": ["UI/UX", "Web design", "Illustrations"],
+      "tags": [
+        "UI/UX",
+        "Web design",
+        "Illustrations"
+      ],
       "anim": "anim-uni-in-up"
     },
     {
@@ -13,7 +17,11 @@
       "title": "Interactive concept",
       "description": "powered by AI",
       "previewClass": "preview-image-2",
-      "tags": ["Sora", "AI", "Editorial"],
+      "tags": [
+        "Sora",
+        "AI",
+        "Editorial"
+      ],
       "anim": "anim-uni-in-up"
     },
     {
@@ -21,7 +29,11 @@
       "title": "Mobile app design",
       "description": "for a cross-platform solution",
       "previewClass": "preview-image-3",
-      "tags": ["UI/UX", "Design", "Android"],
+      "tags": [
+        "UI/UX",
+        "Design",
+        "Android"
+      ],
       "anim": ""
     },
     {
@@ -29,7 +41,10 @@
       "title": "NFT project",
       "description": "branding",
       "previewClass": "preview-image-4",
-      "tags": ["Brand identity", "Style guides"],
+      "tags": [
+        "Brand identity",
+        "Style guides"
+      ],
       "anim": "anim-uni-in-up"
     },
     {
@@ -37,7 +52,11 @@
       "title": "Illustrations set",
       "description": "for digital and print use.",
       "previewClass": "preview-image-5",
-      "tags": ["Illustrations", "Design", "Packaging"],
+      "tags": [
+        "Illustrations",
+        "Design",
+        "Packaging"
+      ],
       "anim": "anim-uni-in-up"
     },
     {
@@ -45,7 +64,10 @@
       "title": "VR Vision",
       "description": "experience concept",
       "previewClass": "preview-image-6",
-      "tags": ["Midjourney", "AI Model"],
+      "tags": [
+        "Midjourney",
+        "AI Model"
+      ],
       "anim": "anim-uni-in-up"
     }
   ],
@@ -57,7 +79,11 @@
         "mobile": "/img/works/preview/1080x1920_prv-01.webp",
         "desktop": "/img/works/preview/1920x1080_prv-01.webp"
       },
-      "tags": ["Midjourney", "AI", "Editorial"],
+      "tags": [
+        "Midjourney",
+        "AI",
+        "Editorial"
+      ],
       "justify": "justify-end"
     },
     {
@@ -67,7 +93,11 @@
         "mobile": "/img/works/preview/1080x1920_prv-07.webp",
         "desktop": "/img/works/preview/1920x1080_prv-07.webp"
       },
-      "tags": ["Development", "Web", "Editorial"],
+      "tags": [
+        "Development",
+        "Web",
+        "Editorial"
+      ],
       "justify": "justify-end"
     },
     {
@@ -77,7 +107,11 @@
         "mobile": "/img/works/preview/1080x1920_prv-03.webp",
         "desktop": "/img/works/preview/1920x1080_prv-03.webp"
       },
-      "tags": ["Branding", "Web", "Packaging"],
+      "tags": [
+        "Branding",
+        "Web",
+        "Packaging"
+      ],
       "justify": "justify-end"
     },
     {
@@ -87,7 +121,10 @@
         "mobile": "/img/works/preview/1080x1920_prv-04.webp",
         "desktop": "/img/works/preview/1920x1080_prv-04.webp"
       },
-      "tags": ["UI/UX", "Development"],
+      "tags": [
+        "UI/UX",
+        "Development"
+      ],
       "justify": "justify-end"
     }
   ],
@@ -193,7 +230,11 @@
         "mobile": "/img/works/preview/1080x1920_prv-04.webp",
         "desktop": "/img/works/preview/1920x1080_prv-04.webp"
       },
-      "tags": ["Brand", "Illustrations", "Web"],
+      "tags": [
+        "Brand",
+        "Illustrations",
+        "Web"
+      ],
       "justify": "justify-between"
     },
     {
@@ -203,7 +244,11 @@
         "mobile": "/img/works/preview/1080x1920_prv-01.webp",
         "desktop": "/img/works/preview/1920x1080_prv-01.webp"
       },
-      "tags": ["Sora", "AI", "Editorial"],
+      "tags": [
+        "Sora",
+        "AI",
+        "Editorial"
+      ],
       "justify": "justify-between"
     },
     {
@@ -213,7 +258,11 @@
         "mobile": "/img/works/preview/1080x1920_prv-05.webp",
         "desktop": "/img/works/preview/1920x1080_prv-05.webp"
       },
-      "tags": ["Design", "UI/UX", "Android"],
+      "tags": [
+        "Design",
+        "UI/UX",
+        "Android"
+      ],
       "justify": "justify-between"
     }
   ],
@@ -337,7 +386,10 @@
       "thumb": "/img/works/preview/600x730_prv-01.webp",
       "image": "/img/works/preview/1200x800_prv-01.webp",
       "title": "E-commerce website",
-      "tags": ["UI/UX design", "Development"],
+      "tags": [
+        "UI/UX design",
+        "Development"
+      ],
       "date": "2025"
     },
     {
@@ -345,7 +397,10 @@
       "thumb": "/img/works/preview/600x730_prv-02.webp",
       "image": "/img/works/preview/1200x800_prv-02.webp",
       "title": "NFT project branding",
-      "tags": ["Brand identity", "Style guides"],
+      "tags": [
+        "Brand identity",
+        "Style guides"
+      ],
       "date": "2025"
     },
     {
@@ -353,7 +408,10 @@
       "thumb": "/img/works/preview/600x730_prv-03.webp",
       "image": "/img/works/preview/1200x800_prv-03.webp",
       "title": "VR vision project",
-      "tags": ["Midjourney", "AI model"],
+      "tags": [
+        "Midjourney",
+        "AI model"
+      ],
       "date": "2024"
     },
     {
@@ -361,7 +419,10 @@
       "thumb": "/img/works/preview/1200x800_prv-04.webp",
       "image": "/img/works/preview/1200x800_prv-04.webp",
       "title": "Illustrations set",
-      "tags": ["Illustrations", "Design"],
+      "tags": [
+        "Illustrations",
+        "Design"
+      ],
       "date": "2024"
     },
     {
@@ -369,7 +430,10 @@
       "thumb": "/img/works/preview/600x730_prv-05.webp",
       "image": "/img/works/preview/1200x800_prv-05.webp",
       "title": "Blockchain app design",
-      "tags": ["IU/UX design", "Development"],
+      "tags": [
+        "IU/UX design",
+        "Development"
+      ],
       "date": "2024"
     },
     {
@@ -377,7 +441,10 @@
       "thumb": "/img/works/preview/600x730_prv-06.webp",
       "image": "/img/works/preview/1200x800_prv-06.webp",
       "title": "Rayo studio portfolio",
-      "tags": ["IU/UX design", "Development"],
+      "tags": [
+        "IU/UX design",
+        "Development"
+      ],
       "date": "2024"
     }
   ],
@@ -395,12 +462,20 @@
         {
           "id": 40,
           "src": "/img/works/preview/800x400_prv-01.webp",
-          "tags": ["Sora", "AI", "Editorial"]
+          "tags": [
+            "Sora",
+            "AI",
+            "Editorial"
+          ]
         },
         {
           "id": 41,
           "src": "/img/works/preview/800x400_prv-02.webp",
-          "tags": ["Frontend", "Interactions", "Web"]
+          "tags": [
+            "Frontend",
+            "Interactions",
+            "Web"
+          ]
         }
       ]
     },
@@ -417,12 +492,20 @@
         {
           "id": 42,
           "src": "/img/works/preview/800x400_prv-03.webp",
-          "tags": ["Frontend", "Interactions", "Web"]
+          "tags": [
+            "Frontend",
+            "Interactions",
+            "Web"
+          ]
         },
         {
           "id": 43,
           "src": "/img/works/preview/800x400_prv-04.webp",
-          "tags": ["Brand", "Illustrations", "Web"]
+          "tags": [
+            "Brand",
+            "Illustrations",
+            "Web"
+          ]
         }
       ]
     },
@@ -439,12 +522,19 @@
         {
           "id": 44,
           "src": "/img/works/preview/800x400_prv-05.webp",
-          "tags": ["Design", "UI/UX", "Android"]
+          "tags": [
+            "Design",
+            "UI/UX",
+            "Android"
+          ]
         },
         {
           "id": 45,
           "src": "/img/works/preview/800x400_prv-06.webp",
-          "tags": ["IU/UX design", "Development"]
+          "tags": [
+            "IU/UX design",
+            "Development"
+          ]
         }
       ]
     },
@@ -461,12 +551,19 @@
         {
           "id": 46,
           "src": "/img/works/preview/800x400_prv-07.webp",
-          "tags": ["Brand", "Style guides"]
+          "tags": [
+            "Brand",
+            "Style guides"
+          ]
         },
         {
           "id": 47,
           "src": "/img/works/preview/800x400_prv-08.webp",
-          "tags": ["Interactions", "Web", "Style guides"]
+          "tags": [
+            "Interactions",
+            "Web",
+            "Style guides"
+          ]
         }
       ]
     }
@@ -475,37 +572,62 @@
     {
       "id": 48,
       "image": "/img/works/preview/Modified (2).png",
-      "tags": ["Brand", "Illustrations", "Web"],
+      "tags": [
+        "Brand",
+        "Illustrations",
+        "Web"
+      ],
       "title": "kozmo",
-      "description": "Kozmo, the bold explorer embodies curiosity and courage where he's the drive to go beyond."
+      "description": "Kozmo, the bold explorer embodies curiosity and courage where he's the drive to go beyond.",
+      "description1": "Kozmo is a bright and adventurous ten-year-old boy, born on Science Day, a natural explorer driven by curiosity and enthusiasm. With big brown eyes and messy chestnut-brown hair, he is always ready to discover something new, whether it is technology, sports, or a new journey with his family. Friendly, caring, and full of energy, Kozmo is an extrovert who easily connects with everyone around him. His spontaneous nature makes every moment feel like an adventure, and his excitement is contagious. He has a special talent for getting everyone involved, inspired, and eager to explore. He is the brother of Ëena and shares a close bond with Dogzilla, who often watches over his adventures."
     },
     {
       "id": 49,
       "image": "/img/works/preview/Modifiedyellow.png",
-      "tags": ["Sora", "AI", "Editorial"],
+      "tags": [
+        "Sora",
+        "AI",
+        "Editorial"
+      ],
       "title": "Ëena",
-      "description": "Ëena, the thoughtful creator, represents the mind — innovation, learning, and discovery."
+      "description": "Ëena, the thoughtful creator, represents the mind — innovation, learning, and discovery.",
+      "description1": "Ëena is a bright six-year-old girl, born on Flower Day, known for her calm confidence and natural sense of responsibility. Often seen as a little miss perfect, she is deeply curious and loves finding answers on her own, believing that every question deserves careful thought. Ëena sees herself as the one responsible for keeping everyone together, acting as the glue that holds her family and friends close. She has a passion for guiding others and gently advising them toward the right path. With her sharp mind and caring nature, she is a natural problem solver, always ready to step in with clarity, kindness, and thoughtful solutions. She is Kozmo’s younger sister and a steady presence in every adventure."
     },
     {
       "id": 50,
       "image": "/img/works/preview/Modified (3).png",
-      "tags": ["Design", "UI/UX", "Android"],
+      "tags": [
+        "Design",
+        "UI/UX",
+        "Android"
+      ],
       "title": "Dogzilla",
-      "description": "Dogzilla, the steadfast guardian, stands for protection, loyalty, and strength.."
+      "description": "Dogzilla, the steadfast guardian, stands for protection, loyalty, and strength..",
+      "description1": "Dogzilla is a Roman sheepdog whose story is deeply woven into the heart of KidzMondo. Born on Friendship Day, he became the city’s first and eternal guardian when ancient Roman children left the city and Dogzilla remained behind, locked within its walls. Through the magic of KidzMondo, he lived for more than two thousand years, standing watch, protecting the city from any danger that tried to enter it. When the founders finally arrived, Dogzilla found his true purpose again. He devoted his life to serving them, protecting the city, and caring for every child and character inside it. Strong, loyal, and always alert, Dogzilla is known for his courage and his instinct to step in at the right moment. He is close to Kozmo and is famous for always saving the day, no matter how big the challenge."
     },
     {
-      "id": 50,
+      "id": 51,
       "image": "/img/works/preview/Modified (4).png",
-      "tags": ["Design", "UI/UX", "Android"],
+      "tags": [
+        "Design",
+        "UI/UX",
+        "Android"
+      ],
       "title": "Leeloo",
-      "description": "Leeloo, the quiet sage, carries the wisdom that binds them all together."
+      "description": "Leeloo, the quiet sage, carries the wisdom that binds them all together.",
+      "description1": "Leeloo is a wise and gentle tortoise, born on World Turtles Day, known for her slow pace, deep experience, and thoughtful presence. Middle-aged by tortoise standards, she carries one hundred and fifty years of quiet observation, patience, and care, always moving calmly through the world of KidzMondo. As Ëena’s personal assistant, Leeloo is extremely organized, with everything carefully arranged and planned, even if she is often found sleeping or lost in daydreams. When she finally wakes up, her focus is always clear, helping the family in the best way possible. Each time she opens her eyes, she usually discovers a new surprise on herself: drawings on her shell, notes on her glasses, or playful changes made while she slept. Yet none of this distracts her devotion. Leeloo exists to assist, guide, and support, bringing wisdom, calm, and loyalty to every adventure."
     },
     {
-      "id": 50,
+      "id": 52,
       "image": "/img/works/preview/Modified (5).png",
-      "tags": ["Design", "UI/UX", "Android"],
+      "tags": [
+        "Design",
+        "UI/UX",
+        "Android"
+      ],
       "title": " ",
-      "description": "Together, they made the KidzMondo Constitution, a promise that every child would grow in a world built on respect, equality, and empathy. Their spirit shapes everything within the city: its culture, its play, and its purpose. Through them, KidzMondo isn’t just imagined, it’s governed by values that turn every child into a citizen of possibility."
+      "description": "Together, they made the KidzMondo Constitution, a promise that every child would grow in a world built on respect, equality, and empathy. Their spirit shapes everything within the city: its culture, its play, and its purpose. Through them, KidzMondo isn’t just imagined, it’s governed by values that turn every child into a citizen of possibility.",
+      "description1": "Dogzilla is a Roman sheepdog whose story is deeply woven into the heart of KidzMondo born on Friendship Day he became the citys first and eternal guardian when ancient Roman children left the city and Dogzilla remained behind locked within its walls Through the magic of KidzMondo he lived for more than two thousand years standing watch protecting the city from any danger that tried to enter it When the founders finally arrived Dogzilla found his true purpose again He devoted his life to serving them protecting the city and caring for every child and character inside it Strong loyal and always alert. Dogzilla is known for his courage and his instinct to step in at the right moment He is close to Kozmo and is famous for always saving the day no matter how big the challenge"
     }
   ]
 }

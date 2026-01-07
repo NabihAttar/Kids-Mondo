@@ -1,8 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 
 import StackCards from "../animation/StackCards";
 import projectsData from "@/data/projects.json";
@@ -16,17 +15,35 @@ type CharacterItem = {
   tags?: string[];
 };
 
+/** ✅ Popup Modal */
 function CharacterModal({
   open,
   onClose,
   title,
-  subtitle,
+  body,
 }: {
   open: boolean;
   onClose: () => void;
   title?: string;
-  subtitle?: string;
+  body?: string;
 }) {
+  useEffect(() => {
+    if (!open) return;
+
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [open, onClose]);
+
   if (!open) return null;
 
   return (
@@ -48,19 +65,27 @@ function CharacterModal({
       <div
         onClick={(e) => e.stopPropagation()}
         style={{
-          width: "min(720px, 100%)",
+          width: "min(820px, 100%)",
           borderRadius: 16,
           background: "#fff",
           padding: 24,
           boxShadow: "0 20px 60px rgba(0,0,0,0.25)",
+          maxHeight: "min(80vh, 900px)",
+          overflow: "auto",
         }}
       >
-        <div style={{ display: "flex", justifyContent: "space-between", gap: 12 }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            gap: 12,
+            alignItems: "flex-start",
+          }}
+        >
           <div>
-            <h2 style={{ margin: 0, fontSize: 28, lineHeight: 1.2 }}>{title}</h2>
-            <p style={{ marginTop: 10, fontSize: 18, lineHeight: 1.6, opacity: 0.9 }}>
-              {subtitle}
-            </p>
+            <h2 style={{ margin: 0, fontSize: 28, lineHeight: 1.2 }}>
+              {title}
+            </h2>
           </div>
 
           <button
@@ -76,21 +101,42 @@ function CharacterModal({
               cursor: "pointer",
               fontSize: 18,
               lineHeight: 1,
+              flex: "0 0 auto",
             }}
           >
             ✕
           </button>
         </div>
+
+        <p
+          style={{
+            marginTop: 14,
+            fontSize: 18,
+            lineHeight: 1.7,
+            opacity: 0.95,
+            whiteSpace: "pre-wrap",
+          }}
+        >
+          {body}
+        </p>
       </div>
     </div>
   );
 }
 
 export default function Portfolios1() {
-  const items = useMemo(() => (projectsData.projects10 as CharacterItem[]) ?? [], []);
+  // ✅ Safe array fallback (never undefined)
+  const items = useMemo<CharacterItem[]>(() => {
+    const data: any = projectsData as any;
+    return Array.isArray(data?.projects10) ? (data.projects10 as CharacterItem[]) : [];
+  }, []);
 
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState<CharacterItem | null>(null);
+
+  // ✅ Drag/click detection to work with StackCards
+  const startRef = useRef<{ x: number; y: number } | null>(null);
+  const movedRef = useRef(false);
 
   const close = () => {
     setOpen(false);
@@ -107,12 +153,19 @@ export default function Portfolios1() {
       <div className="mxd-section padding-pinned-img-pre-mtext">
         <div className="mxd-container">
           <div className="mxd-section__heading text-center">
-            <h2 className="mxd-section__title anim-uni-in-up" style={{ marginBottom: "30px" }}>
+            <h2
+              className="mxd-section__title anim-uni-in-up"
+              style={{ marginBottom: "30px" }}
+            >
               The Characters Behind KidzMondo
             </h2>
-            <p className="mxd-section__subtitle anim-uni-in-up" style={{ fontSize: "2rem" }}>
-              Every great city begins with a vision and so is KidzMondo, brought to life by four
-              symbolic founders who turned imagination into order and play into purpose.
+            <p
+              className="mxd-section__subtitle anim-uni-in-up"
+              style={{ fontSize: "2rem" }}
+            >
+              Every great city begins with a vision and so is KidzMondo, brought
+              to life by four symbolic founders who turned imagination into
+              order and play into purpose.
             </p>
           </div>
 
@@ -121,16 +174,43 @@ export default function Portfolios1() {
               <div className="content__block loading__fade">
                 <StackCards stackName="projects-stack" className="stack-wrapper">
                   {items.map((s, idx) => {
-                    const imgSrc = encodeURI(s.image); // handles spaces like "Modified (2).png"
+                    const imgSrc = encodeURI(s.image);
 
                     return (
-                      <Link
+                      <div
                         key={s.id}
                         className="mxd-projects-stack__inner justify-between"
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          openModal(s);
+                        role="button"
+                        tabIndex={0}
+                        // ✅ Use pointer events with drag threshold (works with StackCards)
+                        onPointerDown={(e) => {
+                          startRef.current = { x: e.clientX, y: e.clientY };
+                          movedRef.current = false;
+                        }}
+                        onPointerMove={(e) => {
+                          if (!startRef.current) return;
+                          const dx = Math.abs(e.clientX - startRef.current.x);
+                          const dy = Math.abs(e.clientY - startRef.current.y);
+                          if (dx + dy > 6) movedRef.current = true; // threshold
+                        }}
+                        onPointerUp={(e) => {
+                          e.stopPropagation();
+                          if (!movedRef.current) openModal(s);
+                          startRef.current = null;
+                        }}
+                        onPointerCancel={() => {
+                          startRef.current = null;
+                          movedRef.current = false;
+                        }}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter" || e.key === " ") {
+                            e.preventDefault();
+                            openModal(s);
+                          }
+                        }}
+                        style={{
+                          cursor: "pointer",
+                          touchAction: "manipulation",
                         }}
                       >
                         <div className="mxd-projects-stack__image">
@@ -157,7 +237,7 @@ export default function Portfolios1() {
                             {s.description ?? ""}
                           </h2>
                         </div>
-                      </Link>
+                      </div>
                     );
                   })}
                 </StackCards>
@@ -170,8 +250,8 @@ export default function Portfolios1() {
       <CharacterModal
         open={open}
         onClose={close}
-        title={selected?.title}
-        subtitle={selected?.description1 ?? selected?.description ?? ""}
+        title={selected?.title?.trim() ? selected?.title : "Details"}
+        body={selected?.description1 ?? ""}
       />
     </>
   );

@@ -21081,3 +21081,108 @@ form textarea:required:valid {
   .desktop-only { display: none !important; }
   .mobile-only { display: block !important; }
 }
+@media (max-width: 767px) {
+  .services-stack__image {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 16px;
+    overflow: visible !important;
+  }
+
+  /* ✅ hide small image on mobile */
+  .services-stack__image .service-img-s {
+    display: none !important;
+  }
+
+  /* ✅ show the SAME desktop image on mobile */
+  .services-stack__image .service-img-m {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+  }
+}
+/* show/hide blocks */
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+}
+
+/* MOBILE MODAL (top of screen) */
+.kmMobileModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* ✅ TOP */
+
+  padding: 14px;
+  padding-top: 20px; /* ✅ space from top */
+}
+
+.kmMobileModal {
+  width: 100%;
+  max-width: 520px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.kmMobileModalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.kmMobileModalTitle {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.kmMobileModalClose {
+  border: 0;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.kmMobileModalBody {
+  padding: 14px 16px;
+  overflow: auto;
+}
+
+.kmMobileModalText {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* make sure modal never shows on desktop */
+@media (min-width: 768px) {
+  .kmMobileModalOverlay {
+    display: none !important;
+  }
+}

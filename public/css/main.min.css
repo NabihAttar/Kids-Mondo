@@ -7294,7 +7294,7 @@ form textarea:required:valid {
   justify-content: center;
   width: 100%;
   height: auto;
-  padding: 11.5rem 0 12.9rem 0;
+  padding: 0.5rem 0 2.9rem 0;
 }
 @media only screen and (min-width: 768px) {
   .mxd-hero-01__top {

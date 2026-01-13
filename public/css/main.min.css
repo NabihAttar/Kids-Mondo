@@ -21067,7 +21067,7 @@ form textarea:required:valid {
 
 .hero-bottom-video {
   width: 100%;
-  height: 360px;      /* change height as you like */
+  height: 360px;      
   display: block;
   object-fit: cover;  /* keeps it cropped nicely */
 }

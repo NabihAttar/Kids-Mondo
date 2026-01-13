@@ -13,11 +13,6 @@ import React from "react";
 export default function MarqueeSlider() {
   return (
     <>
-
-
-
-
-
       {testimonialsPortfolioData.map((item, idx) => (
         <div
           // key={item.id ?? idx}
@@ -39,9 +34,9 @@ export default function MarqueeSlider() {
                       <RevealText
                         as="h2"
                         className="reveal-type"
-                        style={{width: "100%" }}
+                        style={{ width: "100%" }}
                       >
-                        <p style={{ color: "black", width: "100%", fontSize:"2rem" }}>{item.text}</p>
+                        <p style={{ color: "black", width: "100%", fontSize: "2rem" }}>{item.text}</p>
                       </RevealText>
                     </div>
                   </div>
@@ -102,8 +97,8 @@ export default function MarqueeSlider() {
                   </div>
                   {/* item */}
                   {item.title && (
-                    <div className="marquee__item has-caption padding-4">
-                      <p style={{ color: "black", fontSize: "100px" }}>
+                    <div className="marquee__item has-caption padding-4" style={{background: "#D5242D"}}>
+                      <p style={{ color: "white", fontSize: "100px" }}>
                         {item.title.split(" ")[0]}
                         <br />
                         {item.title.split(" ")[1]}

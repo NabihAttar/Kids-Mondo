@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 const partners = [
@@ -35,33 +36,27 @@ export default function Partners() {
         <div className="mxd-block">
           <div className="mxd-partners-cards">
             <div className="container-fluid p-0">
-              {/* custom flex row */}
-              <div className="partners-row">
-                {partners.map((partner, i) => (
-                  <div
-                    key={i}
-                    className="partners-col mxd-partners-cards__item mxd-grid-item "
+              <div className="partnersGrid">
+                {partners.map((partner) => (
+                  <a
+                    key={partner.href}
+                    className="partnerCard"
+                    href={partner.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={partner.alt}
                   >
-                    <a
-                      className="mxd-partners-cards__inner"
-                      href={partner.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div className="mxd-partners-cards__logo">
-                        <Image
-                          alt={partner.alt}
-                          src={partner.src}
-                          width={984}
-                          height={235}
-                          
-                        />
-                      </div>
-                    </a>
-                  </div>
+                    <Image
+                      alt={partner.alt}
+                      src={partner.src}
+                      width={120}
+                      height={120}
+                      className="partnerIcon"
+                      priority
+                    />
+                  </a>
                 ))}
               </div>
-              {/* end flex row */}
             </div>
           </div>
         </div>

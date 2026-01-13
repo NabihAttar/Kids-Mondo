@@ -1,5 +1,6 @@
+"use client";
+
 import VelocityMarquee from "@/components/animation/VelocityMarquee";
-import VideoParallax from "@/components/animation/VideoParallax";
 import Image from "next/image";
 
 export default function Hero() {
@@ -11,34 +12,7 @@ export default function Hero() {
           <div className="mxd-hero-03__top">
             {/* marquee */}
             <div className="mxd-hero-03__marquee loading__item">
-              {/* Marquee Start */}
               <VelocityMarquee className="marquee marquee-right--gsap">
-                {/* item */}
-                {/* <div className="marquee__item one-line">
-                  <div className="hero-03-marquee__video">
-                    <video
-                      preload="auto"
-                      autoPlay
-                      loop
-                      muted
-                      poster="video/hero/hero-video-02.webp"
-                    >
-                      <source
-                        type="video/mp4"
-                        src="/video/hero/hero-video-02.mp4"
-                      />
-                      <source
-                        type="video/webm"
-                        src="/video/hero/hero-video-02.webm"
-                      />
-                      <source
-                        type="video/ogv"
-                        src="/video/hero/hero-video-02.ogv"
-                      />
-                    </video>
-                  </div>
-                </div> */}
-                {/* item */}
                 <div className="marquee__item one-line">
                   <div className="hero-03-marquee__image">
                     <Image
@@ -50,32 +24,7 @@ export default function Hero() {
                     />
                   </div>
                 </div>
-                {/* item */}
-                {/* <div className="marquee__item one-line">
-                  <div className="hero-03-marquee__video">
-                    <video
-                      preload="auto"
-                      autoPlay
-                      loop
-                      muted
-                      poster="video/hero/hero-video-01.webp"
-                    >
-                      <source
-                        type="video/mp4"
-                        src="/video/hero/hero-video-01.mp4"
-                      />
-                      <source
-                        type="video/webm"
-                        src="/video/hero/hero-video-01.webm"
-                      />
-                      <source
-                        type="video/ogv"
-                        src="/video/hero/hero-video-01.ogv"
-                      />
-                    </video>
-                  </div>
-                </div>
-                {/* item */}
+
                 <div className="marquee__item one-line">
                   <div className="hero-03-marquee__image">
                     <Image
@@ -87,7 +36,7 @@ export default function Hero() {
                     />
                   </div>
                 </div>
-                {/* item */}
+
                 <div className="marquee__item one-line">
                   <div className="hero-03-marquee__image">
                     <Image
@@ -99,7 +48,7 @@ export default function Hero() {
                     />
                   </div>
                 </div>
-                {/* item */}
+
                 <div className="marquee__item one-line">
                   <div className="hero-03-marquee__image">
                     <Image
@@ -112,59 +61,66 @@ export default function Hero() {
                   </div>
                 </div>
               </VelocityMarquee>
-              {/* Marquee End */}
             </div>
+
             {/* headline */}
             <div className="mxd-hero-03__headline">
-              <p className="hero-03-headline__caption loading__item" >
+              <p className="hero-03-headline__caption loading__item">
                 Where Kids
                 <br />
                 Become Heroes of
                 <br />
                 Their Own Story
               </p>
-             <h1 className="hero-03-headline__title loading__item">
-  <span className="hero-03-headline__hidden">KidzMondo</span>
 
-  {/* Mobile logo */}
-  <Image
-    className="hero-03-headline__svg-mobile"
-    src="/img/avatars/KidzMondo(6).svg"
-    alt="KidzMondo"
-    width={238}
-    height={108}
-    priority
-    style={{ width: "100%", height: "auto" }}
-  />
+              <h1 className="hero-03-headline__title loading__item">
+                <span className="hero-03-headline__hidden">KidzMondo</span>
 
-  {/* Desktop logo */}
-  <Image
-    className="hero-03-headline__svg"
-    src="/img/avatars/KidzMondo(6).svg"
-    alt="KidzMondo"
-    width={400}
-    height={72}
-    priority
-    style={{ width: "100%", height: "auto" }}
-  />
-</h1>
+                {/* Mobile logo */}
+                <Image
+                  className="hero-03-headline__svg-mobile"
+                  src="/img/avatars/KidzMondo(6).svg"
+                  alt="KidzMondo"
+                  width={238}
+                  height={108}
+                  priority
+                  style={{ width: "100%", height: "auto" }}
+                />
 
+                {/* Desktop logo */}
+                <Image
+                  className="hero-03-headline__svg"
+                  src="/img/avatars/KidzMondo(6).svg"
+                  alt="KidzMondo"
+                  width={400}
+                  height={72}
+                  priority
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </h1>
             </div>
           </div>
-          {/* bottom part */}
-          {/* <div className="mxd-hero-03__bottom">
+
+          {/* ✅ bottom video part */}
+          <div className="mxd-hero-03__bottom">
             <div className="mxd-container">
               <div className="mxd-divider">
                 <div className="mxd-divider__video">
-                  <VideoParallax
-                    className="video parallax-video"
-                    src="/video/1920x1080_video-04.webm"
-                    poster="/video/1920x1080_video-04.webp"
-                  />
+                  <video
+                    className="hero-bottom-video"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                  >
+                    <source src="/video/IMG_4456.mp4" type="video/mp4" />
+                  </video>
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
+          {/* ✅ end bottom video */}
         </div>
       </div>
     </div>

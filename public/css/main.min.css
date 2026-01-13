@@ -17663,6 +17663,7 @@ form textarea:required:valid {
   justify-content: flex-start;
   background-color: var(--accent);
 }
+
 .marquee__item.has-caption p {
   font: normal var(--fw-medium) 2.2rem/1.2 var(--_font-accent);
   color: var(--t-opp-bright);
@@ -21010,4 +21011,63 @@ form textarea:required:valid {
   .opposite-responsive {
     font-size: 30px;
   }
+}
+
+
+.partnersGrid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 18px 14px !important;
+  align-items: center !important;
+
+  /* ✅ IMPORTANT FIX */
+  align-content: start !important;
+  grid-auto-rows: max-content !important;
+}
+
+.partnerCard {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  padding: 12px 0 !important;
+  text-decoration: none !important;
+}
+
+.partnerIcon {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: contain !important;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .partnersGrid {
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  }
+
+  .partnerIcon {
+    width: 160px !important;
+    height: 160px !important;
+  }
+}
+
+/* Mobile: center the last item if total is odd (e.g. 5) */
+@media (max-width: 767px) {
+  .partnersGrid .partnerCard:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+.mxd-divider__video {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px; /* optional */
+}
+
+.hero-bottom-video {
+  width: 100%;
+  height: 360px;      /* change height as you like */
+  display: block;
+  object-fit: cover;  /* keeps it cropped nicely */
 }

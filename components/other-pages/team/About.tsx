@@ -191,7 +191,7 @@ export default function About() {
                                 />
                               </div> */}
                               <div className="mxd-testimonials-image__info">
-                                <h5 className="mxd-testimonials-image__name opposite">
+                                <h5 className="mxd-testimonials-image__name opposite" style={{fontSize:"4rem"}}>
                                   {t.author}
                                 </h5>{" "}
                                 {/* <p className="mxd-testimonials-image__position t-small t-opposite-medium">
@@ -215,7 +215,7 @@ export default function About() {
                               data-swiper-parallax={-100}
                               data-swiper-parallax-opacity={0}
                             >
-                              <p className="t-large t-opposite" style={{fontSize:"2rem"}}>{t.text}</p>
+                              <p className="t-large t-opposite" style={{fontSize:"3rem"}}>{t.text}</p>
                               {/* <AnimatedButton
                                 className="btn btn-anim btn-default btn-small btn-base slide-right-up"
                                 as={"a"}
@@ -227,17 +227,24 @@ export default function About() {
                             </div>
                           </div>
                           <div
-                            className="col-12 col-xl-5 mxd-testimonials-image__img mxd-grid-item no-margin"
-                            data-swiper-parallax-x={-50}
-                            data-swiper-parallax-opacity={0}
-                          >
-                            <Image
-                              alt=""
-                              src={t.illustration}
-                              width={1400}
-                              height={1400}
-                            />
-                          </div>
+  className="col-12 col-xl-5 mxd-testimonials-image__img mxd-grid-item no-margin"
+  data-swiper-parallax-x={-50}
+  data-swiper-parallax-opacity={0}
+  style={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+>
+  <Image
+    alt=""
+    src={t.illustration}
+    width={600}
+    height={600}
+    style={{
+      width: "min(320px, 70%)", // ✅ controls displayed size
+      height: "auto",
+      objectFit: "contain",
+    }}
+  />
+</div>
+
                         </div>
                       </div>
                     </div>

@@ -15,7 +15,7 @@ type CharacterItem = {
   tags?: string[];
 };
 
-/** ✅ Popup Modal */
+/** Popup Modal */
 function CharacterModal({
   open,
   onClose,
@@ -83,9 +83,7 @@ function CharacterModal({
           }}
         >
           <div>
-            <h2 style={{ margin: 0, fontSize: 28, lineHeight: 1.2 }}>
-              {title}
-            </h2>
+            <h2 style={{ margin: 0, fontSize: 28, lineHeight: 1.2 }}>{title}</h2>
           </div>
 
           <button
@@ -125,7 +123,7 @@ function CharacterModal({
 }
 
 export default function Portfolios1() {
-  // ✅ Safe array fallback (never undefined)
+  // Safe array fallback (never undefined)
   const items = useMemo<CharacterItem[]>(() => {
     const data: any = projectsData as any;
     return Array.isArray(data?.projects10) ? (data.projects10 as CharacterItem[]) : [];
@@ -134,7 +132,7 @@ export default function Portfolios1() {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState<CharacterItem | null>(null);
 
-  // ✅ Drag/click detection to work with StackCards
+  // Drag/click detection to work with StackCards
   const startRef = useRef<{ x: number; y: number } | null>(null);
   const movedRef = useRef(false);
 
@@ -159,6 +157,7 @@ export default function Portfolios1() {
             >
               The Characters Behind KidzMondo
             </h2>
+
             <p
               className="mxd-section__subtitle anim-uni-in-up"
               style={{ fontSize: "2rem" }}
@@ -173,8 +172,9 @@ export default function Portfolios1() {
             <div className="mxd-block mxd-grid-item no-margin">
               <div className="content__block loading__fade">
                 <StackCards stackName="projects-stack" className="stack-wrapper">
-                  {items.map((s, idx) => {
+                  {items.map((s, idx, arr) => {
                     const imgSrc = encodeURI(s.image);
+                    const isBlackTitle = idx === 1 || idx === arr.length - 1;
 
                     return (
                       <div
@@ -182,7 +182,6 @@ export default function Portfolios1() {
                         className="mxd-projects-stack__inner justify-between"
                         role="button"
                         tabIndex={0}
-                        // ✅ Use pointer events with drag threshold (works with StackCards)
                         onPointerDown={(e) => {
                           startRef.current = { x: e.clientX, y: e.clientY };
                           movedRef.current = false;
@@ -191,7 +190,7 @@ export default function Portfolios1() {
                           if (!startRef.current) return;
                           const dx = Math.abs(e.clientX - startRef.current.x);
                           const dy = Math.abs(e.clientY - startRef.current.y);
-                          if (dx + dy > 6) movedRef.current = true; // threshold
+                          if (dx + dy > 6) movedRef.current = true;
                         }}
                         onPointerUp={(e) => {
                           e.stopPropagation();
@@ -214,29 +213,36 @@ export default function Portfolios1() {
                         }}
                       >
                         <div className="mxd-projects-stack__image">
-                          <Image alt={s.title} src={imgSrc} width={1920} height={1080} />
+                          <Image
+                            alt={s.title}
+                            src={imgSrc}
+                            width={1920}
+                            height={1080}
+                          />
                         </div>
 
                         <div className="mxd-projects-stack__title no-margin">
                           <h2
                             className="permanent-light"
-                            style={{ color: idx === 1 ? "#000" : undefined }}
+                            style={{ color: isBlackTitle ? "#000" : undefined }}
                           >
                             {s.title}
                           </h2>
                         </div>
 
+                        {/* Optional: if you want description instead of title, keep this block
                         <div className="mxd-projects-stack__title no-margin">
                           <h2
                             className="permanent-light"
                             style={{
                               fontSize: "22px",
-                              color: idx === 1 || idx === 4 ? "#000" : undefined,
+                              color: isBlackTitle ? "#000" : undefined,
                             }}
                           >
                             {s.description ?? ""}
                           </h2>
                         </div>
+                        */}
                       </div>
                     );
                   })}

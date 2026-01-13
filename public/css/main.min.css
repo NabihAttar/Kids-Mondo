@@ -21071,3 +21071,13 @@ form textarea:required:valid {
   display: block;
   object-fit: cover;  /* keeps it cropped nicely */
 }
+
+
+/* Show/hide content by screen size */
+.desktop-only { display: block; }
+.mobile-only { display: none; }
+
+@media (max-width: 767px) {
+  .desktop-only { display: none !important; }
+  .mobile-only { display: block !important; }
+}

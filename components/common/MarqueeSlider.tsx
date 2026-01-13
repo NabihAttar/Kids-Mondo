@@ -26,7 +26,7 @@ export default function MarqueeSlider() {
                   <div className="row g-0">
                     <div className="col-12 mxd-grid-item no-margin">
                       <div className="mxd-section-title__hrtitle anim-uni-in-up">
-                        <RevealText as="h2" className="reveal-type">
+                        <RevealText as="h2" className="reveal-type" style={{marginBottom:"50px"}}>
                           Discover What They Be
                         </RevealText>
                       </div>
@@ -36,7 +36,7 @@ export default function MarqueeSlider() {
                         className="reveal-type"
                         style={{ width: "100%" }}
                       >
-                        <p style={{ color: "black", width: "100%", fontSize: "2rem" }}>{item.text}</p>
+                        <p style={{ color: "black", width: "100%", fontSize: "30px" }}>{item.text}</p>
                       </RevealText>
                     </div>
                   </div>

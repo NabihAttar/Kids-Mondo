@@ -213,16 +213,17 @@ export default function ServicesStack() {
           <div className="container-fluid px-0">
             <div className="row gx-0">
               <div className="col-12">
-                <div style={{ marginTop: 24, overflow: "hidden" }}>
-                  <Image
-                    src="/img/hero/Map.jpeg"
-                    alt="Map"
-                    width={3920}
-                    height={1900}
-                    style={{ width: "100%", height: "auto", display: "block" }}
-                    priority
-                  />
-                </div>
+                <div style={{ marginTop: 24, overflow: "hidden", borderRadius: 46 }}>
+  <Image
+    src="/img/hero/Map.jpeg"
+    alt="Map"
+    width={3920}
+    height={1900}
+    style={{ width: "100%", height: "auto", display: "block" }}
+    priority
+  />
+</div>
+
               </div>
             </div>
           </div>

@@ -229,7 +229,7 @@ export default function Hero() {
                   </ul>
                 </div>
               </div>
-              <div className="mxd-hero-01__video-wrap loading__item">
+              {/* <div className="mxd-hero-01__video-wrap loading__item">
                 <video
                   className="mxd-hero-01__video"
                   preload="auto"
@@ -245,7 +245,7 @@ export default function Hero() {
                 <div className="mxd-hero-01__video-btn">
                   <VideoModalButton videoSrc="https://vimeo.com/65036292" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

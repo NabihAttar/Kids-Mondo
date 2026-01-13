@@ -624,10 +624,10 @@ html.lenis body {
   border-radius: var(--_radius-l);
 }
 .mxd-wrapper.padding-top-pre-title {
-  padding-top: 13rem;
+  padding-top: 8rem;
 }
 .mxd-wrapper.margin-bottom-pre-title {
-  margin-bottom: 13rem;
+  margin-bottom: 8rem;
 }
 @media only screen and (min-width: 768px) {
   .mxd-wrapper.padding-top-pre-title {
@@ -657,7 +657,7 @@ html.lenis body {
   padding-bottom: 2.2rem;
 }
 .mxd-section.padding-default {
-  padding-bottom: 14rem;
+  padding-bottom: 4rem;
 }
 .mxd-section.padding-default.mobile-title {
   padding-bottom: 13rem;
@@ -699,10 +699,10 @@ html.lenis body {
   padding-bottom: 13rem;
 }
 .mxd-section.padding-grid-pre-mtext {
-  padding-bottom: 11.3rem;
+  /* padding-bottom: 11.3rem; */
 }
 .mxd-section.padding-pinned-img-pre-mtext {
-  padding-bottom: 10.4rem;
+  padding-bottom: 1.4rem;
 }
 .mxd-section.padding-mtext {
   padding-bottom: 12.6rem;
@@ -1002,7 +1002,7 @@ html.lenis body {
   }
 }
 .mxd-section-inner-headline {
-  padding-top: 13rem;
+  padding-top: 5rem;
 }
 @media only screen and (min-width: 768px) {
   .mxd-section-inner-headline {
@@ -1041,7 +1041,7 @@ html.lenis body {
   padding-bottom: 2.3rem;
 }
 .mxd-section-inner-headline.padding-text-pre-block {
-  padding-bottom: 13rem;
+  /* padding-bottom: 13rem; */
 }
 .mxd-section-inner-headline.padding-s-text-pre-block {
   padding-bottom: 4.9rem;
@@ -7700,7 +7700,7 @@ form textarea:required:valid {
 }
 .mxd-hero-01__data-wrap {
   position: relative;
-  padding: 14rem 0 13.2rem 0;
+  /* padding: 14rem 0 13.2rem 0; */
 }
 @media only screen and (min-width: 1200px) {
   .mxd-hero-01__data-wrap {
@@ -8372,7 +8372,7 @@ form textarea:required:valid {
 .mxd-hero-03__top {
   position: relative;
   height: -moz-calc(100vh - 7.6rem);
-  height: calc(100vh - 7.6rem);
+  height: calc(100vh - 33.6rem);
   padding-top: 12rem;
 }
 @media only screen and (min-width: 768px) {
@@ -18207,7 +18207,7 @@ form textarea:required:valid {
 }
 .mxd-services-stack__info {
   z-index: 1;
-  margin-bottom: 3.3rem;
+  /* margin-bottom: 3.3rem; */
 }
 .mxd-services-stack__info.showcase-info {
   width: 100%;
@@ -20713,8 +20713,8 @@ form textarea:required:valid {
 
 /* Section spacing */
 .mxd-section.padding-stacked-section {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .stack-wrapper.in-content-stack .mxd-services-stack__inner {

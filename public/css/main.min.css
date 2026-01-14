@@ -21186,3 +21186,64 @@ form textarea:required:valid {
     display: none !important;
   }
 }
+@media (max-width: 767px) {
+  .hideControlsOnMobile {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .heroMissionText {
+    font-size: 22px !important;
+  }
+}
+@media (max-width: 767px) {
+  .testimonialText {
+    font-size: 2rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .itemTextMobile22 {
+    font-size: 22px !important;
+  }
+}
+@media (max-width: 767px) {
+  .innerHeadlineText {
+    font-size: 22px !important;
+  }
+}
+@media (max-width: 767px) {
+  .beliefText {
+    font-size: 22px !important;
+  }
+}
+@media (max-width: 767px) {
+  .mobile22 {
+    font-size: 22px !important;
+  }
+}
+@media (max-width: 767px) {
+  .subtitleMobile22 {
+    font-size: 22px !important;
+  }
+}
+/* Default: Desktop shows Illustration.svg */
+.footerBannerMobile {
+  display: none;
+}
+
+/* Mobile: show footer banner.svg instead */
+@media (max-width: 767px) {
+  .footerBannerDesktop {
+    display: none !important;
+  }
+  .footerBannerMobile {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  .mxd-services-cards__tags.mobile-only {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important; /* space between tags */
+  }
+}

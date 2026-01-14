@@ -426,7 +426,7 @@ export default function ServicesStack() {
                     </div>
                   </div>
 
-                  <div className="mxd-services-cards__tags mobile-only">
+                  <div className="mxd-services-cards__tags mobile-only tagsMobileGap">
                     <span className="tag tag-default tag-outline-opposite">
                       Empathy
                     </span>

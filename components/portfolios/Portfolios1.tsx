@@ -159,13 +159,14 @@ export default function Portfolios1() {
             </h2>
 
             <p
-              className="mxd-section__subtitle anim-uni-in-up"
-              style={{ fontSize: "2rem" }}
+              className="mxd-section__subtitle anim-uni-in-up subtitleMobile22"
+              style={{ fontSize: "30px" }}
             >
-              Every great city begins with a vision and so is KidzMondo, brought
-              to life by four symbolic founders who turned imagination into
-              order and play into purpose.
+              Every great city begins with a vision and so is KidzMondo, brought to life by
+              four symbolic founders who turned imagination into order and play into
+              purpose.
             </p>
+
           </div>
 
           <div className="mxd-container grid-container">

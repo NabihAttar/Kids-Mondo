@@ -8,23 +8,6 @@ import SubscribeForm from "./SubscribeForm";
 export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
   return (
     <footer id="mxd-footer" className="mxd-footer footer-kidz">
-      {/* Footer Block - Fullwidth Text Start */}
-      {/* <div className="mxd-footer__text-wrap">
-        <div className="fullwidth-text__tl-trigger" />
-        <div className="mxd-footer__fullwidth-text anim-top-to-bottom">
-          <Image
-            src="/img/hero/kidmondo.svg"
-            alt={text}
-            width={400}
-            height={72}
-            className="mxd-footer__svg-v2"
-            priority
-          />
-        </div>
-      </div> */}
-      {/* Footer Block - Fullwidth Text End */}
-
-      {/* Footer Block - Info Columns Start */}
       <div className="mxd-footer__footer-blocks">
         {/* single column */}
         <div className="footer-blocks__column animate-card-3">
@@ -74,24 +57,6 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                 )}
               </ul>
             </div>
-            {/* <div className="footer-blocks__links anim-uni-in-up">
-              <AnimatedButton
-                text="Privacy Policy"
-                as={"a"}
-                className="btn btn-line-xsmall btn-muted slide-right anim-no-delay"
-                href="#"
-              >
-                <i className="ph ph-arrow-right" />
-              </AnimatedButton>
-              <AnimatedButton
-                text="Terms &amp; conditions"
-                as={"a"}
-                className="btn btn-line-xsmall btn-muted slide-right anim-no-delay"
-                href="#"
-              >
-                <i className="ph ph-arrow-right" />
-              </AnimatedButton>
-            </div> */}
           </div>
         </div>
 
@@ -122,7 +87,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
               </svg>
               <a
                 href="mailto:example@example.com?subject=Message%20from%20your%20site"
-                className="footer-contact-link" 
+                className="footer-contact-link"
               >
                 hello@KidzMondo.com
               </a>
@@ -158,17 +123,15 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
             </p>
           </div>
 
-          <div className="footer-blocks__card fill-card notify" >
-            <div className="footer-blocks__title anim-uni-in-up" >
+          <div className="footer-blocks__card fill-card notify">
+            <div className="footer-blocks__title anim-uni-in-up">
               <p className="footer-blocks__title-m footer-text-white">
                 Subscribe to our City Updates :
               </p>
             </div>
             <div className="form-container anim-uni-in-up">
               <div className="form__reply subscription-ok">
-                <span className="reply__text" >
-                  Done! Thanks for subscribing.
-                </span>
+                <span className="reply__text">Done! Thanks for subscribing.</span>
               </div>
               <div className="form__reply subscription-error">
                 <span className="reply__text">
@@ -185,7 +148,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
           <div className="footer-blocks__card fullheight-card">
             <div className="footer-blocks__block">
               <div className="footer-blocks__title anim-uni-in-up">
-                <p className="footer-blocks__title-l " style={{ color: "white" }}>
+                <p className="footer-blocks__title-l" style={{ color: "white" }}>
                   Find Us Online
                 </p>
               </div>
@@ -197,6 +160,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                         href={social.url}
                         className="footer-socials__link"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         {social.title}
                       </a>
@@ -205,45 +169,49 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                 </ul>
               </div>
             </div>
-            <div className="footer-blocks__links anim-uni-in-up">
-              {/* <p className="t-xsmall t-muted footer-text-white">
-                <a
-                  className="no-effect"
-                  href="https://themeforest.net/user/ib-themes/portfolio"
-                  target="_blank"
-                >
-                  ib themes
-                </a>
-                <i className="ph-bold ph-copyright" />
-                {new Date().getFullYear()}
-              </p> */}
-            </div>
+            <div className="footer-blocks__links anim-uni-in-up" />
           </div>
         </div>
       </div>
-      <div className="mxd-footer__text-wrap" style={{ width: "100%" }}>
-  <div className="fullwidth-text__tl-trigger" />
-  <div
-    className="mxd-footer__fullwidth-text anim-top-to-bottom"
-    style={{ width: "100%" }}
-  >
-    <Image
-      src="/img/hero/Illustration.svg"
-      alt={text}
-      width={1920}
-      height={300}
-      priority
-      style={{
-        width: "100%",
-        height: "auto",
-        display: "block",
-        maxWidth: "100%",
-      }}
-    />
-  </div>
-</div>
 
-      {/* Footer Block - Info Columns End */}
+      {/* ✅ Bottom banner (Desktop vs Mobile) */}
+      <div className="mxd-footer__text-wrap footer-banner-wrap" style={{ width: "100%" }}>
+        <div className="fullwidth-text__tl-trigger" />
+
+        {/* Desktop banner (unchanged) */}
+        <div className="mxd-footer__fullwidth-text anim-top-to-bottom footerBannerDesktop">
+          <Image
+            src="/img/hero/Illustration.svg"
+            alt={text}
+            width={1920}
+            height={300}
+            priority
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              maxWidth: "100%",
+            }}
+          />
+        </div>
+
+        {/* Mobile banner (new) */}
+        <div className="mxd-footer__fullwidth-text anim-top-to-bottom footerBannerMobile">
+          <Image
+            src="/img/hero/footer banner.svg"
+            alt={text}
+            width={1920}
+            height={300}
+            priority
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              maxWidth: "100%",
+            }}
+          />
+        </div>
+      </div>
     </footer>
   );
 }

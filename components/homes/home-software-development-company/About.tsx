@@ -20,10 +20,15 @@ export default function About() {
               <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                 <div className="mxd-block__content">
                   <div className="mxd-block__paragraph">
-                    <p className="t-large t-bright anim-uni-in-up" style={{color:"black"}}>
-                      We believe children learn best through real, hands-on experiences. <br />
-                      When they take the lead — making decisions, solving problems, and experimenting freely — they build confidence and discover who they can become.
-                    </p>
+                    <p
+  className="t-large t-bright anim-uni-in-up beliefText"
+  style={{ color: "black" }}
+>
+  We believe children learn best through real, hands-on experiences. <br />
+  When they take the lead — making decisions, solving problems, and experimenting
+  freely — they build confidence and discover who they can become.
+</p>
+
                     {/* <div className="mxd-paragraph__lists">
                       <div className="container-fluid p-0">
                         <div className="row g-0">

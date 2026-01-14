@@ -9,33 +9,22 @@ type CityKey = "doha" | "beirut";
 const FULL_TEXT: Record<CityKey, React.ReactNode> = {
   doha: (
     <>
-      Located in the heart of Lusail, KidzMondo Doha brings education and
-      entertainment together in one dynamic world. Children can explore more
-      than 80 real-life professions, from pilots and bankers to journalists and
-      firefighters, all within a safe, immersive city built just for them. With
-      bilingual staff, interactive activities, and themed zones that reflect
-      Qatar’s culture and innovation, every visit is both fun and meaningful.
-      <br />
-      <br />
-      The Doha branch is a flagship destination, hosting school trips, birthday
-      celebrations, and family adventures, all designed to inspire creativity,
-      confidence, and curiosity.
+      Located in Lusail, KidzMondo Doha blends education and entertainment in a dynamic city built just for kids. With over 80 professions to explore and bilingual staff, it offers a safe environment reflecting Qatar’s culture. It is the ideal destination for school trips, birthdays, and family adventures that inspire creativity.
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
     </>
   ),
   beirut: (
     <>
-      Nestled in the heart of Beirut, KidzMondo’s first city continues to
-      inspire generations of children through the power of play. Here, every
-      corner tells a story from hospitals and theaters to radio stations and
-      construction zones giving kids the chance to experience real-world roles
-      in a safe, joyful environment. Beirut’s city is where KidzMondo’s
-      philosophy was born: combining education, culture, and fun to build
-      confident, responsible citizens of tomorrow.
-      <br />
-      <br />
-      Perfect for school outings, family days, and birthday celebrations,
-      KidzMondo Beirut remains a benchmark for experiential learning in Lebanon
-      and beyond.
+      Located in the heart of Beirut, KidzMondo inspires children through the power of play. In this safe, educational city, kids explore real-world roles—from doctors to builders—building confidence and responsibility. It is the premier destination for school outings, birthdays, and family fun in Lebanon
+   <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
     </>
   ),
 };
@@ -214,15 +203,15 @@ export default function ServicesStack() {
             <div className="row gx-0">
               <div className="col-12">
                 <div style={{ marginTop: 24, overflow: "hidden", borderRadius: 46 }}>
-  <Image
-    src="/img/hero/Map.jpeg"
-    alt="Map"
-    width={3920}
-    height={1900}
-    style={{ width: "100%", height: "auto", display: "block" }}
-    priority
-  />
-</div>
+                  <Image
+                    src="/img/hero/Map.jpeg"
+                    alt="Map"
+                    width={3920}
+                    height={1900}
+                    style={{ width: "100%", height: "auto", display: "block" }}
+                    priority
+                  />
+                </div>
 
               </div>
             </div>

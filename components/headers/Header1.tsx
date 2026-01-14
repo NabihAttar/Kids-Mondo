@@ -159,28 +159,25 @@ export default function Header1() {
       </div>
 
       {/* header controls */}
-      <div className="mxd-header__controls loading__fade">
-        {/* <ThemeSwitcherButton /> */}
+     <div className="mxd-header__controls loading__fade hideControlsOnMobile">
+  {pathname === "/" || pathname === "/preview" ? (
+    <AnimatedButton
+      text="Contact Us"
+      className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"
+      href="https://themeforest.net/user/ib-themes/portfolio"
+      target="_blank"
+    />
+  ) : (
+    <AnimatedButton
+      text="Say Hello"
+      className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"
+      href="/contact"
+    >
+      <i className="ph-bold ph-arrow-up-right" />
+    </AnimatedButton>
+  )}
+</div>
 
-        {pathname === "/" || pathname === "/preview" ? (
-          <AnimatedButton
-            text="Contact Us"
-            className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"
-            href="https://themeforest.net/user/ib-themes/portfolio"
-            target="_blank"
-          >
-            {/* <i className="ph-bold ph-shopping-cart-simple" /> */}
-          </AnimatedButton>
-        ) : (
-          <AnimatedButton
-            text="Say Hello"
-            className="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right"
-            href="/contact"
-          >
-            <i className="ph-bold ph-arrow-up-right" />
-          </AnimatedButton>
-        )}
-      </div>
     </header>
   );
 }

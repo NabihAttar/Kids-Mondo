@@ -54,7 +54,7 @@ export default function Testimonials2() {
                             data-swiper-parallax-x={-250}
                             data-swiper-parallax-opacity={0}
                           >
-                            <RevealText as="h2" className="reveal-type" style={{fontSize:"4.5rem"}}>
+                            <RevealText as="h2" className="reveal-type" style={{ fontSize: "4.5rem" }}>
                               Our philosophy centers on:
                             </RevealText>
                           </div>
@@ -85,8 +85,14 @@ export default function Testimonials2() {
 
 
                             {/* existing paragraphs */}
-                            <p className="t-large" style={{ color: "black" }}>{item.text}</p>
-                            <p className="t-large" style={{ color: "black" }}>{item.text1}</p>
+                            <p className="t-large mobile22" style={{ color: "black" }}>
+                              {item.text}
+                            </p>
+
+                            <p className="t-large mobile22" style={{ color: "black" }}>
+                              {item.text1}
+                            </p>
+
                           </div>
                         </div>
 

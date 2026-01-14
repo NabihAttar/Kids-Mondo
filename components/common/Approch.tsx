@@ -44,9 +44,14 @@ export default function Approch() {
                     >
                       <RevealText as="h2" className="reveal-type" >
 
-                        <p className="anim-uni-in-up" style={{ fontSize: "30px" }}>
-                          At KidzMondo every child steps into a world built just for them a living city where imagination meets responsibility and curiosity grows into confidence. Our mission is to spark a lifelong love of learning by transforming everyday play into meaningful moments. We aim to build confident curious children ready to engage with the world
-                        </p>
+                       <p className="anim-uni-in-up heroMissionText" style={{ fontSize: "30px" }}>
+  At KidzMondo every child steps into a world built just for them a living city
+  where imagination meets responsibility and curiosity grows into confidence.
+  Our mission is to spark a lifelong love of learning by transforming everyday
+  play into meaningful moments. We aim to build confident curious children ready
+  to engage with the world
+</p>
+
                       </RevealText>
 
                       {/* </div> */}

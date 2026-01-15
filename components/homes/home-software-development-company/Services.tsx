@@ -178,14 +178,14 @@ export default function Services() {
                        KidzMondo helps kids discover their interests by exploring real-world industries. This hands-on exposure inspires curiosity and builds a sense of purpose through experience.
                       </p>
                     </div>
-                    {/* <div className="mxd-services-cards-s__image image-bottom image-bottom-2">
+                    <div className="mxd-services-cards-s__image image-bottom image-bottom-2" style={{ marginTop: "-30px" }}>
                       <Image
                         alt="Illustration"
-                        src="/img/illustrations/3d-office-icon.png"
+                        src="/img/illustrations/3d-magnifier-icon-red-without-background.png"
                         width={891}
                         height={1200}
                       />
-                    </div> */}
+                    </div>
                   </div>
                 </div>
 

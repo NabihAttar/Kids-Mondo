@@ -771,9 +771,9 @@ html.lenis body {
   .mxd-section.padding-grid-pre-pinned {
     padding-bottom: 14.3rem;
   }
-  .mxd-section.padding-grid-pre-mtext {
+  /* .mxd-section.padding-grid-pre-mtext {
     padding-bottom: 10.4rem;
-  }
+  } */
   .mxd-section.padding-pinned-img-pre-mtext {
     padding-bottom: 10rem;
   }
@@ -850,9 +850,9 @@ html.lenis body {
   .mxd-section.padding-grid-pre-pinned {
     padding-bottom: 10rem;
   }
-  .mxd-section.padding-grid-pre-mtext {
+  /* .mxd-section.padding-grid-pre-mtext {
     padding-bottom: 10.4rem;
-  }
+  } */
   .mxd-section.padding-pinned-img-pre-mtext {
     padding-bottom: 4.3rem;
   }
@@ -17155,11 +17155,11 @@ form textarea:required:valid {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: -160px;
+    bottom: -100px;
   }
-  .mxd-services-cards-s__image.image-bottom-2 {
+  /* .mxd-services-cards-s__image.image-bottom-2 {
     bottom: -260px;
-  }
+  } */
   .mxd-services-cards-s__image.image-top {
     width: 100%;
     max-width: 330px;
@@ -18545,6 +18545,7 @@ form textarea:required:valid {
     display: block;
   }
 }
+
 .mxd-projects-stack__title {
   position: relative;
   margin-bottom: 2.4rem;
@@ -21244,6 +21245,9 @@ form textarea:required:valid {
   .mxd-services-cards__tags.mobile-only {
     display: flex !important;
     flex-wrap: wrap !important;
-    gap: 12px !important; /* space between tags */
+    gap: 5px !important; /* space between tags */
   }
 }
+
+
+

@@ -129,7 +129,7 @@ export default function Hero() {
 
           {/* ✅ bottom video part (visible, click plays with sound) */}
           <div className="mxd-hero-03__bottom">
-            <div className="mxd-container">
+            <div className="mxd-container" style={{marginTop:"100px"}}>
               <div className="mxd-divider">
                 <div className="mxd-divider__video" style={{ position: "relative" }}>
                   <video

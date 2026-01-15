@@ -169,7 +169,7 @@ export default function ServicesStack() {
                       Precision
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Sensory learning
+                      Creativity
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
                       Organization
@@ -345,7 +345,7 @@ export default function ServicesStack() {
                       Courage
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Safety Awareness
+                      Compassion
                     </span>
                   </div>
                 </div>
@@ -434,7 +434,7 @@ export default function ServicesStack() {
                       Responsibility
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Problem-solving
+                      Observation
                     </span>
                   </div>
                 </div>

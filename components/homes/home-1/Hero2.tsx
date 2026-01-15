@@ -177,7 +177,7 @@ export default function Hero() {
                   autoPlay
                   loop
                   muted
-                  poster="img/hero/Hero-Banner.jpg"
+                  poster="img/hero/video-cover.jpg"
                 >
                   {/* <source type="video/mp4" src="video/540x310_video-01.mp4" /> */}
                   {/* <source type="video/webm" src="video/540x310_video-01.webm" /> */}

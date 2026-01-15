@@ -196,6 +196,21 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
         </div>
 
         {/* Mobile banner (new) */}
+        {/* <div className="mxd-footer__fullwidth-text anim-top-to-bottom footerBannerMobile">
+          <Image
+            src="/img/hero/footer banner.svg"
+            alt={text}
+            width={1920}
+            height={300}
+            priority
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              maxWidth: "100%",
+            }}
+          />
+        </div> */}
         <div className="mxd-footer__fullwidth-text anim-top-to-bottom footerBannerMobile">
           <Image
             src="/img/hero/footer banner.svg"

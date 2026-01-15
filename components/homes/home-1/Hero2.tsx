@@ -99,10 +99,10 @@ export default function Hero() {
                 </h1>
               </div>
             </div>
-            
 
 
-            
+
+
 
             {/* bottom group */}
             <div className="mxd-hero-01__bottom">
@@ -138,9 +138,9 @@ export default function Hero() {
                           </textPath>
                         </text>
                       </g>
-                      
+
                     </AnimateRotation>
-                    
+
 
                     <Image
                       className="btn-rotating__image"
@@ -152,7 +152,7 @@ export default function Hero() {
                   </a>
                 </div>
 
-                
+
 
                 <div className="mxd-hero-01__data-descr loading__fade">
                   <p className="t-bright" style={{ color: "black" }}>
@@ -189,8 +189,8 @@ export default function Hero() {
                 </div>
               </div>
 
-              
-              
+
+
               {/* ✅ END VIDEO BLOCK */}
             </div>
           </div>

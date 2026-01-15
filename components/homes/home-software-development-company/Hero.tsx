@@ -1,9 +1,35 @@
 "use client";
 
+import { useRef, useState } from "react";
 import VelocityMarquee from "@/components/animation/VelocityMarquee";
 import Image from "next/image";
 
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handleVideoClick = async () => {
+    const v = videoRef.current;
+    if (!v) return;
+
+    try {
+      if (!isPlaying) {
+        // Start playing WITH sound
+        v.muted = false;
+        v.volume = 1;
+        await v.play();
+        setIsPlaying(true);
+      } else {
+        // Pause on second click (optional)
+        v.pause();
+        setIsPlaying(false);
+      }
+    } catch {
+      // fallback if browser blocks anything
+      v.controls = true;
+    }
+  };
+
   return (
     <div className="mxd-section mxd-hero-section padding-grid-pre-mtext">
       <div className="mxd-hero-03">
@@ -101,21 +127,57 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* ✅ bottom video part */}
+          {/* ✅ bottom video part (visible, click plays with sound) */}
           <div className="mxd-hero-03__bottom">
             <div className="mxd-container">
               <div className="mxd-divider">
-                <div className="mxd-divider__video">
+                <div className="mxd-divider__video" style={{ position: "relative" }}>
                   <video
+                    ref={videoRef}
                     className="hero-bottom-video"
-                    autoPlay
-                    loop
-                    muted
                     playsInline
                     preload="metadata"
+                    muted={false}
+                    onClick={handleVideoClick}
+                    // ✅ shows first frame even when not playing
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      display: "block",
+                      cursor: "pointer",
+                    }}
                   >
-                    <source src="/video/Animate_the_banner_202601131138.mp4" type="video/mp4" />
+                    <source
+                      src="/video/Animate_the_banner_202601131138.mp4"
+                      type="video/mp4"
+                    />
                   </video>
+
+                  {/* Optional overlay text */}
+                  {!isPlaying && (
+                    <div
+                      style={{
+                        position: "absolute",
+                        inset: 0,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        pointerEvents: "none",
+                      }}
+                    >
+                      <div
+                        style={{
+                          background: "rgba(0,0,0,0.55)",
+                          color: "#fff",
+                          padding: "10px 14px",
+                          borderRadius: 999,
+                          fontSize: 14,
+                        }}
+                      >
+                        Tap to play with sound
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

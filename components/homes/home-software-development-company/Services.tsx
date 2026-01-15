@@ -188,6 +188,39 @@ export default function Services() {
                     </div> */}
                   </div>
                 </div>
+
+{/* <div className="col-12 col-xl-4 mxd-services-cards-s__item mxd-grid-item anim-uni-scale-in-left" >
+                  <div className="mxd-services-cards-s__inner justify-end bg-base-tint radius-l padding-4" style={{ backgroundColor: "#2196C4" }}>
+                    <div className="mxd-services-cards-s__title">
+                      <h3 className=" opposite anim-uni-in-up" style={{ color: "white" }}>Discovery & Career Exploration</h3>
+                    </div>
+                    <div className="mxd-services-cards-s__info">
+                      <div className="mxd-services-cards-s__tags">
+                        <span className="tag tag-default tag-outline anim-uni-in-up">
+                          E-Commerce
+                        </span>
+                        <span className="tag tag-default tag-outline anim-uni-in-up">
+                          Maintenance
+                        </span>
+                        <span className="tag tag-default tag-outline anim-uni-in-up">
+                          Support
+                        </span>
+                      </div> 
+                      <p className="anim-uni-in-up" style={{ color: "white" }}>
+                        KidzMondo helps kids discover their interests by exploring real-world industries. This hands-on exposure inspires curiosity and builds a sense of purpose through experience.
+                      </p>
+                    </div>
+                    <div className="mxd-services-cards-s__image image-top">
+                      <Image
+                        alt="Illustration"
+                        src="/img/illustrations/1200x1200_service-image-05.webp"
+                        width={1200}
+                        height={996}
+                      />
+                    </div>
+                  </div>
+                </div> */}
+
               </div>
             </div>
           </div>

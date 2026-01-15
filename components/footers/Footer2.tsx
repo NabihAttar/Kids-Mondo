@@ -7,7 +7,6 @@ import SubscribeForm from "./SubscribeForm";
 
 export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
   return (
-    <>  
     <footer id="mxd-footer" className="mxd-footer footer-kidz">
       <div className="mxd-footer__footer-blocks">
         {/* single column */}
@@ -214,24 +213,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
         </div> */}
       
       </div>
-       {/* <div className="mxd-footer__fullwidth-text anim-top-to-bottom footerBannerMobile">
-          <Image
-            src="/img/hero/footer banner.svg"
-            alt={text}
-            width={1920}
-            height={300}
-            priority
-            style={{
-              width: "100%",
-              height: "auto",
-              display: "block",
-              maxWidth: "100%",
-            }}
-          />
-        </div> */}
-       
-    </footer>
-    <div className="mxd-footer__fullwidth-text anim-top-to-bottom footerBannerMobile">
+       <div className="mxd-footer__fullwidth-text anim-top-to-bottom footerBannerMobile">
           <Image
             src="/img/hero/footer banner.svg"
             alt={text}
@@ -246,6 +228,8 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
             }}
           />
         </div>
-</>
+       
+    </footer>
+
   );
 }

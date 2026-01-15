@@ -211,6 +211,8 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
             }}
           />
         </div> */}
+      
+      </div>
         <div className="mxd-footer__fullwidth-text anim-top-to-bottom footerBannerMobile">
           <Image
             src="/img/hero/footer banner.svg"
@@ -226,7 +228,6 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
             }}
           />
         </div>
-      </div>
     </footer>
   );
 }

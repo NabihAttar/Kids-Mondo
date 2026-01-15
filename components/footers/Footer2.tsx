@@ -179,7 +179,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
         <div className="fullwidth-text__tl-trigger" />
 
         {/* Desktop banner (unchanged) */}
-        <div className="mxd-footer__fullwidth-text anim-top-to-bottom footerBannerDesktop">
+        <div className="mxd-footer__fullwidth-text anim-top-to-bottom footerBannerDesktop" >
           <Image
             src="/img/hero/Illustration.svg"
             alt={text}

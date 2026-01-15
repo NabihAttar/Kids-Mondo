@@ -99,6 +99,10 @@ export default function Hero() {
                 </h1>
               </div>
             </div>
+            
+
+
+            
 
             {/* bottom group */}
             <div className="mxd-hero-01__bottom">
@@ -134,7 +138,9 @@ export default function Hero() {
                           </textPath>
                         </text>
                       </g>
+                      
                     </AnimateRotation>
+                    
 
                     <Image
                       className="btn-rotating__image"
@@ -145,6 +151,8 @@ export default function Hero() {
                     />
                   </a>
                 </div>
+
+                
 
                 <div className="mxd-hero-01__data-descr loading__fade">
                   <p className="t-bright" style={{ color: "black" }}>
@@ -169,17 +177,20 @@ export default function Hero() {
                   autoPlay
                   loop
                   muted
-                  poster="video/540x310_video-01.webp"
+                  poster="img/hero/Hero-Banner.jpg"
                 >
-                  <source type="video/mp4" src="video/540x310_video-01.mp4" />
-                  <source type="video/webm" src="video/540x310_video-01.webm" />
-                  <source type="video/ogv" src="video/540x310_video-01.ogv" />
+                  {/* <source type="video/mp4" src="video/540x310_video-01.mp4" /> */}
+                  {/* <source type="video/webm" src="video/540x310_video-01.webm" /> */}
+                  {/* <source type="video/ogv" src="video/540x310_video-01.ogv" /> */}
                 </video>
 
                 <div className="mxd-hero-01__video-btn">
-                  <VideoModalButton videoSrc="https://www.youtube.com/embed/Xz15a1TPZpM" />
+                  <VideoModalButton videoSrc="https://www.youtube.com/watch?v=Xz15a1TPZpM&embeds_referring_euri=https%3A%2F%2Fkids-mondo.vercel.app%2F&source_ve_path=MTM5MTE3LDIzODUx" />
                 </div>
               </div>
+
+              
+              
               {/* ✅ END VIDEO BLOCK */}
             </div>
           </div>

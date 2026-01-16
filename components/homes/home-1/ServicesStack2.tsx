@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useRef, useState, useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import StackCards from "@/components/animation/StackCards";
 
@@ -37,252 +37,108 @@ const FULL_TEXT: Record<CityKey, React.ReactNode> = {
   ),
 };
 
-/** ✅ Interactive hover map (same image, hover bubble + triangle pointer) */
-function InteractiveMap() {
-  const wrapRef = useRef<HTMLDivElement | null>(null);
-  const imgRef = useRef<HTMLImageElement | null>(null);
-
+/**
+ * ✅ Map (no JS scaling)
+ * - Uses CSS positions (left/top in %) from your main CSS:
+ *   .km-hotspot--lebanon { left:..; top:.. }
+ *   etc...
+ */
+function InteractiveMapCss() {
   const [active, setActive] = useState<string | null>(null);
-  const [scale, setScale] = useState({ sx: 1, sy: 1 });
-
-  const HOTSPOTS = useMemo(
-    () => [
-      {
-        id: "lebanon",
-        label: "Lebanon",
-        coords: [857, 281, 473, 304] as const, 
-        message: "KidzMondo Beirut — Opening Soon",
-        href: null as string | null,
-      },
-      {
-        id: "turkey",
-        label: "Turkey",
-        coords: [0, 0, 0, 0] as const,
-        message: "Visit KidzMondo Istanbul",
-        href: "http://www.kidzmondoistanbul.com/",
-      },
-      {
-        id: "jordan",
-        label: "Jordan",
-        coords: [0, 0, 0, 0] as const,
-        message: "Opening Soon",
-        href: null,
-      },
-      {
-        id: "oman",
-        label: "Oman",
-        coords: [0, 0, 0, 0] as const,
-        message: "Opening Soon",
-        href: null,
-      },
-      {
-        id: "uae",
-        label: "UAE",
-        coords: [0, 0, 0, 0] as const,
-        message: "Opening Soon",
-        href: null,
-      },
-      {
-        id: "qatar",
-        label: "Qatar",
-        coords: [0, 0, 0, 0] as const,
-        message: "KidzMondo Doha",
-        href: null,
-      },
-      {
-        id: "australia",
-        label: "Australia",
-        coords: [0, 0, 0, 0] as const,
-        message: "Opening Soon",
-        href: null,
-      },
-    ],
-    []
-  );
-
-  const updateScale = useCallback(() => {
-    const img = imgRef.current;
-    if (!img) return;
-
-    const nw = img.naturalWidth || 1;
-    const nh = img.naturalHeight || 1;
-
-    const rect = img.getBoundingClientRect();
-    const dw = rect.width || 1;
-    const dh = rect.height || 1;
-
-    setScale({ sx: dw / nw, sy: dh / nh });
-  }, []);
-
-  useEffect(() => {
-    updateScale();
-    window.addEventListener("resize", updateScale);
-    return () => window.removeEventListener("resize", updateScale);
-  }, [updateScale]);
-
-  const rectFromCoords = (coords: readonly number[]) => {
-    const [x1, y1, x2, y2] = coords;
-
-    const leftN = Math.min(x1, x2);
-    const rightN = Math.max(x1, x2);
-    const topN = Math.min(y1, y2);
-    const bottomN = Math.max(y1, y2);
-
-    const left = leftN * scale.sx;
-    const top = topN * scale.sy;
-    const right = rightN * scale.sx;
-    const bottom = bottomN * scale.sy;
-
-    const width = right - left;
-    const height = bottom - top;
-
-    return {
-      left: Math.round(left),
-      top: Math.round(top),
-      width: Math.round(width),
-      height: Math.round(height),
-      centerX: Math.round(left + width / 2),
-      anchorY: Math.round(top),
-    };
-  };
 
   const isTouchDevice =
     typeof window !== "undefined" &&
     ("ontouchstart" in window || navigator.maxTouchPoints > 0);
 
+  const HOTSPOTS = [
+    {
+      id: "lebanon",
+      label: "Lebanon",
+      message: "KidzMondo Beirut — Opening Soon",
+      href: null as string | null,
+    },
+    {
+      id: "turkey",
+      label: "Turkey",
+      message: "Visit KidzMondo Istanbul",
+      href: "http://www.kidzmondoistanbul.com/",
+    },
+    { id: "jordan", label: "Jordan", message: "Opening Soon", href: null },
+    { id: "qatar", label: "Qatar", message: "KidzMondo Doha", href: null },
+    { id: "uae", label: "UAE", message: "Opening Soon", href: null },
+    { id: "oman", label: "Oman", message: "Opening Soon", href: null },
+    { id: "australia", label: "Australia", message: "Opening Soon", href: null },
+  ];
+
   return (
     <div
-      ref={wrapRef}
-      style={{
-        marginTop: 24,
-        position: "relative",
-        width: "100%",
-      }}
+      className="km-map-wrap"
       onMouseLeave={() => setActive(null)}
+      style={{ marginTop: 24 }}
     >
-      <div
-        style={{
-          overflow: "hidden",
-          borderRadius: 46,
-          position: "relative",
-        }}
-      >
-        <img
-          ref={imgRef}
-          src="/img/hero/Map.jpeg"
-          alt="Map"
-          style={{ width: "100%", height: "auto", display: "block" }}
-          onLoad={updateScale}
-        />
-      </div>
+      {/* same pic */}
+      <img
+        src="/img/hero/Map.jpeg"
+        alt="Map"
+        style={{ width: "100%", height: "auto", display: "block" }}
+      />
 
       {HOTSPOTS.map((h) => {
-        if (h.coords.every((n) => n === 0)) return null;
-
-        const r = rectFromCoords(h.coords);
+        const Tag: any = h.href ? "a" : "button";
         const isActive = active === h.id;
 
-        const HotspotTag: any = h.href ? "a" : "div";
-
         return (
-          <React.Fragment key={h.id}>
-            {isActive && (
-              <div
-                style={{
-                  position: "absolute",
-                  left: r.centerX,
-                  top: r.anchorY,
-                  transform: "translate(-50%, calc(-100% - 14px))",
-                  background: "rgba(0,0,0,0.82)",
-                  color: "#fff",
-                  padding: "12px 14px",
-                  borderRadius: 14,
-                  fontSize: 13,
-                  lineHeight: 1.25,
-                  zIndex: 20,
-                  maxWidth: 260,
-                  boxShadow: "0 14px 40px rgba(0,0,0,0.30)",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                  pointerEvents: "none",
-                }}
-              >
-                <span
-                  style={{
-                    width: 30,
-                    height: 30,
-                    borderRadius: 999,
-                    background: "rgba(255,255,255,0.16)",
-                    display: "grid",
-                    placeItems: "center",
-                    flex: "0 0 auto",
-                    fontSize: 16,
-                  }}
-                >
-                  💬
-                </span>
-
-                <div>
-                  <div style={{ fontWeight: 800, marginBottom: 3 }}>
-                    {h.label}
-                  </div>
-                  <div style={{ opacity: 0.95 }}>{h.message}</div>
-                </div>
-
-                {/* ✅ triangle pointer */}
-                <div
-                  style={{
-                    position: "absolute",
-                    left: "50%",
-                    bottom: -10,
-                    transform: "translateX(-50%)",
-                    width: 0,
-                    height: 0,
-                    borderLeft: "10px solid transparent",
-                    borderRight: "10px solid transparent",
-                    borderTop: "10px solid rgba(0,0,0,0.82)",
-                  }}
-                />
-              </div>
-            )}
-
-            <HotspotTag
-              {...(h.href
-                ? { href: h.href, target: "_blank", rel: "noreferrer" }
-                : {})}
-              style={{
-                position: "absolute",
-                left: r.left,
-                top: r.top,
-                width: r.width,
-                height: r.height,
-                cursor: h.href ? "pointer" : "default",
-                zIndex: 10,
-              }}
-              onMouseEnter={() => setActive(h.id)}
-              onFocus={() => setActive(h.id)}
-              onBlur={() => setActive(null)}
-              onClick={(e: any) => {
-                // touch: first tap shows tooltip, second tap follows link
-                if (isTouchDevice) {
-                  if (active !== h.id) {
-                    e.preventDefault?.();
-                    setActive(h.id);
-                    return;
-                  }
-                }
-                if (!h.href) {
+          <div
+            key={h.id}
+            className={`km-hotspot km-hotspot--${h.id}`}
+            // allow focus for keyboard + mobile
+            tabIndex={0}
+            onMouseEnter={() => setActive(h.id)}
+            onFocus={() => setActive(h.id)}
+            onBlur={() => setActive(null)}
+            onClick={(e: any) => {
+              // touch: first tap shows tooltip, second tap follows link
+              if (isTouchDevice) {
+                if (active !== h.id) {
                   e.preventDefault?.();
                   setActive(h.id);
+                  return;
                 }
-              }}
-              onTouchStart={(e: any) => {
-                if (!h.href) e.preventDefault?.();
+              }
+              if (!h.href) {
+                e.preventDefault?.();
                 setActive(h.id);
+              }
+            }}
+            onTouchStart={() => setActive(h.id)}
+          >
+            <Tag
+              {...(h.href
+                ? { href: h.href, target: "_blank", rel: "noreferrer" }
+                : { type: "button" })}
+              style={{
+                // keep button/link invisible; marker is inside
+                all: "unset",
+                cursor: h.href ? "pointer" : "pointer",
+                display: "block",
               }}
-            />
-          </React.Fragment>
+              aria-label={h.label}
+            >
+              <span className="km-marker" />
+            </Tag>
+
+            {/* Tooltip (CSS hover shows it, this makes it also work on touch) */}
+            <div
+              className="km-tooltip"
+              style={{
+                // On touch we toggle via state; on desktop hover CSS will handle anyway
+                opacity: isActive ? 1 : undefined,
+              }}
+            >
+              <div style={{ fontWeight: 800, marginBottom: 4 }}>{h.label}</div>
+              <div style={{ opacity: 0.95 }}>{h.message}</div>
+            </div>
+          </div>
         );
       })}
     </div>
@@ -294,6 +150,7 @@ export default function ServicesStack() {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState<CityKey>("doha");
 
+  // Detect mobile
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 767px)");
     const update = () => setIsMobile(mq.matches);
@@ -308,6 +165,7 @@ export default function ServicesStack() {
     };
   }, []);
 
+  // Lock scroll when modal open
   useEffect(() => {
     if (!open) return;
     const prev = document.body.style.overflow;
@@ -322,14 +180,17 @@ export default function ServicesStack() {
       document.body.style.overflow = prev;
       window.removeEventListener("keydown", onKeyDown);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open]);
 
+  // If user switches to desktop while modal open, close it
   useEffect(() => {
     if (!isMobile && open) setOpen(false);
   }, [isMobile, open]);
 
   const handleOpen = (key: CityKey) => {
-    if (!isMobile) return; 
+    // Popup only on mobile
+    if (!isMobile) return;
     setSelected(key);
     setOpen(true);
   };
@@ -399,8 +260,7 @@ export default function ServicesStack() {
                   role="button"
                   tabIndex={0}
                   onKeyDown={(e) => {
-                    if (e.key === "Enter" || e.key === " ")
-                      handleOpen("beirut");
+                    if (e.key === "Enter" || e.key === " ") handleOpen("beirut");
                   }}
                 >
                   <div className="mxd-services-stack__title width-60">
@@ -453,23 +313,20 @@ export default function ServicesStack() {
         </div>
       </div>
 
-      {/*  Map section */}
-      <div
-        className="mxd-container grid-container"
-        style={{ marginBottom: "150px" }}
-      >
+      {/* ✅ Map section (CSS positioned bullets) */}
+      <div className="mxd-container grid-container" style={{ marginBottom: 150 }}>
         <div className="mxd-block">
           <div className="container-fluid px-0">
             <div className="row gx-0">
               <div className="col-12">
-                <InteractiveMap />
+                <InteractiveMapCss />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Mobile Popup */}
+      {/* ✅ Mobile Popup */}
       {open && (
         <div className="kmMobileModalOverlay" onClick={handleClose}>
           <div className="kmMobileModal" onClick={(e) => e.stopPropagation()}>
@@ -479,6 +336,7 @@ export default function ServicesStack() {
                   ? "KidzMondo Doha, City of Young Dreamers"
                   : "KidzMondo Beirut, Where It All Began"}
               </h4>
+
               <button
                 className="kmMobileModalClose"
                 onClick={handleClose}

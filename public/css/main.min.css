@@ -21249,5 +21249,97 @@ form textarea:required:valid {
   }
 }
 
+/* Map wrapper MUST be position:relative */
+.km-map-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 46px;
+}
+
+/* Each hotspot is positioned by CSS (left/top %) */
+.km-hotspot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+/* Bullet marker */
+.km-marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #fff;
+  border: 3px solid #111;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Pulse animation */
+.km-marker::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 999px;
+  border: 2px solid rgba(255,255,255,0.95);
+  animation: kmPulse 1.6s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes kmPulse {
+  0%   { transform: scale(1); opacity: 0.9; }
+  70%  { transform: scale(2.2); opacity: 0; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+/* Tooltip bubble (hidden by default) */
+.km-tooltip {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, calc(-100% - 18px));
+  background: rgba(0,0,0,0.86);
+  color: #fff;
+  padding: 12px 14px;
+  border-radius: 14px;
+  font-size: 13px;
+  line-height: 1.25;
+  max-width: 260px;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.30);
+  opacity: 0;
+  transition: opacity 160ms ease;
+  pointer-events: none;
+  z-index: 30;
+  white-space: normal;
+}
+
+/* Triangle pointer (touching the map) */
+.km-tooltip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgba(0,0,0,0.86);
+}
+
+/* Show tooltip on hover/focus */
+.km-hotspot:hover .km-tooltip,
+.km-hotspot:focus-within .km-tooltip {
+  opacity: 1;
+}
 
 
+
+
+.km-hotspot--lebanon   { left: 30.75%; top: 32.81%; }
+.km-hotspot--turkey    { left: 29.75%; top: 27.81%; }
+.km-hotspot--jordan    { left: 30.73%; top: 38.14%; }
+.km-hotspot--qatar     { left: 39.50%; top: 41.27%; }
+.km-hotspot--uae       { left: 41.80%; top: 44.27%; }
+.km-hotspot--oman      { left: 40.31%; top: 50.64%; }
+.km-hotspot--australia { left: 70.99%; top: 82.80%; }

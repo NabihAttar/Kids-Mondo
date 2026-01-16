@@ -463,7 +463,7 @@ export default function Hero() {
 
           {/* ✅ cover (stable size on mobile) */}
           <div className="mxd-hero-03__bottom">
-            <div className="mxd-container">
+            <div className="mxd-container" style={{marginTop:"100px"}}>
               <div className="mxd-divider">
                 <div
                   className="mxd-divider__video"

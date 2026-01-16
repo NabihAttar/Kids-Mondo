@@ -38,111 +38,74 @@ const FULL_TEXT: Record<CityKey, React.ReactNode> = {
 };
 
 /**
- * ✅ Map (no JS scaling)
- * - Uses CSS positions (left/top in %) from your main CSS:
- *   .km-hotspot--lebanon { left:..; top:.. }
- *   etc...
+ * ✅ Map using CSS positions (no links)
+ * - Hover shows tooltip
+ * - Mouse out hides tooltip
+ * - Transparent marker (white stroke)
+ * - Tooltip background #D5242D + triangle pointer
+ *
+ * IMPORTANT:
+ * Your CSS must include:
+ * .km-hotspot--lebanon { left:..; top:.. } etc...
  */
 function InteractiveMapCss() {
   const [active, setActive] = useState<string | null>(null);
 
-  const isTouchDevice =
-    typeof window !== "undefined" &&
-    ("ontouchstart" in window || navigator.maxTouchPoints > 0);
-
   const HOTSPOTS = [
-    {
-      id: "lebanon",
-      label: "Lebanon",
-      message: "KidzMondo Beirut — Opening Soon",
-      href: null as string | null,
-    },
-    {
-      id: "turkey",
-      label: "Turkey",
-      message: "Visit KidzMondo Istanbul",
-      href: "http://www.kidzmondoistanbul.com/",
-    },
-    { id: "jordan", label: "Jordan", message: "Opening Soon", href: null },
-    { id: "qatar", label: "Qatar", message: "KidzMondo Doha", href: null },
-    { id: "uae", label: "UAE", message: "Opening Soon", href: null },
-    { id: "oman", label: "Oman", message: "Opening Soon", href: null },
-    { id: "australia", label: "Australia", message: "Opening Soon", href: null },
+    { id: "lebanon", label: "Lebanon", message: "KidzMondo Beirut — Opening Soon" },
+    { id: "turkey", label: "Turkey", message: "KidzMondo Istanbul — Opening Soon" },
+    { id: "jordan", label: "Jordan", message: "Opening Soon" },
+    { id: "qatar", label: "Qatar", message: "KidzMondo Doha" },
+    { id: "uae", label: "UAE", message: "Opening Soon" },
+    { id: "oman", label: "Oman", message: "Opening Soon" },
+    { id: "australia", label: "Australia", message: "Opening Soon" },
   ];
 
   return (
-    <div
-      className="km-map-wrap"
-      onMouseLeave={() => setActive(null)}
-      style={{ marginTop: 24 }}
-    >
-      {/* same pic */}
-      <img
-        src="/img/hero/Map.jpeg"
-        alt="Map"
-        style={{ width: "100%", height: "auto", display: "block" }}
-      />
+    <div className="km-map-wrap" style={{ marginTop: 24 }}>
+      {/* ✅ only the image is clipped (so tooltip/ring never get cut) */}
+      <div className="km-map-clip">
+        <img
+          src="/img/hero/Map.jpeg"
+          alt="Map"
+          style={{ width: "100%", height: "auto", display: "block" }}
+        />
+      </div>
 
-      {HOTSPOTS.map((h) => {
-        const Tag: any = h.href ? "a" : "button";
-        const isActive = active === h.id;
+      {/* ✅ overlay is NOT clipped */}
+      <div className="km-map-overlay" onMouseLeave={() => setActive(null)}>
+        {HOTSPOTS.map((h) => {
+          const isActive = active === h.id;
 
-        return (
-          <div
-            key={h.id}
-            className={`km-hotspot km-hotspot--${h.id}`}
-            // allow focus for keyboard + mobile
-            tabIndex={0}
-            onMouseEnter={() => setActive(h.id)}
-            onFocus={() => setActive(h.id)}
-            onBlur={() => setActive(null)}
-            onClick={(e: any) => {
-              // touch: first tap shows tooltip, second tap follows link
-              if (isTouchDevice) {
-                if (active !== h.id) {
-                  e.preventDefault?.();
-                  setActive(h.id);
-                  return;
-                }
-              }
-              if (!h.href) {
-                e.preventDefault?.();
-                setActive(h.id);
-              }
-            }}
-            onTouchStart={() => setActive(h.id)}
-          >
-            <Tag
-              {...(h.href
-                ? { href: h.href, target: "_blank", rel: "noreferrer" }
-                : { type: "button" })}
-              style={{
-                // keep button/link invisible; marker is inside
-                all: "unset",
-                cursor: h.href ? "pointer" : "pointer",
-                display: "block",
-              }}
-              aria-label={h.label}
-            >
-              <span className="km-marker" />
-            </Tag>
-
-            {/* Tooltip (CSS hover shows it, this makes it also work on touch) */}
+          return (
             <div
-              className="km-tooltip"
-              style={{
-                // On touch we toggle via state; on desktop hover CSS will handle anyway
-                opacity: isActive ? 1 : undefined,
-                background: "#D5242D",
-                color: "#fff",
-              }}
+              key={h.id}
+              className={`km-hotspot km-hotspot--${h.id} ${isActive ? "is-active" : ""}`}
+              onMouseEnter={() => setActive(h.id)}
+              onMouseLeave={() => setActive(null)}
             >
-              <div style={{ fontWeight: 800, marginBottom: 4 }}>{h.label}</div>
-              <div style={{ opacity: 0.95 }}>{h.message}</div>
+              <button
+                type="button"
+                className="km-hotspot-btn"
+                aria-label={h.label}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActive((prev) => (prev === h.id ? null : h.id));
+                }}
+                onFocus={() => setActive(h.id)}
+                onBlur={() => setActive(null)}
+              >
+                <span className="km-marker" />
+              </button>
+
+              <div className="km-tooltip">
+                <div style={{ fontWeight: 800, marginBottom: 4 }}>{h.label}</div>
+                <div style={{ opacity: 0.95 }}>{h.message}</div>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -170,14 +133,15 @@ export default function ServicesStack() {
   // Lock scroll when modal open
   useEffect(() => {
     if (!open) return;
+
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") handleClose();
     };
-    window.addEventListener("keydown", onKeyDown);
 
+    window.addEventListener("keydown", onKeyDown);
     return () => {
       document.body.style.overflow = prev;
       window.removeEventListener("keydown", onKeyDown);
@@ -218,10 +182,7 @@ export default function ServicesStack() {
                   }}
                 >
                   <div className="mxd-services-stack__title width-60">
-                    <h3
-                      className="opposite-responsive"
-                      style={{ color: "white" }}
-                    >
+                    <h3 className="opposite-responsive" style={{ color: "white" }}>
                       KidzMondo Doha, City of Young Dreamers
                     </h3>
                   </div>
@@ -232,8 +193,8 @@ export default function ServicesStack() {
                     </p>
 
                     <p className="t-small-mobile t-opposite mobile-only">
-                      Located in the heart of Lusail, KidzMondo Doha brings
-                      education and entertainment together in one dynamic world.
+                      Located in the heart of Lusail, KidzMondo Doha brings education
+                      and entertainment together in one dynamic world.
                     </p>
                   </div>
 
@@ -266,10 +227,7 @@ export default function ServicesStack() {
                   }}
                 >
                   <div className="mxd-services-stack__title width-60">
-                    <h3
-                      className="opposite-responsive"
-                      style={{ color: "black" }}
-                    >
+                    <h3 className="opposite-responsive" style={{ color: "black" }}>
                       KidzMondo Beirut, Where It All Began
                     </h3>
                   </div>
@@ -286,9 +244,8 @@ export default function ServicesStack() {
                       className="t-small-mobile t-opposite mobile-only"
                       style={{ color: "black" }}
                     >
-                      Nestled in the heart of Beirut, KidzMondo’s first city
-                      continues to inspire generations of children through the
-                      power of play.
+                      Nestled in the heart of Beirut, KidzMondo’s first city continues
+                      to inspire generations of children through the power of play.
                     </p>
                   </div>
 
@@ -315,7 +272,7 @@ export default function ServicesStack() {
         </div>
       </div>
 
-      {/* ✅ Map section (CSS positioned bullets) */}
+      {/* ✅ Map section */}
       <div className="mxd-container grid-container" style={{ marginBottom: 150 }}>
         <div className="mxd-block">
           <div className="container-fluid px-0">

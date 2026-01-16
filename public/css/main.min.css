@@ -21343,3 +21343,119 @@ form textarea:required:valid {
 .km-hotspot--uae       { left: 41.80%; top: 44.99%; }
 .km-hotspot--oman      { left: 40.50%; top: 47.60%; }
 .km-hotspot--australia { left: 69.99%; top: 82.80%; }
+
+
+/* =========================
+   MAP WRAPPER (IMPORTANT)
+   ========================= */
+.km-map-wrap {
+  position: relative;
+  overflow: visible; /* ✅ don't clip tooltips / pulses */
+}
+
+/* ✅ clip ONLY the image */
+.km-map-clip {
+  border-radius: 46px;
+  overflow: hidden;
+}
+
+/* ✅ overlay is not clipped */
+.km-map-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  overflow: visible;
+}
+
+/* =========================
+   HOTSPOT POSITIONING
+   ========================= */
+.km-hotspot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.km-hotspot--lebanon   { left: 31.90%; top: 33.50%; }
+.km-hotspot--turkey    { left: 31.10%; top: 28.21%; }
+.km-hotspot--jordan    { left: 32.03%; top: 36.64%; }
+.km-hotspot--qatar     { left: 39.25%; top: 40.79%; }
+.km-hotspot--uae       { left: 41.80%; top: 44.99%; }
+.km-hotspot--oman      { left: 40.50%; top: 47.60%; }
+.km-hotspot--australia { left: 69.99%; top: 82.80%; }
+
+
+.km-hotspot-btn {
+  all: unset;
+  cursor: pointer;
+  display: block;
+}
+
+/* =========================
+   TRANSPARENT BULLET MARKER
+   ========================= */
+.km-marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: transparent;     /* ✅ transparent */
+  border: 3px solid transparent;      /* ✅ white outline */
+  display: block;
+  position: relative;
+}
+
+/* pulse ring */
+.km-marker::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.65);
+  animation: kmPulse 1.6s ease-out infinite;
+}
+
+@keyframes kmPulse {
+  0% { transform: scale(0.7); opacity: 1; }
+  100% { transform: scale(1.2); opacity: 0; }
+}
+
+/* =========================
+   TOOLTIP (HOVER SHOW / OUT HIDE)
+   ========================= */
+.km-tooltip {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -115%);
+  background: #D5242D; /* ✅ your color */
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 14px;
+  font-size: 13px;
+  line-height: 1.2;
+  max-width: 220px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 999;
+}
+
+/* triangle pointer */
+.km-tooltip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #D5242D;
+}
+
+/* show only on hover/focus (mouse out hides automatically) */
+.km-hotspot:hover .km-tooltip,
+.km-hotspot:focus-within .km-tooltip {
+  opacity: 1;
+  transform: translate(-50%, -125%);
+}

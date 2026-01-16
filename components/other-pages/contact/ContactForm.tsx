@@ -132,7 +132,7 @@ export default function ContactForm() {
 
                               {/* Subject */}
 
-                              
+
                               <div className="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
                                 <input
                                   type="text"
@@ -252,12 +252,8 @@ export default function ContactForm() {
             </div>
           </div>
         </div>
-
       </div>
       {/* Map image at the bottom */}
-
-
-
       <ToastContainer position="bottom-right" />
     </>
   );

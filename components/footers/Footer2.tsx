@@ -89,12 +89,45 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                 href="mailto:example@example.com?subject=Message%20from%20your%20site"
                 className="footer-contact-link"
               >
-                hello@KidzMondo.com
+                Info@kidzmondo.com
               </a>
+
+            </p>
+            <p className="mxd-point-subtitle anim-uni-in-up">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="20px"
+                height="20px"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill="currentColor"
+                  d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
+            c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
+            c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
+            c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
+            c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
+            c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
+            c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
+                />
+              </svg>
+              <a
+                href="mailto:example@example.com?subject=Message%20from%20your%20site"
+                className="footer-contact-link"
+              >
+                Franchise@kidzmondo.com
+              </a>
+
             </p>
           </div>
 
-          <div className="footer-blocks__card">
+
+
+          {/* <div className="footer-blocks__card">
             <p className="mxd-point-subtitle anim-uni-in-up">
               <svg
                 version="1.1"
@@ -121,7 +154,7 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
                 +1 212-708-9400
               </a>
             </p>
-          </div>
+          </div> */}
 
           <div className="footer-blocks__card fill-card notify">
             <div className="footer-blocks__title anim-uni-in-up">
@@ -211,24 +244,24 @@ export default function Footer2({ text = "KidzMondo" }: { text?: string }) {
             }}
           />
         </div> */}
-      
+
       </div>
-       <div className="mxd-footer__fullwidth-text anim-top-to-bottom footerBannerMobile">
-          <Image
-            src="/img/hero/footer banner.svg"
-            alt={text}
-            width={1920}
-            height={300}
-            priority
-            style={{
-              width: "100%",
-              height: "auto",
-              display: "block",
-              maxWidth: "100%",
-            }}
-          />
-        </div>
-       
+      <div className="mxd-footer__fullwidth-text anim-top-to-bottom footerBannerMobile">
+        <Image
+          src="/img/hero/footer banner.svg"
+          alt={text}
+          width={1920}
+          height={300}
+          priority
+          style={{
+            width: "100%",
+            height: "auto",
+            display: "block",
+            maxWidth: "100%",
+          }}
+        />
+      </div>
+
     </footer>
 
   );

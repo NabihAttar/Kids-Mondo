@@ -594,7 +594,7 @@ export default function Hero() {
               }}
             >
               <source
-                src="/video/Animate_the_banner_202601131138.mp4"
+                src="/video/Animate_the_banner_202601131138 (1).mp4"
                 type="video/mp4"
               />
             </video>

@@ -133,6 +133,8 @@ function InteractiveMapCss() {
               style={{
                 // On touch we toggle via state; on desktop hover CSS will handle anyway
                 opacity: isActive ? 1 : undefined,
+                background: "#D5242D",
+                color: "#fff",
               }}
             >
               <div style={{ fontWeight: 800, marginBottom: 4 }}>{h.label}</div>
